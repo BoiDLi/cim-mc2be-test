@@ -9,8 +9,50 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SoutenirRouteImport } from './routes/soutenir'
+import { Route as OrganisationRouteImport } from './routes/organisation'
+import { Route as OffreRouteImport } from './routes/offre'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CarrieresRouteImport } from './routes/carrieres'
+import { Route as BatimentRouteImport } from './routes/batiment'
+import { Route as ActualitesRouteImport } from './routes/actualites'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SoutenirRoute = SoutenirRouteImport.update({
+  id: '/soutenir',
+  path: '/soutenir',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrganisationRoute = OrganisationRouteImport.update({
+  id: '/organisation',
+  path: '/organisation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OffreRoute = OffreRouteImport.update({
+  id: '/offre',
+  path: '/offre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CarrieresRoute = CarrieresRouteImport.update({
+  id: '/carrieres',
+  path: '/carrieres',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BatimentRoute = BatimentRouteImport.update({
+  id: '/batiment',
+  path: '/batiment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActualitesRoute = ActualitesRouteImport.update({
+  id: '/actualites',
+  path: '/actualites',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +61,130 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/actualites': typeof ActualitesRoute
+  '/batiment': typeof BatimentRoute
+  '/carrieres': typeof CarrieresRoute
+  '/contact': typeof ContactRoute
+  '/offre': typeof OffreRoute
+  '/organisation': typeof OrganisationRoute
+  '/soutenir': typeof SoutenirRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/actualites': typeof ActualitesRoute
+  '/batiment': typeof BatimentRoute
+  '/carrieres': typeof CarrieresRoute
+  '/contact': typeof ContactRoute
+  '/offre': typeof OffreRoute
+  '/organisation': typeof OrganisationRoute
+  '/soutenir': typeof SoutenirRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/actualites': typeof ActualitesRoute
+  '/batiment': typeof BatimentRoute
+  '/carrieres': typeof CarrieresRoute
+  '/contact': typeof ContactRoute
+  '/offre': typeof OffreRoute
+  '/organisation': typeof OrganisationRoute
+  '/soutenir': typeof SoutenirRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/actualites'
+    | '/batiment'
+    | '/carrieres'
+    | '/contact'
+    | '/offre'
+    | '/organisation'
+    | '/soutenir'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/actualites'
+    | '/batiment'
+    | '/carrieres'
+    | '/contact'
+    | '/offre'
+    | '/organisation'
+    | '/soutenir'
+  id:
+    | '__root__'
+    | '/'
+    | '/actualites'
+    | '/batiment'
+    | '/carrieres'
+    | '/contact'
+    | '/offre'
+    | '/organisation'
+    | '/soutenir'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ActualitesRoute: typeof ActualitesRoute
+  BatimentRoute: typeof BatimentRoute
+  CarrieresRoute: typeof CarrieresRoute
+  ContactRoute: typeof ContactRoute
+  OffreRoute: typeof OffreRoute
+  OrganisationRoute: typeof OrganisationRoute
+  SoutenirRoute: typeof SoutenirRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/soutenir': {
+      id: '/soutenir'
+      path: '/soutenir'
+      fullPath: '/soutenir'
+      preLoaderRoute: typeof SoutenirRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/organisation': {
+      id: '/organisation'
+      path: '/organisation'
+      fullPath: '/organisation'
+      preLoaderRoute: typeof OrganisationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offre': {
+      id: '/offre'
+      path: '/offre'
+      fullPath: '/offre'
+      preLoaderRoute: typeof OffreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/carrieres': {
+      id: '/carrieres'
+      path: '/carrieres'
+      fullPath: '/carrieres'
+      preLoaderRoute: typeof CarrieresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/batiment': {
+      id: '/batiment'
+      path: '/batiment'
+      fullPath: '/batiment'
+      preLoaderRoute: typeof BatimentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/actualites': {
+      id: '/actualites'
+      path: '/actualites'
+      fullPath: '/actualites'
+      preLoaderRoute: typeof ActualitesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,16 +197,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ActualitesRoute: ActualitesRoute,
+  BatimentRoute: BatimentRoute,
+  CarrieresRoute: CarrieresRoute,
+  ContactRoute: ContactRoute,
+  OffreRoute: OffreRoute,
+  OrganisationRoute: OrganisationRoute,
+  SoutenirRoute: SoutenirRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
