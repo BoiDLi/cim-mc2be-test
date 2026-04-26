@@ -528,6 +528,6 @@ export const translations = {
       body: "The page you're looking for doesn't exist or has been moved.",
     },
   },
-} as const;
+};
 
-export type Dict = typeof translations.fr;
+export type Dict = (typeof translations)[Lang];
