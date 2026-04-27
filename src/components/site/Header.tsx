@@ -89,7 +89,7 @@ export function Header() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="lg:hidden fixed inset-x-0 top-20 bottom-0 bg-background border-t border-border overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-background border-t border-border overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-300">
           <div className="container-narrow py-8 flex flex-col gap-1">
             {NAV.map((item) => (
               <Link
