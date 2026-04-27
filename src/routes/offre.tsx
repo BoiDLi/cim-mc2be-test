@@ -1,5 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Lightbulb, Users2, Wrench, FlaskConical, FileCheck, Factory, Rocket, ArrowRight } from "lucide-react";
+import {
+  Lightbulb,
+  Users2,
+  Wrench,
+  FlaskConical,
+  FileCheck,
+  Factory,
+  Rocket,
+  ArrowRight,
+  Briefcase,
+  Building2,
+} from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
 import clinicalImg from "@/assets/clinical.jpg";
@@ -7,11 +18,11 @@ import clinicalImg from "@/assets/clinical.jpg";
 export const Route = createFileRoute("/offre")({
   head: () => ({
     meta: [
-      { title: "Offre — Services & infrastructures du CIM-MC²" },
+      { title: "Offre — Services & espaces du CIM-MC²" },
       {
         name: "description",
         content:
-          "Conseil, études cliniques, prototypage 3D, cleanrooms, coworking : services et infrastructures du CIM-MC² pour la medtech.",
+          "Offre de services (conseil, études cliniques, prototypage, réglementaire) et offre d'espaces (coworking, bureaux, salles de réunion, transmission de cas cliniques) du CIM-MC².",
       },
       { property: "og:title", content: "Offre — CIM-MC²" },
     ],
@@ -28,12 +39,55 @@ function OfferPage() {
     <>
       <PageHero kicker="03" title={t.offer.title} subtitle={t.offer.subtitle} />
 
+      {/* SUB-NAV : deux piliers de l'offre */}
+      <section className="py-12 border-b border-border">
+        <div className="container-narrow grid sm:grid-cols-2 gap-4">
+          <a
+            href="#services"
+            className="group flex items-start gap-4 rounded-2xl bg-card border border-border p-6 hover:border-coral/50 hover:shadow-soft transition-smooth"
+          >
+            <div className="h-12 w-12 rounded-2xl bg-primary/10 text-primary grid place-items-center group-hover:bg-coral group-hover:text-coral-foreground transition-smooth">
+              <Briefcase className="h-5 w-5" />
+            </div>
+            <div>
+              <p className="font-mono text-xs text-coral">A</p>
+              <h3 className="font-display text-xl text-primary">{t.offer.servicesBlockTitle}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{t.offer.servicesBlockIntro}</p>
+            </div>
+          </a>
+          <a
+            href="#espaces"
+            className="group flex items-start gap-4 rounded-2xl bg-card border border-border p-6 hover:border-coral/50 hover:shadow-soft transition-smooth"
+          >
+            <div className="h-12 w-12 rounded-2xl bg-primary/10 text-primary grid place-items-center group-hover:bg-coral group-hover:text-coral-foreground transition-smooth">
+              <Building2 className="h-5 w-5" />
+            </div>
+            <div>
+              <p className="font-mono text-xs text-coral">B</p>
+              <h3 className="font-display text-xl text-primary">{t.offer.spacesBlockTitle}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{t.offer.spacesBlockIntro}</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      {/* ============ A — OFFRE DE SERVICES ============ */}
+      <section id="services" className="py-24 scroll-mt-24">
+        <div className="container-narrow">
+          <p className="font-display italic text-coral text-lg">— A · Services</p>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl">{t.offer.servicesBlockTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg text-foreground/80 leading-relaxed">
+            {t.offer.servicesBlockIntro}
+          </p>
+        </div>
+      </section>
+
       {/* METHODOLOGY */}
-      <section className="py-24">
+      <section className="pb-24">
         <div className="container-narrow">
           <div className="max-w-3xl">
             <p className="font-display italic text-coral text-lg">— Méthodologie</p>
-            <h2 className="mt-2 font-display text-4xl">{t.offer.methodTitle}</h2>
+            <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.methodTitle}</h2>
             <p className="mt-4 text-lg text-foreground/80 leading-relaxed">{t.offer.methodBody}</p>
           </div>
 
@@ -59,13 +113,13 @@ function OfferPage() {
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* SERVICES DETAIL */}
       <section className="py-24 bg-secondary/40">
         <div className="container-narrow">
           <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
             <div>
-              <p className="font-display italic text-coral text-lg">— Services</p>
-              <h2 className="mt-2 font-display text-4xl">{t.offer.servicesTitle}</h2>
+              <p className="font-display italic text-coral text-lg">— Services CIM-MC²</p>
+              <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.servicesTitle}</h2>
             </div>
           </div>
 
@@ -89,7 +143,7 @@ function OfferPage() {
         </div>
       </section>
 
-      {/* INFRASTRUCTURES */}
+      {/* INFRASTRUCTURES (rattachées aux services) */}
       <section className="py-24">
         <div className="container-narrow grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
@@ -105,8 +159,8 @@ function OfferPage() {
             </div>
           </div>
           <div className="lg:col-span-7 order-1 lg:order-2">
-            <p className="font-display italic text-coral text-lg">— Infrastructures</p>
-            <h2 className="mt-2 font-display text-4xl">{t.offer.infraTitle}</h2>
+            <p className="font-display italic text-coral text-lg">— Infrastructures techniques</p>
+            <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.infraTitle}</h2>
             <p className="mt-4 text-foreground/80">{t.offer.infraBody}</p>
             <ul className="mt-8 space-y-4">
               {t.offer.infrastructures.map((s, i) => (
@@ -122,26 +176,31 @@ function OfferPage() {
         </div>
       </section>
 
-      {/* SPACES */}
-      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+      {/* ============ B — OFFRE D'ESPACES ============ */}
+      <section
+        id="espaces"
+        className="py-24 bg-primary text-primary-foreground relative overflow-hidden scroll-mt-24"
+      >
         <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-coral/20 blur-3xl" />
+        <div className="absolute inset-0 grain" />
         <div className="relative container-narrow">
-          <div className="max-w-3xl">
-            <p className="font-display italic text-coral text-lg">— Espaces</p>
-            <h2 className="mt-2 font-display text-4xl text-cream">{t.offer.spacesTitle}</h2>
-            <p className="mt-4 text-cream/80 leading-relaxed">{t.offer.spacesBody}</p>
-          </div>
+          <p className="font-display italic text-coral text-lg">— B · Espaces</p>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl text-cream">
+            {t.offer.spacesBlockTitle}
+          </h2>
+          <p className="mt-4 max-w-2xl text-cream/80 leading-relaxed">
+            {t.offer.spacesBlockIntro}
+          </p>
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { t: "Bureaux privatifs", d: "Pour start-ups et équipes de recherche." },
-              { t: "Coworking", d: "Pour porteurs de projets et nomades." },
-              { t: "Salles de réunion", d: "Du huddle à la conférence plénière." },
-              { t: "Convivialité", d: "Espaces de rencontre interdisciplinaires." },
-            ].map((s) => (
-              <div key={s.t} className="rounded-2xl border border-cream/15 p-6 hover:bg-cream/5 transition-smooth">
-                <h3 className="font-display text-lg text-cream">{s.t}</h3>
-                <p className="mt-2 text-sm text-cream/70">{s.d}</p>
+          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {t.offer.spaces.map((s, i) => (
+              <div
+                key={s.t}
+                className="rounded-2xl border border-cream/15 p-6 hover:bg-cream/5 transition-smooth"
+              >
+                <p className="font-mono text-xs text-coral">0{i + 1}</p>
+                <h3 className="mt-3 font-display text-lg text-cream">{s.t}</h3>
+                <p className="mt-2 text-sm text-cream/70 leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>
@@ -151,7 +210,7 @@ function OfferPage() {
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
             >
-              Demander une visite
+              {t.offer.spacesCta}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
