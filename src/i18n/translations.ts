@@ -194,9 +194,19 @@ export const translations = {
         "Salles d'assemblage propres (cleanrooms)",
         "Transmission live d'opérations chirurgicales",
       ],
-      spacesTitle: "Bureaux, coworking & salles de réunion",
-      spacesBody:
-        "Pour les équipes en résidence comme pour les visiteurs : bureaux privatifs pour start-ups et chercheurs, espace de coworking, salles de réunion équipées et espaces de convivialité.",
+      servicesBlockTitle: "Offre de services",
+      servicesBlockIntro:
+        "Accompagnement complet, de l'identification du besoin clinique à la mise sur le marché — par les équipes du CIM-MC² et son réseau de partenaires.",
+      spacesBlockTitle: "Offre d'espaces",
+      spacesBlockIntro:
+        "Des espaces flexibles pour travailler, se rencontrer et faire rayonner les pratiques cliniques — disponibles à la réservation.",
+      spaces: [
+        { t: "Bureaux privatifs", d: "Pour start-ups, spin-offs et équipes de recherche en résidence." },
+        { t: "Coworking", d: "Postes flexibles pour porteurs de projets, chercheurs et nomades." },
+        { t: "Salles de réunion", d: "Du huddle de 4 personnes à la salle de conférence plénière, entièrement équipées." },
+        { t: "Espaces de transmission de cas cliniques", d: "Salles dédiées à la retransmission live d'opérations chirurgicales et au partage pédagogique entre cliniciens." },
+      ],
+      spacesCta: "Demander une visite",
     },
     news: {
       title: "Actualités & Événements",
@@ -508,9 +518,19 @@ export const translations = {
         "Clean assembly rooms (cleanrooms)",
         "Live surgical operation streaming",
       ],
-      spacesTitle: "Offices, coworking & meeting rooms",
-      spacesBody:
-        "For resident teams and visitors: private offices for start-ups and researchers, coworking space, equipped meeting rooms and informal collaboration areas.",
+      servicesBlockTitle: "Services offering",
+      servicesBlockIntro:
+        "End-to-end support from clinical need identification to market launch — by CIM-MC² teams and its partner network.",
+      spacesBlockTitle: "Spaces offering",
+      spacesBlockIntro:
+        "Flexible spaces to work, meet and showcase clinical practice — available for booking.",
+      spaces: [
+        { t: "Private offices", d: "For start-ups, spin-offs and resident research teams." },
+        { t: "Coworking", d: "Flexible desks for project leaders, researchers and nomads." },
+        { t: "Meeting rooms", d: "From 4-person huddle rooms to full plenary conference rooms, fully equipped." },
+        { t: "Clinical case streaming spaces", d: "Rooms dedicated to live surgical operation streaming and educational sharing between clinicians." },
+      ],
+      spacesCta: "Request a visit",
     },
     news: {
       title: "News & Events",
