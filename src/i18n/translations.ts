@@ -73,6 +73,26 @@ export const translations = {
         body: "Retrouvez toute l'actualité du CIM-MC² et de ses partenaires.",
         cta: "Voir les événements",
       },
+      sdg: {
+        kicker: "Engagement",
+        title: "Indicateurs de développement durable",
+        intro:
+          "Dans la continuité de l'engagement de la Fondation Michel Cremer, le CIM-MC² agit directement sur les indicateurs de développement durable définis par l'ONU.",
+        directTitle: "Action directe",
+        direct: [
+          { n: 3, t: "Bonne santé et bien-être" },
+          { n: 4, t: "Éducation de qualité" },
+        ],
+        contribTitle: "Contribution",
+        contrib: [
+          { n: 1, t: "Pas de pauvreté" },
+          { n: 5, t: "Égalité entre les sexes" },
+          { n: 9, t: "Industrie, innovation et infrastructure" },
+          { n: 10, t: "Inégalités réduites" },
+          { n: 17, t: "Partenariats pour la réalisation des objectifs" },
+        ],
+        source: "Source : Objectifs de développement durable des Nations Unies",
+      },
     },
     organisation: {
       title: "Organisation",
