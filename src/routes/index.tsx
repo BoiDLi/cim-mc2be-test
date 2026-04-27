@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
+import { SdgTile } from "@/components/site/SdgTile";
 import heroImg from "@/assets/hero-cim.jpg";
 import prototypingImg from "@/assets/prototyping.jpg";
 
