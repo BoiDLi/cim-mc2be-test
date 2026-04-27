@@ -78,7 +78,7 @@ export function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-full bg-secondary text-primary"
+          className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-full bg-cream/10 text-cream ring-1 ring-cream/20"
           onClick={() => setOpen((o) => !o)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
