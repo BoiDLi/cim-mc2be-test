@@ -37,12 +37,12 @@ export function Header() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-smooth ${
         scrolled
-          ? "bg-background/85 backdrop-blur-xl border-b border-border shadow-soft"
-          : "bg-background/0"
+          ? "bg-primary/95 backdrop-blur-xl border-b border-primary-foreground/10 shadow-soft"
+          : "bg-primary"
       }`}
     >
       <div className="container-narrow flex h-20 items-center justify-between gap-6">
-        <Logo />
+        <Logo light />
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-7" aria-label="Primary">
@@ -51,8 +51,8 @@ export function Header() {
               key={item.to}
               to={item.to}
               activeOptions={{ exact: item.exact }}
-              className="nav-link text-sm font-medium text-foreground/80 hover:text-primary transition-smooth"
-              activeProps={{ className: "text-primary" }}
+              className="nav-link text-sm font-medium text-cream/80 hover:text-cream transition-smooth"
+              activeProps={{ className: "text-cream" }}
             >
               {t.nav[item.key]}
             </Link>
@@ -60,10 +60,10 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <LanguageSwitcher />
+          <LanguageSwitcher light />
           <Link
             to="/contact"
-            className="text-sm font-medium px-4 py-2 rounded-full text-primary hover:bg-secondary transition-smooth"
+            className="text-sm font-medium px-4 py-2 rounded-full text-cream hover:bg-cream/10 transition-smooth"
           >
             {t.nav.contact}
           </Link>
