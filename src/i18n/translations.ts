@@ -353,6 +353,26 @@ export const translations = {
         body: "Stay up to date with everything happening at CIM-MC² and its partners.",
         cta: "See events",
       },
+      sdg: {
+        kicker: "Commitment",
+        title: "Sustainable Development Goals",
+        intro:
+          "Building on the commitment of the Michel Cremer Foundation, CIM-MC² acts directly on the Sustainable Development Goals defined by the United Nations.",
+        directTitle: "Direct action",
+        direct: [
+          { n: 3, t: "Good health and well-being" },
+          { n: 4, t: "Quality education" },
+        ],
+        contribTitle: "Contribution",
+        contrib: [
+          { n: 1, t: "No poverty" },
+          { n: 5, t: "Gender equality" },
+          { n: 9, t: "Industry, innovation and infrastructure" },
+          { n: 10, t: "Reduced inequalities" },
+          { n: 17, t: "Partnerships for the goals" },
+        ],
+        source: "Source: United Nations Sustainable Development Goals",
+      },
     },
     organisation: {
       title: "Organisation",
