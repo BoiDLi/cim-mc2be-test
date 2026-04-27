@@ -113,7 +113,7 @@ function ContactPage() {
               <ul className="mt-6 space-y-4 relative">
                 <li className="flex items-start gap-3 text-cream/90">
                   <MapPin className="h-4 w-4 mt-1 text-coral shrink-0" />
-                  <span>CHU Hôpital Marie Curie<br />6042 Charleroi · Belgique</span>
+                  <span>24 Rue de la Marine<br />6042 Lodelinsart (Charleroi) · Belgique</span>
                 </li>
                 <li className="flex items-start gap-3 text-cream/90">
                   <Mail className="h-4 w-4 mt-1 text-coral shrink-0" />

@@ -73,6 +73,26 @@ export const translations = {
         body: "Retrouvez toute l'actualité du CIM-MC² et de ses partenaires.",
         cta: "Voir les événements",
       },
+      sdg: {
+        kicker: "Engagement",
+        title: "Indicateurs de développement durable",
+        intro:
+          "Dans la continuité de l'engagement de la Fondation Michel Cremer, le CIM-MC² agit directement sur les indicateurs de développement durable définis par l'ONU.",
+        directTitle: "Action directe",
+        direct: [
+          { n: 3, t: "Bonne santé et bien-être" },
+          { n: 4, t: "Éducation de qualité" },
+        ],
+        contribTitle: "Contribution",
+        contrib: [
+          { n: 1, t: "Pas de pauvreté" },
+          { n: 5, t: "Égalité entre les sexes" },
+          { n: 9, t: "Industrie, innovation et infrastructure" },
+          { n: 10, t: "Inégalités réduites" },
+          { n: 17, t: "Partenariats pour la réalisation des objectifs" },
+        ],
+        source: "Source : Objectifs de développement durable des Nations Unies",
+      },
     },
     organisation: {
       title: "Organisation",
@@ -332,6 +352,26 @@ export const translations = {
         title: "Conferences, open days, medtech hackathons",
         body: "Stay up to date with everything happening at CIM-MC² and its partners.",
         cta: "See events",
+      },
+      sdg: {
+        kicker: "Commitment",
+        title: "Sustainable Development Goals",
+        intro:
+          "Building on the commitment of the Michel Cremer Foundation, CIM-MC² acts directly on the Sustainable Development Goals defined by the United Nations.",
+        directTitle: "Direct action",
+        direct: [
+          { n: 3, t: "Good health and well-being" },
+          { n: 4, t: "Quality education" },
+        ],
+        contribTitle: "Contribution",
+        contrib: [
+          { n: 1, t: "No poverty" },
+          { n: 5, t: "Gender equality" },
+          { n: 9, t: "Industry, innovation and infrastructure" },
+          { n: 10, t: "Reduced inequalities" },
+          { n: 17, t: "Partnerships for the goals" },
+        ],
+        source: "Source: United Nations Sustainable Development Goals",
       },
     },
     organisation: {
