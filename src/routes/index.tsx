@@ -208,6 +208,9 @@ function HomePage() {
         </div>
       </section>
 
+      {/* CLINICAL NEED FORM */}
+      <ClinicalNeed />
+
       {/* SDG */}
       <section className="py-24 bg-gradient-soft">
         <div className="container-narrow">
