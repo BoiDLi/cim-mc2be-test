@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logoSrc from "@/assets/cim-logo.jpg";
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
@@ -7,19 +8,17 @@ export function Logo({ light = false }: { light?: boolean }) {
       className="group flex items-center gap-3"
       aria-label="CIM-MC² — accueil"
     >
-      <div className="relative h-10 w-10 shrink-0">
-        <div
-          className={`absolute inset-0 rounded-xl transition-smooth ${
-            light ? "bg-cream/10 ring-1 ring-cream/30" : "bg-primary"
-          } group-hover:scale-110`}
-        />
-        <div className="absolute inset-0 grid place-items-center font-display text-lg font-semibold text-coral-foreground">
-          <span className={light ? "text-cream" : "text-coral"}>C</span>
-        </div>
-        <div
-          className={`absolute -bottom-1 -right-1 h-3 w-3 rounded-full ${
-            light ? "bg-coral" : "bg-coral"
-          } shadow-coral`}
+      <div
+        className={`relative h-11 w-11 shrink-0 overflow-hidden rounded-xl transition-smooth group-hover:scale-105 ${
+          light ? "ring-1 ring-cream/30" : "ring-1 ring-primary/15"
+        }`}
+      >
+        <img
+          src={logoSrc}
+          alt="Logo CIM-MC²"
+          className="h-full w-full object-cover"
+          width={44}
+          height={44}
         />
       </div>
       <div className="flex flex-col leading-none">
@@ -35,7 +34,7 @@ export function Logo({ light = false }: { light?: boolean }) {
             light ? "text-cream/70" : "text-muted-foreground"
           }`}
         >
-          Medical Innovation
+          Michel Cremer · Marie Curie
         </span>
       </div>
     </Link>

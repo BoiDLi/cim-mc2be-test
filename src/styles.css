@@ -162,6 +162,23 @@
     padding-inline: 1.5rem;
   }
 
+  .form-input {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    padding: 0.65rem 0.9rem;
+    font-size: 0.9rem;
+    color: var(--color-foreground);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary) 18%, transparent);
+  }
+  .form-input::placeholder { color: var(--color-muted-foreground); opacity: 0.7; }
+
   /* Animated underline for nav */
   .nav-link {
     position: relative;

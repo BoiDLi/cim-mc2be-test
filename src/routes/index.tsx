@@ -2,8 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { SdgTile } from "@/components/site/SdgTile";
-import heroImg from "@/assets/hero-cim.jpg";
-import prototypingImg from "@/assets/prototyping.jpg";
+import { ClinicalNeed } from "@/components/site/ClinicalNeed";
+import heroImg from "@/assets/surgery-team.jpg";
+import prototypingImg from "@/assets/labs-collage.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -80,10 +81,10 @@ function HomePage() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
               <img
                 src={heroImg}
-                alt="Médecin et ingénieur collaborent autour d'un prototype 3D de dispositif médical"
+                alt="Équipe chirurgicale en salle d'opération — collaboration médecine et innovation"
                 className="absolute inset-0 h-full w-full object-cover"
-                width={1600}
-                height={1024}
+                width={1024}
+                height={769}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
             </div>
@@ -155,11 +156,11 @@ function HomePage() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
               <img
                 src={prototypingImg}
-                alt="Imprimante 3D créant un prototype médical"
+                alt="Salles techniques du CIM-MC² — cleanroom, prototypage et impression 3D"
                 className="h-full w-full object-cover"
                 loading="lazy"
-                width={1280}
-                height={960}
+                width={1600}
+                height={900}
               />
             </div>
           </div>
@@ -206,6 +207,9 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* CLINICAL NEED FORM */}
+      <ClinicalNeed />
 
       {/* SDG */}
       <section className="py-24 bg-gradient-soft">
