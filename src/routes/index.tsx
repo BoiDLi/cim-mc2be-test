@@ -206,6 +206,39 @@ function HomePage() {
         </div>
       </section>
 
+      {/* SDG */}
+      <section className="py-24 bg-gradient-soft">
+        <div className="container-narrow">
+          <p className="font-display italic text-coral text-lg">— 05</p>
+          <h2 className="mt-2 font-display text-4xl md:text-5xl">{t.home.sdg.title}</h2>
+          <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed">{t.home.sdg.intro}</p>
+
+          <div className="mt-12">
+            <h3 className="font-display text-sm uppercase tracking-[0.2em] text-primary">
+              {t.home.sdg.directTitle}
+            </h3>
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+              {t.home.sdg.direct.map((g) => (
+                <SdgTile key={g.n} n={g.n} label={g.t} highlighted />
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <h3 className="font-display text-sm uppercase tracking-[0.2em] text-primary">
+              {t.home.sdg.contribTitle}
+            </h3>
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              {t.home.sdg.contrib.map((g) => (
+                <SdgTile key={g.n} n={g.n} label={g.t} />
+              ))}
+            </div>
+          </div>
+
+          <p className="mt-10 text-xs text-muted-foreground italic">{t.home.sdg.source}</p>
+        </div>
+      </section>
+
       {/* EVENTS TEASER */}
       <section className="py-24">
         <div className="container-narrow">
