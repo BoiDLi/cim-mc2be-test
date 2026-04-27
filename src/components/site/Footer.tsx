@@ -46,8 +46,8 @@ export function Footer() {
             <li><Link to="/soutenir" className="hover:text-coral transition-smooth">{t.nav.support}</Link></li>
           </ul>
           <div className="mt-8 text-sm text-cream/60">
-            <p>CHU Hôpital Marie Curie</p>
-            <p>Charleroi · Belgique</p>
+            <p>24 Rue de la Marine</p>
+            <p>6042 Lodelinsart (Charleroi) · Belgique</p>
           </div>
         </div>
       </div>
