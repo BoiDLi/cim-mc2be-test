@@ -61,8 +61,8 @@ export const translations = {
       ],
       audienceTitle: "À qui s'adresse le CIM-MC² ?",
       audience: [
-        { t: "Chercheurs", d: "Équipes universitaires souhaitant valoriser leurs travaux." },
         { t: "Cliniciens", d: "Médecins et personnels hospitaliers porteurs d'un besoin clinique." },
+        { t: "Chercheurs", d: "Équipes universitaires souhaitant valoriser leurs travaux." },
         { t: "Start-ups & PME", d: "Entreprises développant des dispositifs médicaux." },
         { t: "Industriels", d: "Cherchant un terrain de co-développement." },
         { t: "Étudiants", d: "Jeunes ingénieurs en formation à la medtech." },
