@@ -113,14 +113,13 @@ function OfferPage() {
         </div>
       </section>
 
-      {/* SERVICES DETAIL */}
+      {/* SERVICES — I. CIM-MC² */}
       <section className="py-24 bg-secondary/40">
         <div className="container-narrow">
-          <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
-            <div>
-              <p className="font-display italic text-coral text-lg">— Services CIM-MC²</p>
-              <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.servicesTitle}</h2>
-            </div>
+          <div className="max-w-3xl mb-12">
+            <p className="font-display italic text-coral text-lg">— I · Services CIM-MC²</p>
+            <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.servicesTitle}</h2>
+            <p className="mt-4 text-foreground/80 leading-relaxed">{t.offer.servicesIntro}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -129,19 +128,43 @@ function OfferPage() {
                 key={s.t}
                 className="group bg-card rounded-2xl p-7 border border-border hover:border-coral/40 hover:-translate-y-1 transition-smooth"
               >
-                <span className="font-mono text-xs text-coral">0{i + 1}</span>
+                <span className="font-mono text-xs text-coral">I.0{i + 1}</span>
                 <h3 className="mt-3 font-display text-xl text-primary">{s.t}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.d}</p>
               </article>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-10 bg-card rounded-3xl p-8 border border-border">
-            <h3 className="font-display text-2xl">{t.offer.partnerServicesTitle}</h3>
-            <p className="mt-3 text-foreground/80">{t.offer.partnerServicesBody}</p>
+      {/* SERVICES — II. Écosystème */}
+      <section className="py-24">
+        <div className="container-narrow">
+          <div className="max-w-3xl mb-12">
+            <p className="font-display italic text-coral text-lg">— II · Services écosystème</p>
+            <h2 className="mt-2 font-display text-3xl md:text-4xl">
+              {t.offer.partnerServicesTitle}
+            </h2>
+            <p className="mt-4 text-foreground/80 leading-relaxed">
+              {t.offer.partnerServicesIntro}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {t.offer.partnerServices.map((s, i) => (
+              <article
+                key={s.t}
+                className="group bg-card rounded-2xl p-7 border border-dashed border-border hover:border-coral/40 hover:-translate-y-1 transition-smooth"
+              >
+                <span className="font-mono text-xs text-coral">II.0{i + 1}</span>
+                <h3 className="mt-3 font-display text-xl text-primary">{s.t}</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.d}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* INFRASTRUCTURES (rattachées aux services) */}
       <section className="py-24">
