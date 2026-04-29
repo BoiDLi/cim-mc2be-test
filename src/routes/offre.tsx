@@ -179,35 +179,46 @@ function OfferPage() {
       </section>
 
 
-      {/* INFRASTRUCTURES (rattachées aux services) */}
-      <section className="py-24">
-        <div className="container-narrow grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
-              <img
-                src={clinicalImg}
-                alt="Salle d'opération moderne vue à travers une vitre d'observation"
-                className="h-full w-full object-cover"
-                loading="lazy"
-                width={1280}
-                height={960}
-              />
+      {/* INFRASTRUCTURES */}
+      <section className="py-24 bg-secondary/40">
+        <div className="container-narrow">
+          <div className="grid lg:grid-cols-12 gap-12 items-start">
+            <div className="lg:col-span-5">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
+                <img
+                  src={clinicalImg}
+                  alt="Salle d'opération moderne vue à travers une vitre d'observation"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  width={1280}
+                  height={960}
+                />
+              </div>
             </div>
-          </div>
-          <div className="lg:col-span-7 order-1 lg:order-2">
-            <p className="font-display italic text-coral text-lg">— Infrastructures techniques</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.infraTitle}</h2>
-            <p className="mt-4 text-foreground/80">{t.offer.infraBody}</p>
-            <ul className="mt-8 space-y-4">
-              {t.offer.infrastructures.map((s, i) => (
-                <li key={s} className="flex gap-4 items-start group">
-                  <span className="shrink-0 h-8 w-8 rounded-full border-2 border-coral grid place-items-center text-coral font-mono text-xs group-hover:bg-coral group-hover:text-coral-foreground transition-smooth">
-                    {i + 1}
-                  </span>
-                  <p className="pt-0.5 text-foreground/85">{s}</p>
-                </li>
-              ))}
-            </ul>
+            <div className="lg:col-span-7">
+              <p className="font-display italic text-coral text-lg">— 3 · Infrastructures</p>
+              <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.infraTitle}</h2>
+              <p className="mt-4 text-foreground/80 leading-relaxed">{t.offer.infraBody}</p>
+
+              <div className="mt-10 space-y-8">
+                {t.offer.infraGroups.map((g, gi) => (
+                  <div key={g.t} className="bg-card rounded-2xl p-6 border border-border">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-mono text-xs text-coral">3.{gi + 1}</span>
+                      <h3 className="font-display text-xl text-primary">{g.t}</h3>
+                    </div>
+                    <ul className="mt-4 space-y-3">
+                      {g.items.map((it) => (
+                        <li key={it} className="flex gap-3 items-start">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-coral shrink-0" />
+                          <p className="text-sm text-foreground/85 leading-relaxed">{it}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
