@@ -53,9 +53,9 @@ export const translations = {
       ],
       objectivesTitle: "Nos objectifs",
       objectives: [
+        "Créer des procédures plus sûres, réduisant les durées d'hospitalisation et les complications.",
         "Réduire le temps entre une idée et son application clinique.",
         "Faire progresser des projets de TRL 4 vers une maturité industrielle et clinique.",
-        "Créer des procédures plus sûres, réduisant les durées d'hospitalisation.",
         "Limiter le recours aux essais sur animaux grâce aux modèles de simulation.",
         "Concevoir des dispositifs respectueux des contraintes environnementales.",
       ],
@@ -388,9 +388,9 @@ export const translations = {
       ],
       objectivesTitle: "Our objectives",
       objectives: [
+        "Enable safer procedures, reducing hospital stays and complications.",
         "Shorten the path from idea to clinical use.",
         "Move projects from TRL 4 toward industrial and clinical maturity.",
-        "Enable safer procedures, reducing hospital stays.",
         "Reduce reliance on animal testing through simulation models.",
         "Design devices that meet environmental requirements.",
       ],
