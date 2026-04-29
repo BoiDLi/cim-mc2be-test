@@ -599,19 +599,24 @@ export const translations = {
     },
     offer: {
       title: "Our offer",
-      subtitle: "Services, facilities and end-to-end support — from idea to market.",
-      methodTitle: "An integrated methodology",
+      subtitle:
+        "An integrated offering for medical device innovation — a one-stop shop to accelerate, secure and optimise medtech project development.",
+      intro:
+        "CIM-MC² provides a unique offering covering the entire medical device value chain, from clinical need identification to market launch. By combining its in-house services, the expertise of its partners and state-of-the-art infrastructure, the Centre acts as a one-stop shop to accelerate, secure and optimise medtech projects.",
+      methodTitle: "End-to-end support: from idea to clinical proof",
       methodBody:
-        "Our methodology is designed to shorten the path from idea to clinical application by integrating all key stages from day one.",
+        "CIM-MC² structures its work around a proven methodology designed to significantly reduce the time between an idea and its clinical application.",
       steps: [
         "Clinical need identification",
-        "Clinician & engineer co-creation",
+        "Multidisciplinary co-creation",
         "Rapid prototyping",
-        "Preclinical & clinical validation",
-        "Regulatory & certification",
-        "Industrialisation & funding",
-        "Market launch",
+        "Design & usage scenarios",
+        "Proof of concept",
+        "Feasibility studies (TAF)",
+        "Clinical preparation & follow-up",
       ],
+      seminarsNote:
+        "The Centre also offers a dedicated programme of specialised seminars (1 to 4 days) for healthcare professionals and industrial players, including auditorium and simulation-room sessions.",
       servicesTitle: "Services delivered by CIM-MC²",
       servicesIntro:
         "In-house expertise supporting project leaders: from technology advisory and industrial design to clinical trials, training and scientific events.",
@@ -621,20 +626,42 @@ export const translations = {
         { t: "Clinical trial protocols", d: "Methodological design, protocol writing and coordination with investigator sites." },
         { t: "Device training", d: "Design and delivery of training sessions for clinicians and hospital staff." },
         { t: "Seminars & conferences", d: "Curation and hosting of thematic events for researchers: IP, business development, regulatory…" },
+        { t: "Specialised seminar programme", d: "1- to 4-day sessions in auditorium and simulation rooms for healthcare professionals and industry." },
       ],
-      partnerServicesTitle: "Services delivered by the ecosystem",
+      partnerServicesTitle: "A natural extension through ecosystem partners",
       partnerServicesIntro:
-        "CIM-MC² leverages a network of specialised partners to cover the full range of medtech project needs.",
+        "CIM-MC² relies on a network of specialised partners to cover the critical stages of development and market access.",
       partnerServices: [
-        { t: "Intellectual property", d: "Patent strategy, freedom-to-operate, filings and IP defence." },
-        { t: "Regulatory affairs", d: "MDR, ISO 13485, CE marking and market access." },
-        { t: "Company creation", d: "Legal incorporation, capital structuring and incorporation support." },
-        { t: "Communication", d: "Brand identity, PR and content strategy for medtech spin-offs." },
-        { t: "Business development", d: "Commercial strategy, industrial partnerships and clinical market access." },
-        { t: "Investor introductions", d: "Fundraising preparation and introductions to specialised investor networks." },
+        { t: "Preclinical & clinical validation", d: "Set-up and coordination of preclinical and clinical validation stages." },
+        { t: "Regulatory advisory & certification", d: "MDR, ISO 13485, CE marking and market access." },
+        { t: "Clinical studies", d: "Design, conduct and follow-up of clinical studies with hospital partners." },
+        { t: "Intellectual property", d: "Patent strategy, freedom-to-operate, filings and innovation strategy." },
+        { t: "Start-up & spin-off creation", d: "Legal incorporation, capital structuring and incorporation support." },
+        { t: "Funding & investor access", d: "Fundraising preparation and introductions to specialised investor networks." },
+        { t: "Market development & internationalisation", d: "Commercial strategy, industrial partnerships and access to international markets." },
+        { t: "Industrialisation & project structuring", d: "Support for industrialisation and structuring of collaborative projects." },
       ],
-      infraTitle: "Research facilities",
-      infraBody: "State-of-the-art technical rooms and equipment available for booking:",
+      infraTitle: "Technological infrastructure & associated services",
+      infraBody:
+        "CIM-MC² provides state-of-the-art infrastructure with flexible access and integrated technical and logistical services. Equipment is bookable by hour, day or project, with dedicated support.",
+      infraGroups: [
+        {
+          t: "Prototyping & validation",
+          items: [
+            "Medical 3D printing (FDM, SLA, SLS) with technical and biocompatible materials",
+            "Measurement and verification equipment to demonstrate compliance with standards",
+            "Simulation rooms for testing, functional validation and qualification (ISO, CE)",
+            "Live streaming systems for training and clinical analysis",
+          ],
+        },
+        {
+          t: "Production & controlled environments",
+          items: [
+            "Cleanrooms for prototyping and pre-industrialisation in controlled atmosphere",
+            "Maintenance, certification and technical support included",
+          ],
+        },
+      ],
       infrastructures: [
         "3D printers for rapid prototyping",
         "Verification and measurement equipment",
@@ -645,16 +672,30 @@ export const translations = {
       servicesBlockTitle: "Services offering",
       servicesBlockIntro:
         "End-to-end support from clinical need identification to market launch — by CIM-MC² teams and its partner network.",
-      spacesBlockTitle: "Spaces offering",
+      spacesBlockTitle: "Workspaces & ecosystem integration",
       spacesBlockIntro:
-        "Flexible spaces to work, meet and showcase clinical practice — available for booking.",
+        "A working environment designed to foster collaboration and innovation, with an integrated service offering (reception, administrative support, logistics).",
       spaces: [
         { t: "Private offices", d: "For start-ups, spin-offs and resident research teams." },
-        { t: "Coworking", d: "Flexible desks for project leaders, researchers and nomads." },
-        { t: "Meeting rooms", d: "From 4-person huddle rooms to full plenary conference rooms, fully equipped." },
-        { t: "Clinical case streaming spaces", d: "Rooms dedicated to live surgical operation streaming and educational sharing between clinicians." },
+        { t: "Coworking", d: "Flexible desks available year-round for project leaders and researchers." },
+        { t: "Meeting & conference rooms", d: "From 4-person huddle rooms to full plenary rooms, fully equipped." },
+        { t: "Convivial spaces", d: "Areas designed to encourage interdisciplinary encounters." },
       ],
       spacesCta: "Request a visit",
+      conclusionKicker: "One-stop shop",
+      conclusionTitle: "A one-stop shop to accelerate your innovation",
+      conclusionBody:
+        "By bringing together expertise, infrastructure and partners in a single location, CIM-MC² offers a unique setting to:",
+      conclusionPoints: [
+        "Reduce development timelines",
+        "Secure critical stages (technical, regulatory, clinical)",
+        "Accelerate market access",
+      ],
+      conclusionFooter:
+        "Whether you are a start-up, an SME, an academic player or an industrial company, CIM-MC² supports you at every stage of your project.",
+      ctaServices: "Discover our services",
+      ctaInfra: "Book infrastructure",
+      ctaResident: "Become a resident partner",
     },
     news: {
       title: "News & Events",
