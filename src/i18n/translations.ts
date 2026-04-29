@@ -193,19 +193,23 @@ export const translations = {
     offer: {
       title: "Notre offre",
       subtitle:
-        "Services, infrastructures et accompagnement complet — de l'idée à la mise sur le marché.",
-      methodTitle: "Une méthodologie intégrée",
+        "Une offre intégrée au service de l'innovation en dispositifs médicaux — un guichet unique pour accélérer, sécuriser et optimiser le développement de projets Medtech.",
+      intro:
+        "Le CIM-MC² propose une offre unique couvrant l'ensemble de la chaîne de valeur des dispositifs médicaux, de l'identification du besoin clinique jusqu'à la mise sur le marché. En combinant ses services propres, l'expertise de ses partenaires et des infrastructures de pointe, le Centre constitue un guichet unique pour accélérer, sécuriser et optimiser le développement de projets Medtech.",
+      methodTitle: "Accompagnement complet : de l'idée à la preuve clinique",
       methodBody:
-        "Notre méthodologie est pensée pour réduire au maximum le temps entre une idée et son application clinique, en intégrant dès le départ toutes les étapes clés.",
+        "Le CIM-MC² structure son intervention autour d'une méthodologie éprouvée permettant de réduire significativement le temps entre une idée et son application clinique.",
       steps: [
         "Identification du besoin clinique",
-        "Co-création médecins & ingénieurs",
+        "Co-création pluridisciplinaire",
         "Prototypage rapide",
-        "Validation préclinique & clinique",
-        "Réglementation & certification",
-        "Industrialisation & financement",
-        "Mise sur le marché",
+        "Design et usages",
+        "Preuve de concept",
+        "Études de faisabilité (TAF)",
+        "Préparation et suivi clinique",
       ],
+      seminarsNote:
+        "Le Centre propose également un programme de séminaires spécialisés (1 à 4 jours), destiné aux professionnels de santé et aux industriels, incluant des sessions en auditoire et en salle de simulation.",
       servicesTitle: "Services proposés par le CIM-MC²",
       servicesIntro:
         "Une expertise interne au service des porteurs de projets : du conseil technologique à la formation, en passant par les essais cliniques et l'animation scientifique.",
@@ -215,20 +219,42 @@ export const translations = {
         { t: "Préparation des protocoles d'essais cliniques", d: "Design méthodologique, rédaction des protocoles et coordination avec les centres investigateurs." },
         { t: "Formation à l'utilisation des dispositifs", d: "Conception et organisation de sessions de formation pour cliniciens et personnels hospitaliers." },
         { t: "Séminaires & conférences", d: "Animation et organisation d'événements thématiques pour les chercheurs : propriété intellectuelle, business development, réglementaire…" },
+        { t: "Programme de séminaires spécialisés", d: "Sessions de 1 à 4 jours en auditoire et salle de simulation pour professionnels de santé et industriels." },
       ],
-      partnerServicesTitle: "Services proposés par l'écosystème",
+      partnerServicesTitle: "Une extension naturelle grâce aux partenaires de l'écosystème",
       partnerServicesIntro:
-        "Le CIM-MC² s'appuie sur un réseau de partenaires spécialisés pour couvrir l'ensemble des besoins des porteurs de projets medtech.",
+        "Le CIM-MC² s'appuie sur un réseau de partenaires spécialisés permettant de couvrir les étapes critiques du développement et de la mise sur le marché.",
       partnerServices: [
-        { t: "Propriété intellectuelle", d: "Stratégie brevets, freedom-to-operate, dépôts et défense des titres." },
-        { t: "Affaires réglementaires", d: "MDR, ISO 13485, marquage CE et accès au marché." },
-        { t: "Création d'entreprise", d: "Constitution juridique, structuration capitalistique et accompagnement à l'incorporation." },
-        { t: "Communication", d: "Identité de marque, relations presse et stratégie de contenu pour spin-offs medtech." },
-        { t: "Business development", d: "Stratégie commerciale, partenariats industriels et accès au marché clinique." },
-        { t: "Mise en relation investisseurs", d: "Préparation des levées de fonds et introduction auprès du réseau d'investisseurs spécialisés." },
+        { t: "Validation préclinique et clinique", d: "Mise en place et coordination des essais aux étapes pré-cliniques et cliniques." },
+        { t: "Conseil réglementaire et certification", d: "MDR, ISO 13485, marquage CE et accès au marché." },
+        { t: "Études cliniques", d: "Design, conduite et suivi des études cliniques en lien avec les hôpitaux partenaires." },
+        { t: "Propriété intellectuelle", d: "Stratégie brevets, freedom-to-operate, dépôts et stratégie d'innovation." },
+        { t: "Création de start-ups et spin-offs", d: "Constitution juridique, structuration capitalistique et accompagnement à l'incorporation." },
+        { t: "Accès au financement et aux investisseurs", d: "Préparation des levées de fonds et introduction auprès du réseau d'investisseurs spécialisés." },
+        { t: "Développement de marchés et internationalisation", d: "Stratégie commerciale, partenariats industriels et accès aux marchés internationaux." },
+        { t: "Industrialisation et montage de projets", d: "Accompagnement à l'industrialisation et à la structuration de projets collaboratifs." },
       ],
-      infraTitle: "Infrastructures de recherche",
-      infraBody: "Salles techniques et équipements de pointe disponibles à la réservation :",
+      infraTitle: "Infrastructures technologiques et services associés",
+      infraBody:
+        "Le CIM-MC² met à disposition des infrastructures de pointe, accessibles de manière flexible et accompagnées de services techniques et logistiques. Chaque équipement est accessible selon des modalités flexibles (horaire, journée, projet), avec un accompagnement dédié.",
+      infraGroups: [
+        {
+          t: "Prototypage et validation",
+          items: [
+            "Impression 3D médicale (FDM, SLA, SLS) avec matériaux techniques et biocompatibles",
+            "Équipements de mesure et de vérification pour démontrer la conformité aux normes",
+            "Salles de simulation pour tests, validation fonctionnelle et qualification (ISO, CE)",
+            "Systèmes de transmission live pour la formation et l'analyse clinique",
+          ],
+        },
+        {
+          t: "Production et environnement contrôlé",
+          items: [
+            "Salles propres (cleanrooms) pour prototypage et pré-industrialisation en atmosphère contrôlée",
+            "Maintenance, certification et support technique inclus",
+          ],
+        },
+      ],
       infrastructures: [
         "Imprimantes 3D pour prototypage rapide",
         "Équipements de vérification et de mesure",
@@ -239,16 +265,30 @@ export const translations = {
       servicesBlockTitle: "Offre de services",
       servicesBlockIntro:
         "Accompagnement complet, de l'identification du besoin clinique à la mise sur le marché — par les équipes du CIM-MC² et son réseau de partenaires.",
-      spacesBlockTitle: "Offre d'espaces",
+      spacesBlockTitle: "Espaces de travail et intégration dans l'écosystème",
       spacesBlockIntro:
-        "Des espaces flexibles pour travailler, se rencontrer et faire rayonner les pratiques cliniques — disponibles à la réservation.",
+        "Un environnement de travail conçu pour favoriser la collaboration et l'innovation, avec une offre de services intégrée (accueil, support administratif, logistique).",
       spaces: [
         { t: "Bureaux privatifs", d: "Pour start-ups, spin-offs et équipes de recherche en résidence." },
-        { t: "Coworking", d: "Postes flexibles pour porteurs de projets, chercheurs et nomades." },
-        { t: "Salles de réunion", d: "Du huddle de 4 personnes à la salle de conférence plénière, entièrement équipées." },
-        { t: "Espaces de transmission de cas cliniques", d: "Salles dédiées à la retransmission live d'opérations chirurgicales et au partage pédagogique entre cliniciens." },
+        { t: "Coworking", d: "Postes flexibles accessibles à l'année pour porteurs de projets et chercheurs." },
+        { t: "Salles de réunion et de conférence", d: "Du huddle de 4 personnes à la salle plénière, entièrement équipées." },
+        { t: "Espaces de convivialité", d: "Lieux d'échange favorisant les rencontres interdisciplinaires." },
       ],
       spacesCta: "Demander une visite",
+      conclusionKicker: "Un guichet unique",
+      conclusionTitle: "Un guichet unique pour accélérer votre innovation",
+      conclusionBody:
+        "En réunissant expertises, infrastructures et partenaires au sein d'un même lieu, le CIM-MC² offre un cadre unique pour :",
+      conclusionPoints: [
+        "Réduire les délais de développement",
+        "Sécuriser les étapes critiques (techniques, réglementaires, cliniques)",
+        "Accélérer l'accès au marché",
+      ],
+      conclusionFooter:
+        "Que vous soyez une start-up, une PME, un acteur académique ou un industriel, le CIM-MC² vous accompagne à chaque étape de votre projet.",
+      ctaServices: "Découvrir nos services",
+      ctaInfra: "Réserver une infrastructure",
+      ctaResident: "Devenir partenaire résident",
     },
     news: {
       title: "Actualités & Événements",
@@ -559,19 +599,24 @@ export const translations = {
     },
     offer: {
       title: "Our offer",
-      subtitle: "Services, facilities and end-to-end support — from idea to market.",
-      methodTitle: "An integrated methodology",
+      subtitle:
+        "An integrated offering for medical device innovation — a one-stop shop to accelerate, secure and optimise medtech project development.",
+      intro:
+        "CIM-MC² provides a unique offering covering the entire medical device value chain, from clinical need identification to market launch. By combining its in-house services, the expertise of its partners and state-of-the-art infrastructure, the Centre acts as a one-stop shop to accelerate, secure and optimise medtech projects.",
+      methodTitle: "End-to-end support: from idea to clinical proof",
       methodBody:
-        "Our methodology is designed to shorten the path from idea to clinical application by integrating all key stages from day one.",
+        "CIM-MC² structures its work around a proven methodology designed to significantly reduce the time between an idea and its clinical application.",
       steps: [
         "Clinical need identification",
-        "Clinician & engineer co-creation",
+        "Multidisciplinary co-creation",
         "Rapid prototyping",
-        "Preclinical & clinical validation",
-        "Regulatory & certification",
-        "Industrialisation & funding",
-        "Market launch",
+        "Design & usage scenarios",
+        "Proof of concept",
+        "Feasibility studies (TAF)",
+        "Clinical preparation & follow-up",
       ],
+      seminarsNote:
+        "The Centre also offers a dedicated programme of specialised seminars (1 to 4 days) for healthcare professionals and industrial players, including auditorium and simulation-room sessions.",
       servicesTitle: "Services delivered by CIM-MC²",
       servicesIntro:
         "In-house expertise supporting project leaders: from technology advisory and industrial design to clinical trials, training and scientific events.",
@@ -581,20 +626,42 @@ export const translations = {
         { t: "Clinical trial protocols", d: "Methodological design, protocol writing and coordination with investigator sites." },
         { t: "Device training", d: "Design and delivery of training sessions for clinicians and hospital staff." },
         { t: "Seminars & conferences", d: "Curation and hosting of thematic events for researchers: IP, business development, regulatory…" },
+        { t: "Specialised seminar programme", d: "1- to 4-day sessions in auditorium and simulation rooms for healthcare professionals and industry." },
       ],
-      partnerServicesTitle: "Services delivered by the ecosystem",
+      partnerServicesTitle: "A natural extension through ecosystem partners",
       partnerServicesIntro:
-        "CIM-MC² leverages a network of specialised partners to cover the full range of medtech project needs.",
+        "CIM-MC² relies on a network of specialised partners to cover the critical stages of development and market access.",
       partnerServices: [
-        { t: "Intellectual property", d: "Patent strategy, freedom-to-operate, filings and IP defence." },
-        { t: "Regulatory affairs", d: "MDR, ISO 13485, CE marking and market access." },
-        { t: "Company creation", d: "Legal incorporation, capital structuring and incorporation support." },
-        { t: "Communication", d: "Brand identity, PR and content strategy for medtech spin-offs." },
-        { t: "Business development", d: "Commercial strategy, industrial partnerships and clinical market access." },
-        { t: "Investor introductions", d: "Fundraising preparation and introductions to specialised investor networks." },
+        { t: "Preclinical & clinical validation", d: "Set-up and coordination of preclinical and clinical validation stages." },
+        { t: "Regulatory advisory & certification", d: "MDR, ISO 13485, CE marking and market access." },
+        { t: "Clinical studies", d: "Design, conduct and follow-up of clinical studies with hospital partners." },
+        { t: "Intellectual property", d: "Patent strategy, freedom-to-operate, filings and innovation strategy." },
+        { t: "Start-up & spin-off creation", d: "Legal incorporation, capital structuring and incorporation support." },
+        { t: "Funding & investor access", d: "Fundraising preparation and introductions to specialised investor networks." },
+        { t: "Market development & internationalisation", d: "Commercial strategy, industrial partnerships and access to international markets." },
+        { t: "Industrialisation & project structuring", d: "Support for industrialisation and structuring of collaborative projects." },
       ],
-      infraTitle: "Research facilities",
-      infraBody: "State-of-the-art technical rooms and equipment available for booking:",
+      infraTitle: "Technological infrastructure & associated services",
+      infraBody:
+        "CIM-MC² provides state-of-the-art infrastructure with flexible access and integrated technical and logistical services. Equipment is bookable by hour, day or project, with dedicated support.",
+      infraGroups: [
+        {
+          t: "Prototyping & validation",
+          items: [
+            "Medical 3D printing (FDM, SLA, SLS) with technical and biocompatible materials",
+            "Measurement and verification equipment to demonstrate compliance with standards",
+            "Simulation rooms for testing, functional validation and qualification (ISO, CE)",
+            "Live streaming systems for training and clinical analysis",
+          ],
+        },
+        {
+          t: "Production & controlled environments",
+          items: [
+            "Cleanrooms for prototyping and pre-industrialisation in controlled atmosphere",
+            "Maintenance, certification and technical support included",
+          ],
+        },
+      ],
       infrastructures: [
         "3D printers for rapid prototyping",
         "Verification and measurement equipment",
@@ -605,16 +672,30 @@ export const translations = {
       servicesBlockTitle: "Services offering",
       servicesBlockIntro:
         "End-to-end support from clinical need identification to market launch — by CIM-MC² teams and its partner network.",
-      spacesBlockTitle: "Spaces offering",
+      spacesBlockTitle: "Workspaces & ecosystem integration",
       spacesBlockIntro:
-        "Flexible spaces to work, meet and showcase clinical practice — available for booking.",
+        "A working environment designed to foster collaboration and innovation, with an integrated service offering (reception, administrative support, logistics).",
       spaces: [
         { t: "Private offices", d: "For start-ups, spin-offs and resident research teams." },
-        { t: "Coworking", d: "Flexible desks for project leaders, researchers and nomads." },
-        { t: "Meeting rooms", d: "From 4-person huddle rooms to full plenary conference rooms, fully equipped." },
-        { t: "Clinical case streaming spaces", d: "Rooms dedicated to live surgical operation streaming and educational sharing between clinicians." },
+        { t: "Coworking", d: "Flexible desks available year-round for project leaders and researchers." },
+        { t: "Meeting & conference rooms", d: "From 4-person huddle rooms to full plenary rooms, fully equipped." },
+        { t: "Convivial spaces", d: "Areas designed to encourage interdisciplinary encounters." },
       ],
       spacesCta: "Request a visit",
+      conclusionKicker: "One-stop shop",
+      conclusionTitle: "A one-stop shop to accelerate your innovation",
+      conclusionBody:
+        "By bringing together expertise, infrastructure and partners in a single location, CIM-MC² offers a unique setting to:",
+      conclusionPoints: [
+        "Reduce development timelines",
+        "Secure critical stages (technical, regulatory, clinical)",
+        "Accelerate market access",
+      ],
+      conclusionFooter:
+        "Whether you are a start-up, an SME, an academic player or an industrial company, CIM-MC² supports you at every stage of your project.",
+      ctaServices: "Discover our services",
+      ctaInfra: "Book infrastructure",
+      ctaResident: "Become a resident partner",
     },
     news: {
       title: "News & Events",

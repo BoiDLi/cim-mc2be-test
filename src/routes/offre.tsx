@@ -71,8 +71,17 @@ function OfferPage() {
         </div>
       </section>
 
+      {/* INTRO */}
+      <section className="py-20">
+        <div className="container-narrow max-w-4xl">
+          <p className="text-lg md:text-xl text-foreground/85 leading-relaxed">
+            {t.offer.intro}
+          </p>
+        </div>
+      </section>
+
       {/* ============ A — OFFRE DE SERVICES ============ */}
-      <section id="services" className="py-24 scroll-mt-24">
+      <section id="services" className="py-16 scroll-mt-24 border-t border-border">
         <div className="container-narrow">
           <p className="font-display italic text-coral text-lg">— A · Services</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl">{t.offer.servicesBlockTitle}</h2>
@@ -86,14 +95,14 @@ function OfferPage() {
       <section className="pb-24">
         <div className="container-narrow">
           <div className="max-w-3xl">
-            <p className="font-display italic text-coral text-lg">— Méthodologie</p>
+            <p className="font-display italic text-coral text-lg">— 1 · Méthodologie</p>
             <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.methodTitle}</h2>
             <p className="mt-4 text-lg text-foreground/80 leading-relaxed">{t.offer.methodBody}</p>
           </div>
 
           <div className="mt-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
             {t.offer.steps.map((s, i) => {
-              const Icon = STEP_ICONS[i];
+              const Icon = STEP_ICONS[i] ?? Lightbulb;
               return (
                 <div
                   key={s}
@@ -110,6 +119,10 @@ function OfferPage() {
               );
             })}
           </div>
+
+          <p className="mt-10 max-w-3xl text-foreground/75 italic border-l-2 border-coral pl-5">
+            {t.offer.seminarsNote}
+          </p>
         </div>
       </section>
 
@@ -166,35 +179,46 @@ function OfferPage() {
       </section>
 
 
-      {/* INFRASTRUCTURES (rattachées aux services) */}
-      <section className="py-24">
-        <div className="container-narrow grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
-              <img
-                src={clinicalImg}
-                alt="Salle d'opération moderne vue à travers une vitre d'observation"
-                className="h-full w-full object-cover"
-                loading="lazy"
-                width={1280}
-                height={960}
-              />
+      {/* INFRASTRUCTURES */}
+      <section className="py-24 bg-secondary/40">
+        <div className="container-narrow">
+          <div className="grid lg:grid-cols-12 gap-12 items-start">
+            <div className="lg:col-span-5">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
+                <img
+                  src={clinicalImg}
+                  alt="Salle d'opération moderne vue à travers une vitre d'observation"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  width={1280}
+                  height={960}
+                />
+              </div>
             </div>
-          </div>
-          <div className="lg:col-span-7 order-1 lg:order-2">
-            <p className="font-display italic text-coral text-lg">— Infrastructures techniques</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.infraTitle}</h2>
-            <p className="mt-4 text-foreground/80">{t.offer.infraBody}</p>
-            <ul className="mt-8 space-y-4">
-              {t.offer.infrastructures.map((s, i) => (
-                <li key={s} className="flex gap-4 items-start group">
-                  <span className="shrink-0 h-8 w-8 rounded-full border-2 border-coral grid place-items-center text-coral font-mono text-xs group-hover:bg-coral group-hover:text-coral-foreground transition-smooth">
-                    {i + 1}
-                  </span>
-                  <p className="pt-0.5 text-foreground/85">{s}</p>
-                </li>
-              ))}
-            </ul>
+            <div className="lg:col-span-7">
+              <p className="font-display italic text-coral text-lg">— 3 · Infrastructures</p>
+              <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.infraTitle}</h2>
+              <p className="mt-4 text-foreground/80 leading-relaxed">{t.offer.infraBody}</p>
+
+              <div className="mt-10 space-y-8">
+                {t.offer.infraGroups.map((g, gi) => (
+                  <div key={g.t} className="bg-card rounded-2xl p-6 border border-border">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-mono text-xs text-coral">3.{gi + 1}</span>
+                      <h3 className="font-display text-xl text-primary">{g.t}</h3>
+                    </div>
+                    <ul className="mt-4 space-y-3">
+                      {g.items.map((it) => (
+                        <li key={it} className="flex gap-3 items-start">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-coral shrink-0" />
+                          <p className="text-sm text-foreground/85 leading-relaxed">{it}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -234,6 +258,57 @@ function OfferPage() {
               className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
             >
               {t.offer.spacesCta}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CONCLUSION + CTAs */}
+      <section className="py-24">
+        <div className="container-narrow max-w-4xl">
+          <p className="font-mono text-xs uppercase tracking-wider text-coral">
+            {t.offer.conclusionKicker}
+          </p>
+          <h2 className="mt-3 font-display text-3xl md:text-4xl">{t.offer.conclusionTitle}</h2>
+          <p className="mt-5 text-lg text-foreground/85 leading-relaxed">
+            {t.offer.conclusionBody}
+          </p>
+          <ul className="mt-6 grid sm:grid-cols-3 gap-4">
+            {t.offer.conclusionPoints.map((p, i) => (
+              <li
+                key={p}
+                className="rounded-2xl bg-card border border-border p-5 hover:border-coral/40 transition-smooth"
+              >
+                <span className="font-mono text-xs text-coral">0{i + 1}</span>
+                <p className="mt-2 text-sm font-medium text-primary leading-snug">{p}</p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-foreground/80 leading-relaxed">
+            {t.offer.conclusionFooter}
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="#services"
+              className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+            >
+              {t.offer.ctaServices}
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.03] transition-smooth"
+            >
+              {t.offer.ctaInfra}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-4 font-medium text-primary hover:border-coral/50 transition-smooth"
+            >
+              {t.offer.ctaResident}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
