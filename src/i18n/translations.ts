@@ -139,6 +139,7 @@ export const translations = {
         "Une équipe pluridisciplinaire alliant compétences scientifiques, cliniques, techniques et entrepreneuriales pilote au quotidien le centre et accompagne les porteurs de projets.",
       direction: "Direction",
       directionName: "Cécile Sztalberg",
+      directionMembers: ["Cécile Sztalberg", "Dr Jacques Devière"],
       doctorsTitle: "Les médecins",
       doctors: [
         "Dr Marianna Arvanitaki",
