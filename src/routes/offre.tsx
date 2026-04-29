@@ -71,8 +71,17 @@ function OfferPage() {
         </div>
       </section>
 
+      {/* INTRO */}
+      <section className="py-20">
+        <div className="container-narrow max-w-4xl">
+          <p className="text-lg md:text-xl text-foreground/85 leading-relaxed">
+            {t.offer.intro}
+          </p>
+        </div>
+      </section>
+
       {/* ============ A — OFFRE DE SERVICES ============ */}
-      <section id="services" className="py-24 scroll-mt-24">
+      <section id="services" className="py-16 scroll-mt-24 border-t border-border">
         <div className="container-narrow">
           <p className="font-display italic text-coral text-lg">— A · Services</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl">{t.offer.servicesBlockTitle}</h2>
@@ -86,14 +95,14 @@ function OfferPage() {
       <section className="pb-24">
         <div className="container-narrow">
           <div className="max-w-3xl">
-            <p className="font-display italic text-coral text-lg">— Méthodologie</p>
+            <p className="font-display italic text-coral text-lg">— 1 · Méthodologie</p>
             <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.methodTitle}</h2>
             <p className="mt-4 text-lg text-foreground/80 leading-relaxed">{t.offer.methodBody}</p>
           </div>
 
           <div className="mt-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
             {t.offer.steps.map((s, i) => {
-              const Icon = STEP_ICONS[i];
+              const Icon = STEP_ICONS[i] ?? Lightbulb;
               return (
                 <div
                   key={s}
@@ -110,6 +119,10 @@ function OfferPage() {
               );
             })}
           </div>
+
+          <p className="mt-10 max-w-3xl text-foreground/75 italic border-l-2 border-coral pl-5">
+            {t.offer.seminarsNote}
+          </p>
         </div>
       </section>
 
