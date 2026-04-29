@@ -506,6 +506,7 @@ export const translations = {
         "A multidisciplinary team — combining scientific, clinical, technical and entrepreneurial expertise — runs the centre and supports project leaders.",
       direction: "Direction",
       directionName: "Cécile Sztalberg",
+      directionMembers: ["Cécile Sztalberg", "Dr Jacques Devière"],
       doctorsTitle: "Physicians",
       doctors: [
         "Dr Marianna Arvanitaki",
