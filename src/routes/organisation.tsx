@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Building2, Users, Network, Briefcase, Heart, Stethoscope, Cog, GraduationCap } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
+import ecosystemPartners from "@/assets/ecosystem-partners.png";
 
 export const Route = createFileRoute("/organisation")({
   head: () => ({
