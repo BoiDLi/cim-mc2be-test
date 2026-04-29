@@ -49,7 +49,11 @@ function OrganisationPage() {
                   <Briefcase className="h-4 w-4 text-accent" />
                 </div>
                 <p className="font-mono text-xs uppercase tracking-wider text-coral">{t.organisation.direction}</p>
-                <p className="mt-2 font-display text-lg text-primary">{t.organisation.directionName}</p>
+                <ul className="mt-3 space-y-1.5">
+                  {t.organisation.directionMembers.map((d) => (
+                    <li key={d} className="text-sm text-foreground/85">{d}</li>
+                  ))}
+                </ul>
               </div>
 
               {/* Médecins */}
