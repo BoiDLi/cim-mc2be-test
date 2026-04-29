@@ -543,7 +543,7 @@ export const translations = {
       strategicTitle: "Strategic partnerships",
       strategicBody:
         "A network of internationally recognised academic, hospital and technology partners.",
-      partners: ["MLTL — Multitel", "CHU Charleroi & Chimay", "Biopark", "ULB", "UMONS"],
+      partners: ["MLTL — Multitel", "CHU Charleroi & Chimay", "Biopark", "ULB", "UMONS", "Biopark Charleroi Brussels South", "Ignity", "Sambrinvest"],
       ecosystemTitle: "Ecosystem",
       ecosystemBody:
         "Certified research centres, competitiveness clusters, health clusters, specialised investment funds and training providers: CIM-MC² is part of a vibrant innovation ecosystem in Wallonia and Brussels.",
