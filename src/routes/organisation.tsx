@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Building2, Users, Network, Briefcase, Heart, Stethoscope, Cog, GraduationCap } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
+import ecosystemPartners from "@/assets/ecosystem-partners.png";
 
 export const Route = createFileRoute("/organisation")({
   head: () => ({
@@ -145,6 +146,14 @@ function OrganisationPage() {
                 </span>
               ))}
             </div>
+            <figure className="mt-10 rounded-2xl overflow-hidden bg-card border border-border shadow-soft">
+              <img
+                src={ecosystemPartners}
+                alt="Écosystème de partenaires du CIM-MC² : Fondation Michel Cremer, Hôpital Erasme, ULB, UMONS, Multitel, EndoTools, HUman, Wallonie Santé, Pôle MecaTech, BMDC, Sambrinvest, BioWin, et partenaires européens (Charité, BIH, TUM, Karolinska, PTB, Fraunhofer, etc.)"
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </figure>
           </article>
 
           {/* SHAREHOLDING */}
