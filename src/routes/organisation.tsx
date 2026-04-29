@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Building2, Users, Network, Briefcase, Heart } from "lucide-react";
+import { Building2, Users, Network, Briefcase, Heart, Stethoscope, Cog, GraduationCap } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
 
@@ -42,16 +42,60 @@ function OrganisationPage() {
             <p className="mt-6 text-lg text-foreground/85 leading-relaxed max-w-3xl">
               {t.organisation.teamBody}
             </p>
-            <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-              {["Direction scientifique", "Coordination clinique", "Business development", "Opérations"].map((role) => (
-                <div key={role} className="rounded-2xl bg-secondary p-5">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 grid place-items-center mb-3">
-                    <span className="font-display text-primary">·</span>
-                  </div>
-                  <p className="text-sm font-medium text-primary">{role}</p>
-                  <p className="text-xs text-muted-foreground mt-1">À compléter</p>
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              {/* Direction */}
+              <div className="rounded-2xl bg-secondary p-6">
+                <div className="h-10 w-10 rounded-full bg-accent/15 grid place-items-center mb-3">
+                  <Briefcase className="h-4 w-4 text-accent" />
                 </div>
-              ))}
+                <p className="font-mono text-xs uppercase tracking-wider text-coral">{t.organisation.direction}</p>
+                <p className="mt-2 font-display text-lg text-primary">{t.organisation.directionName}</p>
+              </div>
+
+              {/* Médecins */}
+              <div className="rounded-2xl bg-secondary p-6">
+                <div className="h-10 w-10 rounded-full bg-coral/15 grid place-items-center mb-3">
+                  <Stethoscope className="h-4 w-4 text-coral" />
+                </div>
+                <p className="font-mono text-xs uppercase tracking-wider text-coral">{t.organisation.doctorsTitle}</p>
+                <ul className="mt-3 space-y-1.5">
+                  {t.organisation.doctors.map((d) => (
+                    <li key={d} className="text-sm text-foreground/85">{d}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Ingénieurs */}
+              <div className="rounded-2xl bg-secondary p-6">
+                <div className="h-10 w-10 rounded-full bg-primary/10 grid place-items-center mb-3">
+                  <Cog className="h-4 w-4 text-primary" />
+                </div>
+                <p className="font-mono text-xs uppercase tracking-wider text-coral">{t.organisation.engineersTitle}</p>
+                <ul className="mt-3 space-y-1.5">
+                  {t.organisation.engineers.map((e) => (
+                    <li key={e} className="text-sm text-foreground/85">{e}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Comité scientifique */}
+            <div className="mt-10 rounded-2xl bg-gradient-soft p-6 border border-border">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-full bg-primary text-primary-foreground grid place-items-center">
+                  <GraduationCap className="h-4 w-4" />
+                </div>
+                <h3 className="font-display text-xl">{t.organisation.scientificCommitteeTitle}</h3>
+              </div>
+              <ul className="mt-5 grid md:grid-cols-3 gap-5">
+                {t.organisation.scientificCommittee.map((m) => (
+                  <li key={m.name} className="border-l-2 border-coral pl-4">
+                    <p className="font-medium text-primary">{m.name}</p>
+                    <p className="text-sm text-foreground/75 mt-1 leading-relaxed">{m.role}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 text-xs text-muted-foreground italic">{t.organisation.scientificCommitteeNote}</p>
             </div>
           </article>
 
