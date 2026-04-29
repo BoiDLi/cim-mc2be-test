@@ -24,7 +24,7 @@ export const translations = {
       title: "Du besoin clinique au patient.",
       titleAccent: "Accélérer l'innovation médicale.",
       subtitle:
-        "Le CIM-MC² réunit médecins, ingénieurs et entrepreneurs pour transformer une idée en dispositif médical — plus vite et au bénéfice direct des patients.",
+        "Le CIM-MC² réunit médecins, ingénieurs et entrepreneurs pour transformer une idée en dispositif médical, plus rapidement et au bénéfice direct des patients, y compris dans le domaine des pathologies rares insuffisamment adressées en raison de contraintes de marché.",
       ctaPrimary: "Découvrir nos services",
       ctaSecondary: "Nous contacter",
       whatTitle: "C'est quoi le CIM-MC² ?",
@@ -371,7 +371,7 @@ export const translations = {
       title: "From clinical need to patient.",
       titleAccent: "Accelerating medical innovation.",
       subtitle:
-        "CIM-MC² brings together clinicians, engineers and entrepreneurs to turn ideas into medical devices — faster, and for the direct benefit of patients.",
+        "CIM-MC² brings together clinicians, engineers and entrepreneurs to turn ideas into medical devices, faster and for the direct benefit of patients — including in the field of rare diseases that remain underserved due to market constraints.",
       ctaPrimary: "Discover our services",
       ctaSecondary: "Get in touch",
       whatTitle: "What is CIM-MC²?",
