@@ -137,6 +137,38 @@ export const translations = {
       teamTitle: "L'équipe du CIM",
       teamBody:
         "Une équipe pluridisciplinaire alliant compétences scientifiques, cliniques, techniques et entrepreneuriales pilote au quotidien le centre et accompagne les porteurs de projets.",
+      direction: "Direction",
+      directionName: "Cécile Sztalberg",
+      doctorsTitle: "Les médecins",
+      doctors: [
+        "Dr Marianna Arvanitaki",
+        "Dr Jacques Devière",
+        "Dr Arnaud Lemmers",
+        "Prof. Karim Zouaoui",
+      ],
+      engineersTitle: "Les ingénieurs",
+      engineers: [
+        "Prof. Alain Delchambre",
+        "Prof. Anthoine Nonclercq",
+        "Dr Ramzi Ben Hassen",
+      ],
+      scientificCommitteeTitle: "Comité scientifique",
+      scientificCommitteeNote:
+        "Voir aussi la page gouvernance du site de la Fondation Michel Cremer.",
+      scientificCommittee: [
+        {
+          name: "Dr Marc Barthet",
+          role: "Service de gastro-entérologie, Hôpital Nord, Marseille (France)",
+        },
+        {
+          name: "Prof. Guido Costamagna",
+          role: "Professor of Surgery, Head of the Digestive Endoscopy Unit — Università Cattolica del Sacro Cuore, Policlinico Gemelli, Rome (Italie)",
+        },
+        {
+          name: "Dr Marc Giovannini",
+          role: "Responsable de l'unité d'écho-endoscopie et d'endoscopie d'oncologie digestive — IPC Institut Paoli-Calmettes, Marseille (France)",
+        },
+      ],
       hostedTitle: "Partenaires hébergés",
       hostedBody:
         "Le CIM-MC² accueille en son sein plusieurs structures partenaires actives dans la medtech et la valorisation de la recherche.",
@@ -471,6 +503,38 @@ export const translations = {
       teamTitle: "The CIM team",
       teamBody:
         "A multidisciplinary team — combining scientific, clinical, technical and entrepreneurial expertise — runs the centre and supports project leaders.",
+      direction: "Direction",
+      directionName: "Cécile Sztalberg",
+      doctorsTitle: "Physicians",
+      doctors: [
+        "Dr Marianna Arvanitaki",
+        "Dr Jacques Devière",
+        "Dr Arnaud Lemmers",
+        "Prof. Karim Zouaoui",
+      ],
+      engineersTitle: "Engineers",
+      engineers: [
+        "Prof. Alain Delchambre",
+        "Prof. Anthoine Nonclercq",
+        "Dr Ramzi Ben Hassen",
+      ],
+      scientificCommitteeTitle: "Scientific committee",
+      scientificCommitteeNote:
+        "See also the governance page of the Michel Cremer Foundation website.",
+      scientificCommittee: [
+        {
+          name: "Dr Marc Barthet",
+          role: "Department of Gastroenterology, Hôpital Nord, Marseille (France)",
+        },
+        {
+          name: "Prof. Guido Costamagna",
+          role: "Professor of Surgery, Head of the Digestive Endoscopy Unit — Università Cattolica del Sacro Cuore, Policlinico Gemelli, Rome (Italy)",
+        },
+        {
+          name: "Dr Marc Giovannini",
+          role: "Head of the Endoscopic Ultrasound and Digestive Oncology Endoscopy Unit — IPC Institut Paoli-Calmettes, Marseille (France)",
+        },
+      ],
       hostedTitle: "Hosted partners",
       hostedBody:
         "CIM-MC² hosts several partner organisations active in medtech and research valorisation.",
