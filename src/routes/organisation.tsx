@@ -146,6 +146,14 @@ function OrganisationPage() {
                 </span>
               ))}
             </div>
+            <figure className="mt-10 rounded-2xl overflow-hidden bg-card border border-border shadow-soft">
+              <img
+                src={ecosystemPartners}
+                alt="Écosystème de partenaires du CIM-MC² : Fondation Michel Cremer, Hôpital Erasme, ULB, UMONS, Multitel, EndoTools, HUman, Wallonie Santé, Pôle MecaTech, BMDC, Sambrinvest, BioWin, et partenaires européens (Charité, BIH, TUM, Karolinska, PTB, Fraunhofer, etc.)"
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </figure>
           </article>
 
           {/* SHAREHOLDING */}
