@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Calendar, PlayCircle } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
-import buildingImg from "@/assets/building-cim.jpg";
+import buildingImg from "@/assets/building-archipelago.jpg";
+import buildingRenderImg from "@/assets/building-cim.jpg";
 
 export const Route = createFileRoute("/batiment")({
   head: () => ({
@@ -127,22 +128,31 @@ function BuildingPage() {
         </div>
       </section>
 
-      {/* VIDEO PLACEHOLDER */}
+      {/* VIDEO */}
       <section className="pb-24">
         <div className="container-narrow">
-          <div className="aspect-[16/9] rounded-3xl bg-gradient-hero relative overflow-hidden flex items-center justify-center">
+          <a
+            href="https://netclick.io/pixel/5NDJdvmjcR7UG9oC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block aspect-[16/9] rounded-3xl bg-gradient-hero relative overflow-hidden"
+            aria-label={t.building.videoTitle}
+          >
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-50 transition-smooth"
+              style={{ backgroundImage: `url(${buildingImg})` }}
+            />
             <div className="absolute inset-0 grain" />
-            <div className="relative text-center">
-              <button
-                className="group h-20 w-20 rounded-full bg-cream/10 ring-1 ring-cream/30 backdrop-blur grid place-items-center hover:bg-coral hover:scale-110 transition-smooth"
-                aria-label="Lire la vidéo"
-              >
-                <PlayCircle className="h-10 w-10 text-cream" />
-              </button>
-              <p className="mt-6 font-display text-cream/80 italic">{t.building.videoTitle}</p>
-              <p className="mt-1 text-xs text-cream/50">{t.building.videoNote}</p>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center">
+                <span className="inline-grid h-20 w-20 place-items-center rounded-full bg-cream/10 ring-1 ring-cream/30 backdrop-blur group-hover:bg-coral group-hover:scale-110 transition-smooth">
+                  <PlayCircle className="h-10 w-10 text-cream" />
+                </span>
+                <p className="mt-6 font-display text-cream/90 italic">{t.building.videoTitle}</p>
+                <p className="mt-1 text-xs text-cream/60">{t.building.videoNote}</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </>
