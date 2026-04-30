@@ -3,8 +3,8 @@ import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucid
 import { useLang } from "@/i18n/LanguageContext";
 import { SdgTile } from "@/components/site/SdgTile";
 import { ClinicalNeed } from "@/components/site/ClinicalNeed";
-import heroImg from "@/assets/cim-medical-team.jpg";
-import prototypingImg from "@/assets/cim-engineers.jpg";
+import heroImg from "@/assets/cim-hero-endoscopy.jpg";
+import prototypingImg from "@/assets/cim-team-meeting.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
