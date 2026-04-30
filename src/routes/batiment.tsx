@@ -34,19 +34,31 @@ function BuildingPage() {
           <div className="relative rounded-3xl overflow-hidden shadow-elegant aspect-[16/9]">
             <img
               src={buildingImg}
-              alt="Rendu architectural du bâtiment CIM-MC² au crépuscule"
+              alt="Photo du futur bâtiment CIM-MC² — projet ARCHIPELAGO, entrée"
               className="h-full w-full object-cover"
               loading="lazy"
               width={1600}
-              height={1024}
+              height={900}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10">
-              <p className="font-display italic text-coral text-sm">Rendu architectural</p>
+              <p className="font-display italic text-coral text-sm">Projet ARCHIPELAGO</p>
               <p className="font-display text-2xl md:text-3xl text-cream max-w-xl">
                 Charleroi — à proximité immédiate du CHU Marie Curie
               </p>
             </div>
+          </div>
+
+          {/* Architectural render */}
+          <div className="relative rounded-3xl overflow-hidden shadow-elegant aspect-[16/9] mt-8">
+            <img
+              src={buildingRenderImg}
+              alt="Rendu architectural du bâtiment CIM-MC² au crépuscule"
+              className="h-full w-full object-cover"
+              loading="lazy"
+              width={1600}
+              height={900}
+            />
           </div>
         </div>
       </section>
