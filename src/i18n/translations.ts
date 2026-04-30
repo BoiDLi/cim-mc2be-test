@@ -297,13 +297,30 @@ export const translations = {
       categoriesTitle: "Catégories",
       categories: ["Événements", "À la une", "Presse", "Publications", "Newsletter"],
       placeholder: "Les premiers contenus seront publiés prochainement.",
+      featuredTitle: "À ne pas manquer",
+      featured: {
+        tag: "Événement",
+        date: "Mercredi 27 mai 2026 — dès 10h",
+        location: "Lodelinsart",
+        title: "Pose de la première pierre du CIM-MC²",
+        lead:
+          "Le Centre d'Innovation Médicale Michel Cremer / Marie Curie franchit une étape clé avec la pose de sa première pierre. Cet événement marque le lancement concret d'un projet ambitieux dédié à l'accélération du développement de solutions médicales innovantes, au plus près des besoins des patients et des professionnels de santé.",
+        body:
+          "Conçu comme un lieu de convergence entre médecins, ingénieurs, chercheurs et entrepreneurs, le CIM-MC² a pour vocation de transformer plus rapidement les avancées scientifiques en applications cliniques concrètes, avec un impact direct sur la qualité des soins et le développement économique régional.",
+        invite:
+          "Nous serions honorés de vous compter parmi nous pour ce moment fondateur et symbolique.",
+        programTitle: "Programme",
+        program: [
+          "Accueil",
+          "Introduction",
+          "Présentation du projet par le Prof. Jacques Devière, Président de la Fondation",
+          "Interventions de M. Adrien Dolimont, Ministre-Président de la Région wallonne, et de M. Thomas Dermine, Bourgmestre de Charleroi",
+          "Pose de la première pierre",
+          "Drink de clôture",
+        ],
+        cta: "Confirmer ma présence",
+      },
       sample: [
-        {
-          tag: "Bâtiment",
-          date: "À venir",
-          title: "Pose de la première pierre du CIM-MC²",
-          desc: "Les travaux du futur Centre d'Innovation Médicale ont franchi une étape clé.",
-        },
         {
           tag: "Projet",
           date: "En cours",
@@ -315,6 +332,12 @@ export const translations = {
           date: "À venir",
           title: "Renforcement du partenariat avec UMONS",
           desc: "Nouveau programme de formation à la dissection endoscopique (ESD).",
+        },
+        {
+          tag: "Bâtiment",
+          date: "Septembre 2027",
+          title: "Mise en service du bâtiment CIM-MC²",
+          desc: "Ouverture officielle et accueil des premiers projets résidents.",
         },
       ],
     },
