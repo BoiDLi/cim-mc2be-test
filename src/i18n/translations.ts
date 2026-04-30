@@ -176,7 +176,7 @@ export const translations = {
       strategicTitle: "Partenariats renforcés",
       strategicBody:
         "Un réseau d'académiques, hospitaliers et technologiques de réputation internationale.",
-      partners: ["MLTL — Multitel", "CHU Charleroi & Chimay", "Biopark", "ULB", "UMONS", "Biopark Charleroi Brussels South", "Ignity", "Sambrinvest"],
+      partners: ["CHU de Charleroi", "HUB — Hôpital Erasme", "MLTL — Multitel", "CHU Charleroi & Chimay", "Biopark", "ULB", "UMONS", "Biopark Charleroi Brussels South", "Ignity", "Sambrinvest"],
       ecosystemTitle: "Écosystème",
       ecosystemBody:
         "Centres de recherche agréés, pôles de compétitivité, clusters santé, fonds d'investissement spécialisés et acteurs de la formation : le CIM-MC² s'inscrit dans un écosystème dynamique d'innovation médicale en Wallonie et à Bruxelles.",
@@ -187,8 +187,8 @@ export const translations = {
       foundationBody:
         "Acteur fondateur du projet, la Fondation soutient l'innovation médicale en finançant programmes de recherche, bourses et infrastructures dédiées.",
       foundationLink: "michelcremerfoundation.eu",
-      geewTitle: "GEEW",
-      geewBody: "Section à préciser — rôle et apport du GEEW dans la gouvernance du CIM-MC².",
+      geewTitle: "Rôle de l'asbl Gastroentérologie et Endothérapie",
+      geewBody: "L'asbl Gastroentérologie et Endothérapie est plus particulièrement impliquée dans l'organisation et la mise sur pied de transmissions de cas cliniques du CIM-MC².",
     },
     offer: {
       title: "Notre offre",
@@ -606,7 +606,7 @@ export const translations = {
       strategicTitle: "Strategic partnerships",
       strategicBody:
         "A network of internationally recognised academic, hospital and technology partners.",
-      partners: ["MLTL — Multitel", "CHU Charleroi & Chimay", "Biopark", "ULB", "UMONS", "Biopark Charleroi Brussels South", "Ignity", "Sambrinvest"],
+      partners: ["CHU de Charleroi", "HUB — Erasme Hospital", "MLTL — Multitel", "CHU Charleroi & Chimay", "Biopark", "ULB", "UMONS", "Biopark Charleroi Brussels South", "Ignity", "Sambrinvest"],
       ecosystemTitle: "Ecosystem",
       ecosystemBody:
         "Certified research centres, competitiveness clusters, health clusters, specialised investment funds and training providers: CIM-MC² is part of a vibrant innovation ecosystem in Wallonia and Brussels.",
@@ -617,8 +617,8 @@ export const translations = {
       foundationBody:
         "A founding actor of the project, the Foundation supports medical innovation by funding research programmes, scholarships and dedicated infrastructure.",
       foundationLink: "michelcremerfoundation.eu",
-      geewTitle: "GEEW",
-      geewBody: "Section to be detailed — role and contribution of GEEW within CIM-MC²'s governance.",
+      geewTitle: "Role of the Gastroenterology & Endotherapy non-profit",
+      geewBody: "The Gastroenterology & Endotherapy non-profit is specifically involved in organising and setting up live clinical case transmissions for CIM-MC².",
     },
     offer: {
       title: "Our offer",

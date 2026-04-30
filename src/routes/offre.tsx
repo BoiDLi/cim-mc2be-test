@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
-import clinicalImg from "@/assets/clinical.jpg";
+import clinicalImg from "@/assets/cim-cleanroom-prototyping.jpg";
 
 export const Route = createFileRoute("/offre")({
   head: () => ({
@@ -187,7 +187,7 @@ function OfferPage() {
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
                 <img
                   src={clinicalImg}
-                  alt="Salle d'opération moderne vue à travers une vitre d'observation"
+                  alt="Technicien en salle blanche assemblant un dispositif médical"
                   className="h-full w-full object-cover"
                   loading="lazy"
                   width={1280}

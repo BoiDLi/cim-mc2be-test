@@ -3,7 +3,6 @@ import { MapPin, Calendar, PlayCircle } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
 import buildingImg from "@/assets/building-archipelago.jpg";
-import buildingRenderImg from "@/assets/building-cim.jpg";
 
 export const Route = createFileRoute("/batiment")({
   head: () => ({
@@ -49,17 +48,6 @@ function BuildingPage() {
             </div>
           </div>
 
-          {/* Architectural render */}
-          <div className="relative rounded-3xl overflow-hidden shadow-elegant aspect-[16/9] mt-8">
-            <img
-              src={buildingRenderImg}
-              alt="Rendu architectural du bâtiment CIM-MC² au crépuscule"
-              className="h-full w-full object-cover"
-              loading="lazy"
-              width={1600}
-              height={900}
-            />
-          </div>
         </div>
       </section>
 

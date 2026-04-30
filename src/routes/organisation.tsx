@@ -140,7 +140,7 @@ function OrganisationPage() {
               {t.organisation.ecosystemBody}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              {["Sirris", "Multitel", "BioWin", "Pôle MecaTech", "Wallonie Entreprendre", "Innoviris"].map((tag) => (
+              {["Sirris", "Multitel", "BioWin", "Pôle MecaTech", "Wallonie Entreprendre", "Ignity", "Sambrinvest", "CHU Charleroi", "HUB — Hôpital Erasme"].map((tag) => (
                 <span key={tag} className="rounded-full bg-card border border-border px-4 py-2 text-sm text-primary">
                   {tag}
                 </span>
@@ -183,10 +183,14 @@ function OrganisationPage() {
           </article>
 
           {/* GEEW */}
-          <article className="lg:col-span-12 bg-secondary/50 rounded-3xl p-10 border border-dashed border-border">
-            <p className="font-mono text-xs uppercase tracking-wider text-coral">À préciser</p>
-            <h2 className="mt-3 font-display text-2xl">{t.organisation.geewTitle}</h2>
-            <p className="mt-3 text-foreground/70 italic">{t.organisation.geewBody}</p>
+          <article className="lg:col-span-12 bg-card rounded-3xl p-10 border border-border shadow-soft">
+            <div className="flex items-center gap-4">
+              <div className="h-12 w-12 rounded-2xl bg-accent/15 text-accent grid place-items-center">
+                <Stethoscope className="h-5 w-5" />
+              </div>
+              <h2 className="font-display text-2xl">{t.organisation.geewTitle}</h2>
+            </div>
+            <p className="mt-5 text-foreground/85 leading-relaxed max-w-3xl">{t.organisation.geewBody}</p>
           </article>
         </div>
       </section>
