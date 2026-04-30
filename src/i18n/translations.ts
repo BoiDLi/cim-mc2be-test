@@ -704,13 +704,30 @@ export const translations = {
       categoriesTitle: "Categories",
       categories: ["Events", "Featured", "Press", "Publications", "Newsletter"],
       placeholder: "First stories coming soon.",
+      featuredTitle: "Don't miss",
+      featured: {
+        tag: "Event",
+        date: "Wednesday, 27 May 2026 — from 10 a.m.",
+        location: "Lodelinsart",
+        title: "CIM-MC² groundbreaking ceremony",
+        lead:
+          "The Michel Cremer / Marie Curie Medical Innovation Centre reaches a major milestone with its groundbreaking ceremony. The event marks the concrete launch of an ambitious project dedicated to accelerating the development of innovative medical solutions, closely aligned with the needs of patients and healthcare professionals.",
+        body:
+          "Designed as a meeting point for physicians, engineers, researchers and entrepreneurs, CIM-MC² aims to translate scientific advances into clinical applications faster, with a direct impact on quality of care and regional economic development.",
+        invite:
+          "We would be honoured to welcome you to this founding and symbolic moment.",
+        programTitle: "Programme",
+        program: [
+          "Welcome",
+          "Introduction",
+          "Project presentation by Prof. Jacques Devière, President of the Foundation",
+          "Addresses by Mr Adrien Dolimont, Minister-President of the Walloon Region, and Mr Thomas Dermine, Mayor of Charleroi",
+          "Laying of the first stone",
+          "Closing drink",
+        ],
+        cta: "Confirm my attendance",
+      },
       sample: [
-        {
-          tag: "Building",
-          date: "Upcoming",
-          title: "CIM-MC² groundbreaking ceremony",
-          desc: "Construction of the future Medical Innovation Centre reaches a key milestone.",
-        },
         {
           tag: "Project",
           date: "Ongoing",
@@ -722,6 +739,12 @@ export const translations = {
           date: "Upcoming",
           title: "Strengthened partnership with UMONS",
           desc: "New training programme for endoscopic submucosal dissection (ESD).",
+        },
+        {
+          tag: "Building",
+          date: "September 2027",
+          title: "CIM-MC² building inauguration",
+          desc: "Official opening and welcoming of the first resident projects.",
         },
       ],
     },
