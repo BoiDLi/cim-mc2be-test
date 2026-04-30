@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Calendar, Newspaper, FileText, Mail, Star } from "lucide-react";
+import { Calendar, Newspaper, FileText, Mail, Star, MapPin, Clock } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
 
@@ -48,8 +48,70 @@ function NewsPage() {
         </div>
       </section>
 
+      {/* FEATURED EVENT */}
+      <section className="pb-8">
+        <div className="container-narrow">
+          <h2 className="font-display text-2xl text-primary mb-6">{t.news.featuredTitle}</h2>
+          <article className="rounded-3xl overflow-hidden bg-gradient-hero text-cream relative shadow-elegant">
+            <div className="absolute inset-0 grain opacity-40" />
+            <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-coral/30 blur-3xl" />
+            <div className="relative grid md:grid-cols-12 gap-8 p-8 md:p-12">
+              <div className="md:col-span-7">
+                <div className="inline-flex items-center gap-2 rounded-full bg-cream/15 backdrop-blur px-3 py-1 text-xs font-medium uppercase tracking-wider">
+                  <Calendar className="h-3.5 w-3.5" />
+                  {t.news.featured.tag}
+                </div>
+                <h3 className="mt-4 font-display text-3xl md:text-4xl leading-tight">
+                  {t.news.featured.title}
+                </h3>
+                <div className="mt-4 flex flex-wrap gap-4 text-sm text-cream/85">
+                  <span className="inline-flex items-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    {t.news.featured.date}
+                  </span>
+                  <span className="inline-flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    {t.news.featured.location}
+                  </span>
+                </div>
+                <p className="mt-6 text-cream/90 leading-relaxed">{t.news.featured.lead}</p>
+                <p className="mt-3 text-cream/80 leading-relaxed text-sm">
+                  {t.news.featured.body}
+                </p>
+                <p className="mt-3 text-cream italic text-sm">{t.news.featured.invite}</p>
+                <div className="mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-6 py-3 font-medium shadow-coral hover:scale-105 transition-smooth"
+                  >
+                    {t.news.featured.cta}
+                  </a>
+                </div>
+              </div>
+              <div className="md:col-span-5">
+                <div className="rounded-2xl bg-cream/10 backdrop-blur ring-1 ring-cream/20 p-6">
+                  <h4 className="font-display text-lg text-cream">
+                    {t.news.featured.programTitle}
+                  </h4>
+                  <ul className="mt-4 space-y-3 text-sm text-cream/90">
+                    {t.news.featured.program.map((step, i) => (
+                      <li key={step} className="flex gap-3">
+                        <span className="flex-shrink-0 h-6 w-6 rounded-full bg-coral/90 text-coral-foreground text-xs font-mono inline-flex items-center justify-center">
+                          {i + 1}
+                        </span>
+                        <span className="leading-snug pt-0.5">{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* SAMPLE NEWS GRID */}
-      <section className="pb-24">
+      <section className="pb-24 pt-8">
         <div className="container-narrow grid md:grid-cols-3 gap-6">
           {t.news.sample.map((n, i) => (
             <article

@@ -297,13 +297,30 @@ export const translations = {
       categoriesTitle: "Catégories",
       categories: ["Événements", "À la une", "Presse", "Publications", "Newsletter"],
       placeholder: "Les premiers contenus seront publiés prochainement.",
+      featuredTitle: "À ne pas manquer",
+      featured: {
+        tag: "Événement",
+        date: "Mercredi 27 mai 2026 — dès 10h",
+        location: "Lodelinsart",
+        title: "Pose de la première pierre du CIM-MC²",
+        lead:
+          "Le Centre d'Innovation Médicale Michel Cremer / Marie Curie franchit une étape clé avec la pose de sa première pierre. Cet événement marque le lancement concret d'un projet ambitieux dédié à l'accélération du développement de solutions médicales innovantes, au plus près des besoins des patients et des professionnels de santé.",
+        body:
+          "Conçu comme un lieu de convergence entre médecins, ingénieurs, chercheurs et entrepreneurs, le CIM-MC² a pour vocation de transformer plus rapidement les avancées scientifiques en applications cliniques concrètes, avec un impact direct sur la qualité des soins et le développement économique régional.",
+        invite:
+          "Nous serions honorés de vous compter parmi nous pour ce moment fondateur et symbolique.",
+        programTitle: "Programme",
+        program: [
+          "Accueil",
+          "Introduction",
+          "Présentation du projet par le Prof. Jacques Devière, Président de la Fondation",
+          "Interventions de M. Adrien Dolimont, Ministre-Président de la Région wallonne, et de M. Thomas Dermine, Bourgmestre de Charleroi",
+          "Pose de la première pierre",
+          "Drink de clôture",
+        ],
+        cta: "Confirmer ma présence",
+      },
       sample: [
-        {
-          tag: "Bâtiment",
-          date: "À venir",
-          title: "Pose de la première pierre du CIM-MC²",
-          desc: "Les travaux du futur Centre d'Innovation Médicale ont franchi une étape clé.",
-        },
         {
           tag: "Projet",
           date: "En cours",
@@ -315,6 +332,12 @@ export const translations = {
           date: "À venir",
           title: "Renforcement du partenariat avec UMONS",
           desc: "Nouveau programme de formation à la dissection endoscopique (ESD).",
+        },
+        {
+          tag: "Bâtiment",
+          date: "Septembre 2027",
+          title: "Mise en service du bâtiment CIM-MC²",
+          desc: "Ouverture officielle et accueil des premiers projets résidents.",
         },
       ],
     },
@@ -704,13 +727,30 @@ export const translations = {
       categoriesTitle: "Categories",
       categories: ["Events", "Featured", "Press", "Publications", "Newsletter"],
       placeholder: "First stories coming soon.",
+      featuredTitle: "Don't miss",
+      featured: {
+        tag: "Event",
+        date: "Wednesday, 27 May 2026 — from 10 a.m.",
+        location: "Lodelinsart",
+        title: "CIM-MC² groundbreaking ceremony",
+        lead:
+          "The Michel Cremer / Marie Curie Medical Innovation Centre reaches a major milestone with its groundbreaking ceremony. The event marks the concrete launch of an ambitious project dedicated to accelerating the development of innovative medical solutions, closely aligned with the needs of patients and healthcare professionals.",
+        body:
+          "Designed as a meeting point for physicians, engineers, researchers and entrepreneurs, CIM-MC² aims to translate scientific advances into clinical applications faster, with a direct impact on quality of care and regional economic development.",
+        invite:
+          "We would be honoured to welcome you to this founding and symbolic moment.",
+        programTitle: "Programme",
+        program: [
+          "Welcome",
+          "Introduction",
+          "Project presentation by Prof. Jacques Devière, President of the Foundation",
+          "Addresses by Mr Adrien Dolimont, Minister-President of the Walloon Region, and Mr Thomas Dermine, Mayor of Charleroi",
+          "Laying of the first stone",
+          "Closing drink",
+        ],
+        cta: "Confirm my attendance",
+      },
       sample: [
-        {
-          tag: "Building",
-          date: "Upcoming",
-          title: "CIM-MC² groundbreaking ceremony",
-          desc: "Construction of the future Medical Innovation Centre reaches a key milestone.",
-        },
         {
           tag: "Project",
           date: "Ongoing",
@@ -722,6 +762,12 @@ export const translations = {
           date: "Upcoming",
           title: "Strengthened partnership with UMONS",
           desc: "New training programme for endoscopic submucosal dissection (ESD).",
+        },
+        {
+          tag: "Building",
+          date: "September 2027",
+          title: "CIM-MC² building inauguration",
+          desc: "Official opening and welcoming of the first resident projects.",
         },
       ],
     },
