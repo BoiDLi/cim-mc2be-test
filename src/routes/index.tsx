@@ -3,8 +3,8 @@ import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucid
 import { useLang } from "@/i18n/LanguageContext";
 import { SdgTile } from "@/components/site/SdgTile";
 import { ClinicalNeed } from "@/components/site/ClinicalNeed";
-import heroImg from "@/assets/surgery-team.jpg";
-import prototypingImg from "@/assets/labs-collage.png";
+import heroImg from "@/assets/cim-medical-team.jpg";
+import prototypingImg from "@/assets/cim-engineers.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -81,10 +81,10 @@ function HomePage() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
               <img
                 src={heroImg}
-                alt="Équipe chirurgicale en salle d'opération — collaboration médecine et innovation"
+                alt="Équipe médicale du CIM autour d'un patient en salle d'endoscopie"
                 className="absolute inset-0 h-full w-full object-cover"
-                width={1024}
-                height={769}
+                width={1230}
+                height={1843}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
             </div>
@@ -156,7 +156,7 @@ function HomePage() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
               <img
                 src={prototypingImg}
-                alt="Salles techniques du CIM-MC² — cleanroom, prototypage et impression 3D"
+                alt="Ingénieurs du CIM-MC² en train de prototyper un dispositif médical"
                 className="h-full w-full object-cover"
                 loading="lazy"
                 width={1600}
