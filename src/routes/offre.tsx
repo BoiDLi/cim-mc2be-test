@@ -14,6 +14,9 @@ import {
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
 import clinicalImg from "@/assets/cim-cleanroom-prototyping.jpg";
+import buildingImg from "@/assets/cim-building-entrance.jpg";
+import transmissionImg from "@/assets/cim-transmission-space.png";
+import usabilityImg from "@/assets/cim-usability-room.jpg";
 
 export const Route = createFileRoute("/offre")({
   head: () => ({
@@ -73,10 +76,24 @@ function OfferPage() {
 
       {/* INTRO */}
       <section className="py-20">
-        <div className="container-narrow max-w-4xl">
-          <p className="text-lg md:text-xl text-foreground/85 leading-relaxed">
-            {t.offer.intro}
-          </p>
+        <div className="container-narrow grid lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7 max-w-2xl">
+            <p className="text-lg md:text-xl text-foreground/85 leading-relaxed">
+              {t.offer.intro}
+            </p>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-elegant">
+              <img
+                src={buildingImg}
+                alt="Entrée du bâtiment CIM-MC² — projet ARCHIPELAGO"
+                className="h-full w-full object-cover"
+                loading="lazy"
+                width={1280}
+                height={960}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
