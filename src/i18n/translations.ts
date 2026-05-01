@@ -8,7 +8,7 @@ export const translations = {
       offer: "Offre",
       news: "Actualités",
       building: "Bâtiment",
-      careers: "Carrières",
+      careers: "Rejoindre l'écosystème",
       contact: "Contact",
       support: "Nous soutenir",
     },
@@ -360,9 +360,33 @@ export const translations = {
       videoNote: "Espace réservé — rendu architectural, interview du directeur, visite virtuelle.",
     },
     careers: {
-      title: "Rejoindre le CIM-MC²",
+      title: "Rejoindre l'écosystème du CIM-MC²",
       subtitle:
-        "Travailler côte à côte au service de l'innovation médicale, sur des projets à fort impact.",
+        "Devenez partenaire résident ou rejoignez nos équipes : intégrez un environnement unique où ingénieurs, chercheurs, cliniciens et entrepreneurs collaborent au quotidien.",
+      partnersKicker: "I · Partenaires",
+      partnersTitle: "Devenir partenaire résident",
+      partnersIntro:
+        "Le CIM-MC² constitue un environnement unique où ingénieurs, chercheurs, cliniciens et entrepreneurs collaborent au quotidien pour accélérer l'innovation en dispositifs médicaux. En rejoignant notre écosystème en tant que partenaire résident, vous intégrez une dynamique collaborative au cœur de projets à fort impact clinique et sociétal.",
+      partnersBody:
+        "Nous invitons les acteurs du secteur Medtech à s'impliquer activement en prenant place au sein de nos espaces de coworking, accessibles sous forme de convention annuelle. Cette présence sur site favorise les synergies, les collaborations transdisciplinaires et l'accès direct à un réseau d'expertise, ainsi qu'à des infrastructures technologiques de pointe.",
+      partnersWhyTitle: "Pourquoi rejoindre le CIM-MC² en tant que partenaire résident ?",
+      partnersWhy: [
+        "Intégrer un écosystème d'innovation reconnu, au croisement de la recherche, du clinique et de l'entrepreneuriat.",
+        "Bénéficier d'un accès privilégié à des équipements spécialisés et à des plateformes technologiques.",
+        "Favoriser les opportunités de collaboration, de co-développement et de transfert technologique.",
+        "Accroître votre visibilité et votre ancrage dans un réseau Medtech régional et international.",
+      ],
+      partnersModalitiesTitle: "Modalités de collaboration",
+      partnersModalitiesBody:
+        "Des postes de travail en coworking sont proposés à l'année, avec des services associés (accès aux espaces communs, support logistique, animation de l'écosystème). Des formules adaptées peuvent être envisagées en fonction de vos besoins et de votre niveau d'implication.",
+      partnersJoinTitle: "Rejoignez-nous",
+      partnersJoinBody:
+        "Vous souhaitez intégrer le CIM-MC² et contribuer activement à l'innovation en santé ? Contactez-nous pour discuter des modalités de partenariat.",
+      partnersCta: "Devenir partenaire résident",
+      careersKicker: "II · Carrières & offres d'emploi",
+      careersTitle: "Rejoindre les équipes du CIM-MC²",
+      careersIntro:
+        "Le CIM-MC² est un environnement où ingénieurs, chercheurs, cliniciens et entrepreneurs travaillent côte à côte au service de l'innovation médicale. Rejoindre nos équipes ou celles de nos partenaires hébergés, c'est contribuer à des projets qui amélioreront concrètement la vie des patients.",
       whyTitle: "Pourquoi nous rejoindre ?",
       why: [
         "Travailler sur des projets à fort impact clinique et sociétal.",
@@ -370,9 +394,9 @@ export const translations = {
         "Accéder à des infrastructures de recherche de pointe.",
         "Bénéficier d'un accompagnement à la formation et à l'évolution de carrière.",
       ],
-      openTitle: "Postes ouverts",
+      openTitle: "Postes & stages ouverts",
       openPlaceholder:
-        "Aucune offre n'est actuellement publiée. Revenez régulièrement ou envoyez-nous une candidature spontanée.",
+        "La liste des postes est mise à jour régulièrement (CDI, CDD, stage, thèse) et couvre les domaines R&D, clinique, opérations et support. Aucune offre publiée pour le moment — revenez régulièrement ou envoyez-nous une candidature spontanée.",
       spontaneousTitle: "Candidature spontanée",
       spontaneousBody:
         "Vous ne trouvez pas le poste qui vous correspond ? Envoyez-nous votre candidature spontanée — nous serions ravis d'échanger.",
@@ -451,7 +475,7 @@ export const translations = {
       offer: "Offer",
       news: "News",
       building: "Building",
-      careers: "Careers",
+      careers: "Join the ecosystem",
       contact: "Contact",
       support: "Support us",
     },
@@ -790,8 +814,33 @@ export const translations = {
       videoNote: "Reserved space — architectural rendering, director interview, virtual tour.",
     },
     careers: {
-      title: "Join CIM-MC²",
-      subtitle: "Working side by side to advance medical innovation, on high-impact projects.",
+      title: "Join the CIM-MC² ecosystem",
+      subtitle:
+        "Become a resident partner or join our teams: step into a unique environment where engineers, researchers, clinicians and entrepreneurs collaborate every day.",
+      partnersKicker: "I · Partners",
+      partnersTitle: "Become a resident partner",
+      partnersIntro:
+        "CIM-MC² is a unique environment where engineers, researchers, clinicians and entrepreneurs work together every day to accelerate medical device innovation. By joining our ecosystem as a resident partner, you take part in a collaborative dynamic at the heart of projects with strong clinical and societal impact.",
+      partnersBody:
+        "We invite Medtech players to engage actively by taking a seat within our coworking spaces, available through an annual agreement. An on-site presence fosters synergies, cross-disciplinary collaborations and direct access to a network of expertise as well as state-of-the-art technological infrastructure.",
+      partnersWhyTitle: "Why join CIM-MC² as a resident partner?",
+      partnersWhy: [
+        "Be part of a recognised innovation ecosystem at the crossroads of research, clinical practice and entrepreneurship.",
+        "Enjoy privileged access to specialised equipment and technological platforms.",
+        "Unlock opportunities for collaboration, co-development and technology transfer.",
+        "Grow your visibility and presence within a regional and international Medtech network.",
+      ],
+      partnersModalitiesTitle: "Collaboration terms",
+      partnersModalitiesBody:
+        "Coworking workstations are offered on a yearly basis, with associated services (access to common areas, logistical support, ecosystem activities). Tailored packages can be discussed depending on your needs and level of involvement.",
+      partnersJoinTitle: "Join us",
+      partnersJoinBody:
+        "Want to join CIM-MC² and actively contribute to health innovation? Get in touch to discuss partnership terms.",
+      partnersCta: "Become a resident partner",
+      careersKicker: "II · Careers & job offers",
+      careersTitle: "Join the CIM-MC² teams",
+      careersIntro:
+        "CIM-MC² is a place where engineers, researchers, clinicians and entrepreneurs work side by side in service of medical innovation. Joining our teams — or those of our hosted partners — means contributing to projects that will tangibly improve patients' lives.",
       whyTitle: "Why join us?",
       why: [
         "Work on projects with strong clinical and societal impact.",
@@ -799,9 +848,9 @@ export const translations = {
         "Access state-of-the-art research infrastructure.",
         "Benefit from training and career development support.",
       ],
-      openTitle: "Open positions",
+      openTitle: "Open positions & internships",
       openPlaceholder:
-        "No openings published right now. Check back regularly or send us a spontaneous application.",
+        "Positions are updated regularly (permanent, fixed-term, internships, PhD) across R&D, clinical, operations and support. No openings published right now — check back regularly or send us a spontaneous application.",
       spontaneousTitle: "Spontaneous application",
       spontaneousBody:
         "Don't see the role you're looking for? Send us a spontaneous application — we'd love to hear from you.",
