@@ -269,6 +269,38 @@ function OfferPage() {
             ))}
           </div>
 
+          {/* Visual gallery — transmission & usability */}
+          <div className="mt-14 grid md:grid-cols-2 gap-5">
+            <figure className="group relative aspect-[4/3] rounded-3xl overflow-hidden shadow-elegant">
+              <img
+                src={transmissionImg}
+                alt="Espace de transmission de cas cliniques et R&D du CIM-MC²"
+                className="h-full w-full object-cover transition-smooth group-hover:scale-105"
+                loading="lazy"
+                width={1280}
+                height={960}
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 to-transparent p-5">
+                <p className="font-mono text-xs text-coral">Espace de transmission</p>
+                <p className="font-display text-lg text-cream">Transmission de cas cliniques & R&D</p>
+              </figcaption>
+            </figure>
+            <figure className="group relative aspect-[4/3] rounded-3xl overflow-hidden shadow-elegant">
+              <img
+                src={usabilityImg}
+                alt="Usability room du CIM-MC² pour tests d'utilisabilité de dispositifs médicaux"
+                className="h-full w-full object-cover transition-smooth group-hover:scale-105"
+                loading="lazy"
+                width={1280}
+                height={960}
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 to-transparent p-5">
+                <p className="font-mono text-xs text-coral">Usability room</p>
+                <p className="font-display text-lg text-cream">Tests d'utilisabilité & validation</p>
+              </figcaption>
+            </figure>
+          </div>
+
           <div className="mt-12">
             <Link
               to="/contact"
