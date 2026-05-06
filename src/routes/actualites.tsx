@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Calendar, Newspaper, FileText, Mail, Star, MapPin, Clock } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
+import buildingImg from "@/assets/building-archipelago.jpg";
 
 export const Route = createFileRoute("/actualites")({
   head: () => ({
@@ -88,7 +89,15 @@ function NewsPage() {
                   </a>
                 </div>
               </div>
-              <div className="md:col-span-5">
+              <div className="md:col-span-5 space-y-4">
+                <div className="rounded-2xl overflow-hidden ring-1 ring-cream/20 shadow-elegant">
+                  <img
+                    src={buildingImg}
+                    alt="Futur bâtiment du CIM-MC² — projet ARCHIPELAGO"
+                    className="h-44 w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="rounded-2xl bg-cream/10 backdrop-blur ring-1 ring-cream/20 p-6">
                   <h4 className="font-display text-lg text-cream">
                     {t.news.featured.programTitle}

@@ -27,27 +27,35 @@ function BuildingPage() {
     <>
       <PageHero kicker="05" title={t.building.title} subtitle={t.building.subtitle} />
 
-      {/* HERO IMAGE */}
+      {/* HERO VIDEO */}
       <section className="pb-16">
         <div className="container-narrow">
-          <div className="relative rounded-3xl overflow-hidden shadow-elegant aspect-[16/9]">
-            <img
-              src={buildingImg}
-              alt="Photo du futur bâtiment CIM-MC² — projet ARCHIPELAGO, entrée"
-              className="h-full w-full object-cover"
-              loading="lazy"
-              width={1600}
-              height={900}
+          <a
+            href="https://netclick.io/pixel/5NDJdvmjcR7UG9oC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block aspect-[16/9] rounded-3xl bg-gradient-hero relative overflow-hidden shadow-elegant"
+            aria-label={t.building.videoTitle}
+          >
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-50 group-hover:opacity-60 transition-smooth"
+              style={{ backgroundImage: `url(${buildingImg})` }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 grain" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="inline-grid h-20 w-20 place-items-center rounded-full bg-cream/10 ring-1 ring-cream/30 backdrop-blur group-hover:bg-coral group-hover:scale-110 transition-smooth">
+                <PlayCircle className="h-10 w-10 text-cream" />
+              </span>
+            </div>
             <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10">
               <p className="font-display italic text-coral text-sm">Projet ARCHIPELAGO</p>
               <p className="font-display text-2xl md:text-3xl text-cream max-w-xl">
                 Charleroi — à proximité immédiate du CHU Marie Curie
               </p>
+              <p className="mt-2 text-xs text-cream/70">{t.building.videoNote}</p>
             </div>
-          </div>
-
+          </a>
         </div>
       </section>
 
@@ -128,33 +136,6 @@ function BuildingPage() {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section className="pb-24">
-        <div className="container-narrow">
-          <a
-            href="https://netclick.io/pixel/5NDJdvmjcR7UG9oC"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block aspect-[16/9] rounded-3xl bg-gradient-hero relative overflow-hidden"
-            aria-label={t.building.videoTitle}
-          >
-            <div
-              className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-50 transition-smooth"
-              style={{ backgroundImage: `url(${buildingImg})` }}
-            />
-            <div className="absolute inset-0 grain" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <span className="inline-grid h-20 w-20 place-items-center rounded-full bg-cream/10 ring-1 ring-cream/30 backdrop-blur group-hover:bg-coral group-hover:scale-110 transition-smooth">
-                  <PlayCircle className="h-10 w-10 text-cream" />
-                </span>
-                <p className="mt-6 font-display text-cream/90 italic">{t.building.videoTitle}</p>
-                <p className="mt-1 text-xs text-cream/60">{t.building.videoNote}</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
     </>
   );
 }

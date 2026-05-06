@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SoutenirRouteImport } from './routes/soutenir'
 import { Route as OrganisationRouteImport } from './routes/organisation'
 import { Route as OffreRouteImport } from './routes/offre'
+import { Route as LandingRouteImport } from './routes/landing'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CarrieresRouteImport } from './routes/carrieres'
 import { Route as BatimentRouteImport } from './routes/batiment'
@@ -31,6 +32,11 @@ const OrganisationRoute = OrganisationRouteImport.update({
 const OffreRoute = OffreRouteImport.update({
   id: '/offre',
   path: '/offre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LandingRoute = LandingRouteImport.update({
+  id: '/landing',
+  path: '/landing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/batiment': typeof BatimentRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
+  '/landing': typeof LandingRoute
   '/offre': typeof OffreRoute
   '/organisation': typeof OrganisationRoute
   '/soutenir': typeof SoutenirRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/batiment': typeof BatimentRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
+  '/landing': typeof LandingRoute
   '/offre': typeof OffreRoute
   '/organisation': typeof OrganisationRoute
   '/soutenir': typeof SoutenirRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/batiment': typeof BatimentRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
+  '/landing': typeof LandingRoute
   '/offre': typeof OffreRoute
   '/organisation': typeof OrganisationRoute
   '/soutenir': typeof SoutenirRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/batiment'
     | '/carrieres'
     | '/contact'
+    | '/landing'
     | '/offre'
     | '/organisation'
     | '/soutenir'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/batiment'
     | '/carrieres'
     | '/contact'
+    | '/landing'
     | '/offre'
     | '/organisation'
     | '/soutenir'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/batiment'
     | '/carrieres'
     | '/contact'
+    | '/landing'
     | '/offre'
     | '/organisation'
     | '/soutenir'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   BatimentRoute: typeof BatimentRoute
   CarrieresRoute: typeof CarrieresRoute
   ContactRoute: typeof ContactRoute
+  LandingRoute: typeof LandingRoute
   OffreRoute: typeof OffreRoute
   OrganisationRoute: typeof OrganisationRoute
   SoutenirRoute: typeof SoutenirRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/offre'
       fullPath: '/offre'
       preLoaderRoute: typeof OffreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/landing': {
+      id: '/landing'
+      path: '/landing'
+      fullPath: '/landing'
+      preLoaderRoute: typeof LandingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   BatimentRoute: BatimentRoute,
   CarrieresRoute: CarrieresRoute,
   ContactRoute: ContactRoute,
+  LandingRoute: LandingRoute,
   OffreRoute: OffreRoute,
   OrganisationRoute: OrganisationRoute,
   SoutenirRoute: SoutenirRoute,
@@ -208,12 +229,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
