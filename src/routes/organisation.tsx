@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Building2, Users, Network, Briefcase, Heart, Stethoscope, Cog, GraduationCap } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Building2, Users, Network, Briefcase, Heart, Stethoscope, Cog, GraduationCap, Mail, ArrowRight } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
 import ecosystemPartners from "@/assets/ecosystem-partners.png";
@@ -140,11 +140,30 @@ function OrganisationPage() {
               {t.organisation.ecosystemBody}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              {["Sirris", "Multitel", "BioWin", "Pôle MecaTech", "Wallonie Entreprendre", "Ignity", "Sambrinvest", "CHU Charleroi", "HUB — Hôpital Erasme"].map((tag) => (
+              {["Sirris", "Multitel", "Wallonie Entreprendre", "Ignity", "Sambrinvest", "CHU Charleroi", "HUB — Hôpital Erasme"].map((tag) => (
                 <span key={tag} className="rounded-full bg-card border border-border px-4 py-2 text-sm text-primary">
                   {tag}
                 </span>
               ))}
+            </div>
+
+            {/* CONTACT CTA */}
+            <div className="mt-8 flex flex-wrap items-center gap-4 rounded-2xl bg-card/70 backdrop-blur border border-border p-5">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-full bg-coral/15 grid place-items-center">
+                  <Mail className="h-4 w-4 text-coral" />
+                </div>
+                <p className="text-sm text-foreground/85">
+                  Une question sur les services du CIM-MC² ou de notre écosystème ?
+                </p>
+              </div>
+              <Link
+                to="/contact"
+                className="ml-auto inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-5 py-2.5 text-sm font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+              >
+                Nous contacter
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
             <figure className="mt-10 rounded-2xl overflow-hidden bg-card border border-border shadow-soft">
               <img
