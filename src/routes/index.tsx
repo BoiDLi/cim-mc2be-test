@@ -1,10 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
-import { SdgTile } from "@/components/site/SdgTile";
+import { SdgIcon } from "@/components/site/SdgIcon";
 import { ClinicalNeed } from "@/components/site/ClinicalNeed";
 import heroImg from "@/assets/cim-hero-endoscopy.jpg";
 import prototypingImg from "@/assets/cim-team-meeting.jpg";
+import sdg1 from "@/assets/sdg/sdg-1.png";
+import sdg3 from "@/assets/sdg/sdg-3.png";
+import sdg4 from "@/assets/sdg/sdg-4.png";
+import sdg5 from "@/assets/sdg/sdg-5.png";
+import sdg9 from "@/assets/sdg/sdg-9.png";
+import sdg10 from "@/assets/sdg/sdg-10.jpg";
+import sdg17 from "@/assets/sdg/sdg-17.png";
+
+const SDG_IMG: Record<number, string> = {
+  1: sdg1, 3: sdg3, 4: sdg4, 5: sdg5, 9: sdg9, 10: sdg10, 17: sdg17,
+};
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -65,9 +76,9 @@ function HomePage() {
 
             <div className="mt-16 grid grid-cols-3 gap-6 max-w-lg">
               {[
-                { n: "5+", l: "partenaires académiques" },
-                { n: "2027", l: "ouverture du bâtiment" },
-                { n: "TRL 4→9", l: "maturation projets" },
+                { n: "1 750 m²", l: "dédiés à l'innovation médicale" },
+                { n: "+25 ans", l: "d'expertise medtech engineering" },
+                { n: "50 m", l: "du labo à l'hôpital" },
               ].map((s) => (
                 <div key={s.n} className="border-l-2 border-coral pl-4">
                   <p className="font-display text-3xl text-cream">{s.n}</p>
@@ -224,7 +235,7 @@ function HomePage() {
             </h3>
             <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4">
               {t.home.sdg.direct.map((g) => (
-                <SdgTile key={g.n} n={g.n} label={g.t} highlighted />
+                <SdgIcon key={g.n} src={SDG_IMG[g.n]} alt={`Objectif ${g.n} — ${g.t}`} highlighted />
               ))}
             </div>
           </div>
@@ -235,7 +246,7 @@ function HomePage() {
             </h3>
             <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
               {t.home.sdg.contrib.map((g) => (
-                <SdgTile key={g.n} n={g.n} label={g.t} />
+                <SdgIcon key={g.n} src={SDG_IMG[g.n]} alt={`Objectif ${g.n} — ${g.t}`} />
               ))}
             </div>
           </div>
