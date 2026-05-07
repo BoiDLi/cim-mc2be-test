@@ -164,10 +164,18 @@ function OfferPage() {
               </article>
             ))}
           </div>
+
+          <div className="mt-12">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+            >
+              {t.offer.ctaServices}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </section>
-
-      {/* SERVICES — II. Écosystème */}
       <section className="py-24">
         <div className="container-narrow">
           <div className="max-w-3xl mb-12">
