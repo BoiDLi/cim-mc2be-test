@@ -34,6 +34,7 @@ export function Footer() {
             <li><Link to="/actualites" className="hover:text-coral transition-smooth">{t.nav.news}</Link></li>
             <li><Link to="/batiment" className="hover:text-coral transition-smooth">{t.nav.building}</Link></li>
             <li><Link to="/carrieres" className="hover:text-coral transition-smooth">{t.nav.careers}</Link></li>
+            <li><Link to="/landing" className="hover:text-coral transition-smooth">Résidence fondatrice</Link></li>
           </ul>
         </div>
 
@@ -45,9 +46,11 @@ export function Footer() {
             <li><Link to="/contact" className="hover:text-coral transition-smooth">{t.nav.contact}</Link></li>
             <li><Link to="/soutenir" className="hover:text-coral transition-smooth">{t.nav.support}</Link></li>
           </ul>
-          <div className="mt-8 text-sm text-cream/60">
+          <div className="mt-8 text-sm text-cream/60 space-y-1">
             <p>24 Rue de la Marine</p>
             <p>6042 Lodelinsart (Charleroi) · Belgique</p>
+            <p className="pt-2">N° d'Entreprise : 0803.219.683</p>
+            <p>N° Compte CBC : BE92 7320 7062 2923</p>
           </div>
         </div>
       </div>

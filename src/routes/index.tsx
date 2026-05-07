@@ -74,11 +74,14 @@ function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-16 grid grid-cols-3 gap-6 max-w-lg">
+            <div className="mt-16 grid grid-cols-3 gap-6 max-w-2xl">
               {[
                 { n: "1 750 m²", l: "dédiés à l'innovation médicale" },
                 { n: "+25 ans", l: "d'expertise medtech engineering" },
                 { n: "50 m", l: "du labo à l'hôpital" },
+                { n: "5+", l: "partenaires académiques" },
+                { n: "2027", l: "ouverture du bâtiment" },
+                { n: "TRL 4→9", l: "maturation de projets" },
               ].map((s) => (
                 <div key={s.n} className="border-l-2 border-coral pl-4">
                   <p className="font-display text-3xl text-cream">{s.n}</p>
