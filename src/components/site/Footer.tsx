@@ -34,6 +34,7 @@ export function Footer() {
             <li><Link to="/actualites" className="hover:text-coral transition-smooth">{t.nav.news}</Link></li>
             <li><Link to="/batiment" className="hover:text-coral transition-smooth">{t.nav.building}</Link></li>
             <li><Link to="/carrieres" className="hover:text-coral transition-smooth">{t.nav.careers}</Link></li>
+            <li><Link to="/landing" className="hover:text-coral transition-smooth">Résidence fondatrice</Link></li>
           </ul>
         </div>
 
