@@ -925,6 +925,8 @@ export const translations = {
         },
       ],
     },
+    building: {
+      title: "The building",
       subtitle:
         "A dedicated infrastructure for collaboration between clinicians, researchers and industry.",
       designTitle: "Designed for medical innovation",
