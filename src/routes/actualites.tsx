@@ -23,6 +23,8 @@ export const Route = createFileRoute("/actualites")({
 function NewsPage() {
   const { t } = useLang();
   const [tab, setTab] = useState<"events" | "news">("events");
+  const [newsKind, setNewsKind] = useState<"highlight" | "press" | "publication">("highlight");
+  const filteredNews = t.news.newsItems.filter((n) => n.kind === newsKind);
 
   const upcoming = t.news.events.filter((e) => e.status === "upcoming");
   const past = t.news.events.filter((e) => e.status === "past");
@@ -176,47 +178,68 @@ function NewsPage() {
               <p className="mt-2 text-muted-foreground">{t.news.newsIntro}</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {t.news.newsItems.map((n, i) => (
-                <article
-                  key={n.title}
-                  className="group bg-card rounded-3xl overflow-hidden border border-border hover:shadow-elegant hover:-translate-y-1 transition-smooth flex flex-col"
+            {/* Sub-tabs */}
+            <div className="mb-8 inline-flex flex-wrap gap-2 rounded-full bg-card border border-border p-1.5 shadow-sm">
+              {(["highlight", "press", "publication"] as const).map((k) => (
+                <button
+                  key={k}
+                  onClick={() => setNewsKind(k)}
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition-smooth ${
+                    newsKind === k
+                      ? "bg-coral text-coral-foreground shadow-coral"
+                      : "text-primary hover:text-coral"
+                  }`}
                 >
-                  <div
-                    className={`aspect-[16/10] relative overflow-hidden ${
-                      i % 3 === 0
-                        ? "bg-gradient-hero"
-                        : i % 3 === 1
-                          ? "bg-gradient-coral"
-                          : "bg-gradient-soft"
-                    }`}
-                  >
-                    <div className="absolute inset-0 grain" />
-                    <div className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-cream/90 backdrop-blur px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-                      {n.category}
-                    </div>
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col">
-                    <p className="text-xs text-muted-foreground font-mono uppercase tracking-wider">
-                      {n.date}
-                    </p>
-                    <h3 className="mt-2 font-display text-xl text-primary group-hover:text-coral transition-smooth">
-                      {n.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed flex-1">
-                      {n.excerpt}
-                    </p>
-                    <a
-                      href="#"
-                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-coral hover:gap-2.5 transition-smooth"
-                    >
-                      {t.news.newsCta}
-                      <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </div>
-                </article>
+                  {t.news.newsSubTabs[k]}
+                </button>
               ))}
             </div>
+
+            {filteredNews.length === 0 ? (
+              <p className="text-muted-foreground italic">{t.news.newsEmpty}</p>
+            ) : (
+              <div className="grid md:grid-cols-3 gap-6">
+                {filteredNews.map((n, i) => (
+                  <article
+                    key={n.title}
+                    className="group bg-card rounded-3xl overflow-hidden border border-border hover:shadow-elegant hover:-translate-y-1 transition-smooth flex flex-col"
+                  >
+                    <div
+                      className={`aspect-[16/10] relative overflow-hidden ${
+                        i % 3 === 0
+                          ? "bg-gradient-hero"
+                          : i % 3 === 1
+                            ? "bg-gradient-coral"
+                            : "bg-gradient-soft"
+                      }`}
+                    >
+                      <div className="absolute inset-0 grain" />
+                      <div className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-cream/90 backdrop-blur px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+                        {n.category}
+                      </div>
+                    </div>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <p className="text-xs text-muted-foreground font-mono uppercase tracking-wider">
+                        {n.date}
+                      </p>
+                      <h3 className="mt-2 font-display text-xl text-primary group-hover:text-coral transition-smooth">
+                        {n.title}
+                      </h3>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed flex-1">
+                        {n.excerpt}
+                      </p>
+                      <a
+                        href="#"
+                        className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-coral hover:gap-2.5 transition-smooth"
+                      >
+                        {t.news.newsCta}
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            )}
 
             <p className="mt-12 text-sm italic text-muted-foreground text-center">
               {t.news.placeholder}
