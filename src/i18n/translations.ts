@@ -382,27 +382,56 @@ export const translations = {
       newsTitle: "Dernières actualités",
       newsIntro: "Communiqués, publications et nouvelles du centre et de ses partenaires.",
       newsCta: "Lire l'article",
+      newsSubTabs: { highlight: "À la une", press: "Presse", publication: "Publications" },
+      newsEmpty: "Aucun contenu pour le moment dans cette rubrique.",
       newsItems: [
         {
           date: "12 mars 2026",
           category: "Communiqué",
+          kind: "highlight",
           title: "Le CIM-MC² accueille un nouveau partenariat avec le HUB — Hôpital Erasme",
           excerpt:
             "Un partenariat stratégique pour renforcer les transmissions de cas cliniques et la formation des cliniciens.",
         },
         {
+          date: "05 février 2026",
+          category: "Annonce",
+          kind: "highlight",
+          title: "Pose de la première pierre du CIM-MC² le 27 mai 2026",
+          excerpt:
+            "Lancement officiel du chantier en présence des autorités régionales et des partenaires fondateurs.",
+        },
+        {
+          date: "10 décembre 2025",
+          category: "Presse",
+          kind: "press",
+          title: "Le CIM-MC² labellisé par le pôle Mecatech",
+          excerpt:
+            "Reconnaissance de la qualité du programme R&D et accélération du déploiement industriel.",
+        },
+        {
+          date: "18 novembre 2025",
+          category: "Presse",
+          kind: "press",
+          title: "L'Echo : « Charleroi se dote d'un centre d'innovation médicale unique en Wallonie »",
+          excerpt:
+            "Retour de la presse économique sur le projet ARCHIPELAGO et l'ambition Medtech du CIM-MC².",
+        },
+        {
           date: "28 janvier 2026",
-          category: "Projet",
+          category: "Publication",
+          kind: "publication",
           title: "Verre connecté : premiers résultats prometteurs",
           excerpt:
             "Le consortium ULg, Multitel et ULB présente les premiers résultats du dispositif de monitoring de la déglutition.",
         },
         {
-          date: "10 décembre 2025",
-          category: "Presse",
-          title: "Le CIM-MC² labellisé par le pôle Mecatech",
+          date: "02 octobre 2025",
+          category: "Publication",
+          kind: "publication",
+          title: "Article scientifique : capsule endoscopique magnétique — étude de faisabilité",
           excerpt:
-            "Reconnaissance de la qualité du programme R&D et accélération du déploiement industriel.",
+            "Publication conjointe ULB / CHU Marie Curie sur la navigation magnétique de la capsule en milieu gastrique.",
         },
       ],
     },
@@ -901,27 +930,56 @@ export const translations = {
       newsTitle: "Latest news",
       newsIntro: "Press releases, publications and updates from the centre and its partners.",
       newsCta: "Read article",
+      newsSubTabs: { highlight: "Highlights", press: "Press", publication: "Publications" },
+      newsEmpty: "No content yet in this section.",
       newsItems: [
         {
           date: "12 March 2026",
           category: "Press release",
+          kind: "highlight",
           title: "CIM-MC² welcomes a new partnership with HUB — Erasme Hospital",
           excerpt:
             "A strategic partnership to strengthen clinical case transmissions and clinician training.",
         },
         {
+          date: "05 February 2026",
+          category: "Announcement",
+          kind: "highlight",
+          title: "CIM-MC² groundbreaking ceremony on 27 May 2026",
+          excerpt:
+            "Official kick-off of the construction with regional authorities and founding partners.",
+        },
+        {
+          date: "10 December 2025",
+          category: "Press",
+          kind: "press",
+          title: "CIM-MC² awarded the Mecatech cluster label",
+          excerpt:
+            "Recognition of the quality of the R&D programme and acceleration of industrial deployment.",
+        },
+        {
+          date: "18 November 2025",
+          category: "Press",
+          kind: "press",
+          title: "L'Echo: 'Charleroi gains a unique medical innovation centre in Wallonia'",
+          excerpt:
+            "The economic press covers the ARCHIPELAGO project and the Medtech ambition of CIM-MC².",
+        },
+        {
           date: "28 January 2026",
-          category: "Project",
+          category: "Publication",
+          kind: "publication",
           title: "Connected glass: first promising results",
           excerpt:
             "The ULg, Multitel and ULB consortium presents the first results of the swallowing monitoring device.",
         },
         {
-          date: "10 December 2025",
-          category: "Press",
-          title: "CIM-MC² awarded the Mecatech cluster label",
+          date: "02 October 2025",
+          category: "Publication",
+          kind: "publication",
+          title: "Scientific paper: magnetic endoscopic capsule — feasibility study",
           excerpt:
-            "Recognition of the quality of the R&D programme and acceleration of industrial deployment.",
+            "Joint ULB / CHU Marie Curie publication on magnetic navigation of the capsule in the gastric cavity.",
         },
       ],
     },
