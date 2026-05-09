@@ -387,21 +387,22 @@ function LandingPage() {
                   Résidence fondatrice
                 </div>
                 <h2 className="mt-4 font-display text-4xl md:text-5xl text-cream">
-                  Soyez le premier à passer la porte.
+                  N'hésitez plus : <em className="not-italic italic">rejoignez-nous</em>.
                 </h2>
                 <p className="mt-5 text-cream/90 max-w-xl leading-relaxed">
-                  Le CIM-MC² ouvre en 2027. Les résidents fondateurs choisissent leur
-                  espace, contribuent à la configuration du centre, et bénéficient de
-                  conditions préférentielles. Un nombre limité de places est ouvert dès
-                  maintenant aux marques d'intérêt.
+                  Le CIM-MC² ouvre en 2027. Les résidents fondateurs peuvent choisir
+                  leurs espaces, contribuer à leur configuration, et bénéficier de
+                  conditions préférentielles. Un nombre limité de places est ouvert
+                  dès maintenant aux marques d'intérêt.
                 </p>
 
                 <div className="mt-8 space-y-3 text-cream/85 text-sm">
                   <p>
-                    <strong className="text-cream">À qui s'adresse-t-il :</strong>{" "}
-                    sociétés medtech en pré-seed à Series A, avec un dispositif ou une
-                    solution digital health, idéalement dans le mini-invasif ou
-                    l'endoscopie. Belges ou internationales.
+                    <strong className="text-cream">À qui s'adresse le CIM-MC² :</strong>{" "}
+                    aux chercheurs en (fin) de thèse valorisable, aux sociétés medtech
+                    en pré-seed, avec un dispositif ou une solution digital health,
+                    idéalement dans le mini-invasif ou l'endoscopie. Belges ou
+                    internationales.
                   </p>
                   <p>
                     <strong className="text-cream">Ce qui se passe ensuite :</strong>{" "}
