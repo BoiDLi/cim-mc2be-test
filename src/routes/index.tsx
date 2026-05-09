@@ -4,7 +4,7 @@ import { useLang } from "@/i18n/LanguageContext";
 import { SdgIcon } from "@/components/site/SdgIcon";
 import { ClinicalNeed } from "@/components/site/ClinicalNeed";
 import heroImg from "@/assets/cim-hero-endoscopy.jpg";
-import prototypingImg from "@/assets/cim-team-meeting.jpg";
+import prototypingImg from "@/assets/cim-max-alix.png";
 import sdg1 from "@/assets/sdg/sdg-1.png";
 import sdg3 from "@/assets/sdg/sdg-3.png";
 import sdg4 from "@/assets/sdg/sdg-4.png";
