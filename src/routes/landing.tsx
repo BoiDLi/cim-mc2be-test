@@ -351,14 +351,17 @@ function LandingPage() {
             <p className="font-display italic text-coral text-lg">— Preuve par l'exemple</p>
             <h2 className="mt-2 font-display text-3xl md:text-4xl max-w-3xl">
               Lys Medical — Iriscope : le premier outil capable de visualiser certaines
-              lésions, né du modèle Fondation.
+              lésions, basé sur la méthodologie développée depuis 25 ans par les équipes
+              de médecins et d'ingénieurs.
             </h2>
             <p className="mt-6 max-w-2xl text-foreground/80 leading-relaxed">
-              Issu du modèle de collaboration médecin–ingénieur de la Fondation, Lys
-              Medical a développé l'Iriscope — un dispositif diagnostique d'un genre
-              nouveau. C'est exactement le type de projet que le CIM-MC² est conçu pour
-              accélérer : un besoin clinique, identifié par des médecins, résolu par des
-              ingénieurs travaillant à leurs côtés. Le modèle, à grande échelle.
+              Issu du modèle de collaboration médecin–ingénieur soutenu par la Fondation
+              Michel Cremer, Lys Medical a développé l'Iriscope — un dispositif
+              diagnostique totalement innovant ayant un impact réel sur le diagnostic
+              des tumeurs cancéreuses. C'est exactement la raison pour laquelle le
+              CIM-MC² est conçu : accélérer des projets avec un besoin clinique,
+              identifié par des médecins, résolu par des ingénieurs travaillant côte à
+              côte.
             </p>
             <a
               href="https://michelcremerfoundation.eu/"
