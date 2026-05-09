@@ -60,9 +60,9 @@ function LandingPage() {
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-cream/80 leading-relaxed">
-              Le CIM-MC² est le premier centre d'innovation medtech belge adossé au CHU
-              Marie Curie de Charleroi avec 1 750 m² de labos, salles propres, prototypage
-              et collaborations cliniques.
+              Le CIM-MC² est le premier centre d'innovation Medtech adossé au CHU
+              Marie Curie de Charleroi avec 1 750 m² de labos, salles propres,
+              prototypage et collaborations cliniques.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
