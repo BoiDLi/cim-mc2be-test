@@ -308,13 +308,13 @@ function LandingPage() {
           <div className="lg:col-span-7">
             <p className="font-display italic text-coral text-lg">— Bâti sur du concret</p>
             <h2 className="mt-2 font-display text-4xl md:text-5xl text-cream">
-              <em className="not-italic text-coral">25 ans</em> d'ingénierie clinique.
-              Pas une promesse — un héritage.
+              <em className="not-italic text-coral">25 ans</em> d'expérience en
+              ingénierie biomédicale, co-conçue avec les médecins cliniciens.
             </h2>
             <p className="mt-6 text-cream/80 max-w-xl leading-relaxed">
-              Le CIM-MC² n'est pas une nouvelle idée à la recherche de traction. C'est la
-              maison physique d'un travail validé par la Région wallonne, reconnu par
-              Mecatech, et bâti sur 25 ans de collaboration entre médecins et ingénieurs.
+              Le CIM-MC² est le résultat de 25 années de collaboration entre médecins
+              et ingénieurs. Le projet a été reconnu par le pôle Mecatech et approuvé
+              par la Région wallonne.
             </p>
 
             <ul className="mt-8 space-y-4">
