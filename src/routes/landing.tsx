@@ -60,9 +60,9 @@ function LandingPage() {
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-cream/80 leading-relaxed">
-              Le CIM-MC² est le premier centre d'innovation medtech belge adossé au CHU
-              Marie Curie de Charleroi avec 1 750 m² de labos, salles propres, prototypage
-              et collaborations cliniques.
+              Le CIM-MC² est le premier centre d'innovation Medtech adossé au CHU
+              Marie Curie de Charleroi avec 1 750 m² de labos, salles propres,
+              prototypage et collaborations cliniques.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -81,12 +81,11 @@ function LandingPage() {
               </a>
             </div>
 
-            <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl">
+            <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
               {[
                 { n: "1 750 m²", l: "dédiés à l'innovation médicale" },
                 { n: "+25 ans", l: "d'expertise en ingénierie Medtech" },
                 { n: "50 m", l: "du labo à l'hôpital" },
-                { n: "J+30", l: "co-créateur et clinicien identifié" },
               ].map((s) => (
                 <div key={s.n} className="border-l-2 border-coral pl-4">
                   <p className="font-display text-2xl text-cream">{s.n}</p>
