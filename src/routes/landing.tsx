@@ -52,17 +52,17 @@ function LandingPage() {
             </div>
 
             <h1 className="mt-8 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] text-cream">
-              Votre dispositif.
+              Un Centre d'Innovation Médicale
               <br />
-              <span className="italic text-coral">À 50 mètres</span> des chirurgiens
+              <span className="italic text-coral">clé sur porte</span>
               <br />
-              qui vont l'utiliser.
+              à 50 mètres de l'hôpital.
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-cream/80 leading-relaxed">
-              Le CIM-MC² est le premier centre d'innovation medtech belge intégré à un
-              hôpital — 1 750 m² de labos, salles propres, prototypage et collaboration
-              clinique, co-localisés avec le CHU Hôpital Marie Curie de Charleroi.
+              Le CIM-MC² est le premier centre d'innovation medtech belge adossé au CHU
+              Marie Curie de Charleroi avec 1 750 m² de labos, salles propres, prototypage
+              et collaborations cliniques.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -70,7 +70,7 @@ function LandingPage() {
                 href="#residency"
                 className="group inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
               >
-                Devenir résident fondateur
+                Devenir résident
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
@@ -84,9 +84,9 @@ function LandingPage() {
             <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl">
               {[
                 { n: "1 750 m²", l: "dédiés à l'innovation médicale" },
-                { n: "+25 ans", l: "d'expertise medtech engineering" },
+                { n: "+25 ans", l: "d'expertise en ingénierie Medtech" },
                 { n: "50 m", l: "du labo à l'hôpital" },
-                { n: "J+30", l: "co-créateur clinicien assigné" },
+                { n: "J+30", l: "co-créateur et clinicien identifié" },
               ].map((s) => (
                 <div key={s.n} className="border-l-2 border-coral pl-4">
                   <p className="font-display text-2xl text-cream">{s.n}</p>
@@ -124,31 +124,31 @@ function LandingPage() {
         <div className="container-narrow">
           <p className="font-display italic text-coral text-lg">— Le problème</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl max-w-3xl">
-            Toute startup medtech se heurte aux <em className="text-coral not-italic">mêmes murs</em>.
+            Toute startup medtech se heurte aux <em className="text-coral not-italic">mêmes difficultés</em>.
           </h2>
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
-            Accès clinique, infrastructure de labo, navigation réglementaire, preuves
-            pour investisseurs. Réunir les quatre — assez tôt pour que ça compte —
-            relevait jusqu'ici de l'impossible.
+            Accès clinique, infrastructure de labo, navigation réglementaire, démonstration
+            de faisabilité financière pour les investisseurs. Atteindre ces quatre
+            objectifs était jusqu'ici extrêmement compliqué.
           </p>
 
           <div className="mt-14 grid md:grid-cols-2 gap-6">
             {[
               {
                 t: "L'accès clinique prend des mois",
-                d: "Introductions à froid, comités d'éthique, listes d'attente. La plupart des startups ne reçoivent jamais de feedback clinique réel avant la Series A.",
+                d: "Procédures, introductions de dossiers, comités d'éthique, listes d'attente… La plupart des startups ne reçoivent pas de feedback clinique réel.",
               },
               {
-                t: "L'infra de labo dévore votre runway",
+                t: "L'infrastructure de labo consomme votre temps",
                 d: "Location d'équipements, conformité, recherche de salles propres — avant même qu'un seul test soit lancé.",
               },
               {
                 t: "Les investisseurs veulent des preuves cliniques",
-                d: "Mais vous ne pouvez pas générer de preuves sans l'accès hôpital que vous n'avez pas. Catch-22 classique.",
+                d: "Pour cela, il faut un accès aux cliniciens et aux hôpitaux.",
               },
               {
-                t: "MDR et CE marking restent opaques",
-                d: "La plupart des équipes naviguent seules les processus AFMPS et la sélection d'organisme notifié.",
+                t: "MDR et CE mark restent complexes",
+                d: "La plupart des équipes naviguent seules les processus AFMPS et la sélection d'organismes notifiés.",
               },
             ].map((p, i) => (
               <article
@@ -169,9 +169,13 @@ function LandingPage() {
         <div className="container-narrow">
           <p className="font-display italic text-coral text-lg">— Notre réponse</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl max-w-3xl">
-            Une seule adresse. <em className="text-coral not-italic">Toutes les ressources</em>{" "}
-            dont vous avez besoin.
+            Rejoignez le CIM-MC² pour profiter des{" "}
+            <em className="text-coral not-italic">ressources dont vous avez besoin</em>.
           </h2>
+          <p className="mt-6 max-w-2xl text-lg text-foreground/75">
+            1 750 m² conçus avec un seul objectif : mettre les technologies médicales à
+            disposition des cliniciens pour mieux traiter les patients.
+          </p>
 
           <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
