@@ -181,33 +181,33 @@ function LandingPage() {
             {[
               {
                 Icon: Stethoscope,
-                t: "Introductions cliniques structurées",
-                d: "Accès aux équipes de chirurgie, cardiologie et gastro-entérologie du CHU Marie Curie. Co-créateur clinicien assigné dans les 30 jours.",
+                t: "Mise en relation avec les cliniciens",
+                d: "Accès aux équipes des hôpitaux pour confronter votre dispositif au terrain dès les premières itérations.",
               },
               {
                 Icon: Microscope,
-                t: "Infrastructure partagée, zéro setup",
-                d: "Salles propres ISO classe 7, impression 3D, prototypage et simulation — disponibles dès le premier jour. Coûts de résidence subsidiés.",
+                t: "Infrastructures partagées",
+                d: "Salles propres ISO classe 7, impression 3D, prototypage et simulation — disponibles dès le premier jour.",
               },
               {
                 Icon: Sparkles,
-                t: "Parcours faisabilité 90 jours",
+                t: "Parcours faisabilité",
                 d: "De la définition du besoin clinique aux données structurées de faisabilité. Un processus défini, co-conçu avec l'hôpital.",
               },
               {
                 Icon: ShieldCheck,
                 t: "Réglementaire & PI sur place",
-                d: "Conformité MDR, AFMPS, organisme notifié, partenaires PI — le tout dans l'écosystème.",
+                d: "PI, conformité MDR, AFMPS, organismes notifiés — avec l'aide des partenaires de l'écosystème.",
               },
               {
                 Icon: Network,
                 t: "Connexions au financement",
-                d: "Liens directs avec Sambrinvest, Wallonie Entreprendre, BioWin, Mecatech et EIT Health. Co-financements possibles.",
+                d: "Liens directs avec les invests en Belgique (Sambrinvest, Wallonie Entreprendre…) et à l'étranger.",
               },
               {
                 Icon: Building2,
-                t: "Bureaux & coworking",
-                d: "Espaces privés et flexibles, sur un campus hospitalier — pas dans un parc d'affaires générique.",
+                t: "Espaces de recherche, labo, bureaux & coworking",
+                d: "Espaces privés et flexibles dans un Centre d'Innovation Médicale proche de l'hôpital et dédié aux technologies médicales.",
               },
             ].map(({ Icon, t, d }) => (
               <article
@@ -308,13 +308,13 @@ function LandingPage() {
           <div className="lg:col-span-7">
             <p className="font-display italic text-coral text-lg">— Bâti sur du concret</p>
             <h2 className="mt-2 font-display text-4xl md:text-5xl text-cream">
-              <em className="not-italic text-coral">25 ans</em> d'ingénierie clinique.
-              Pas une promesse — un héritage.
+              <em className="not-italic text-coral">25 ans</em> d'expérience en
+              ingénierie biomédicale, co-conçue avec les médecins cliniciens.
             </h2>
             <p className="mt-6 text-cream/80 max-w-xl leading-relaxed">
-              Le CIM-MC² n'est pas une nouvelle idée à la recherche de traction. C'est la
-              maison physique d'un travail validé par la Région wallonne, reconnu par
-              Mecatech, et bâti sur 25 ans de collaboration entre médecins et ingénieurs.
+              Le CIM-MC² est le résultat de 25 années de collaboration entre médecins
+              et ingénieurs. Le projet a été reconnu par le pôle Mecatech et approuvé
+              par la Région wallonne.
             </p>
 
             <ul className="mt-8 space-y-4">
@@ -351,14 +351,17 @@ function LandingPage() {
             <p className="font-display italic text-coral text-lg">— Preuve par l'exemple</p>
             <h2 className="mt-2 font-display text-3xl md:text-4xl max-w-3xl">
               Lys Medical — Iriscope : le premier outil capable de visualiser certaines
-              lésions, né du modèle Fondation.
+              lésions, basé sur la méthodologie développée depuis 25 ans par les équipes
+              de médecins et d'ingénieurs.
             </h2>
             <p className="mt-6 max-w-2xl text-foreground/80 leading-relaxed">
-              Issu du modèle de collaboration médecin–ingénieur de la Fondation, Lys
-              Medical a développé l'Iriscope — un dispositif diagnostique d'un genre
-              nouveau. C'est exactement le type de projet que le CIM-MC² est conçu pour
-              accélérer : un besoin clinique, identifié par des médecins, résolu par des
-              ingénieurs travaillant à leurs côtés. Le modèle, à grande échelle.
+              Issu du modèle de collaboration médecin–ingénieur soutenu par la Fondation
+              Michel Cremer, Lys Medical a développé l'Iriscope — un dispositif
+              diagnostique totalement innovant ayant un impact réel sur le diagnostic
+              des tumeurs cancéreuses. C'est exactement la raison pour laquelle le
+              CIM-MC² est conçu : accélérer des projets avec un besoin clinique,
+              identifié par des médecins, résolu par des ingénieurs travaillant côte à
+              côte.
             </p>
             <a
               href="https://michelcremerfoundation.eu/"
@@ -384,21 +387,22 @@ function LandingPage() {
                   Résidence fondatrice
                 </div>
                 <h2 className="mt-4 font-display text-4xl md:text-5xl text-cream">
-                  Soyez le premier à passer la porte.
+                  N'hésitez plus : <em className="not-italic italic">rejoignez-nous</em>.
                 </h2>
                 <p className="mt-5 text-cream/90 max-w-xl leading-relaxed">
-                  Le CIM-MC² ouvre en 2027. Les résidents fondateurs choisissent leur
-                  espace, contribuent à la configuration du centre, et bénéficient de
-                  conditions préférentielles. Un nombre limité de places est ouvert dès
-                  maintenant aux marques d'intérêt.
+                  Le CIM-MC² ouvre en 2027. Les résidents fondateurs peuvent choisir
+                  leurs espaces, contribuer à leur configuration, et bénéficier de
+                  conditions préférentielles. Un nombre limité de places est ouvert
+                  dès maintenant aux marques d'intérêt.
                 </p>
 
                 <div className="mt-8 space-y-3 text-cream/85 text-sm">
                   <p>
-                    <strong className="text-cream">À qui s'adresse-t-il :</strong>{" "}
-                    sociétés medtech en pré-seed à Series A, avec un dispositif ou une
-                    solution digital health, idéalement dans le mini-invasif ou
-                    l'endoscopie. Belges ou internationales.
+                    <strong className="text-cream">À qui s'adresse le CIM-MC² :</strong>{" "}
+                    aux chercheurs en (fin) de thèse valorisable, aux sociétés medtech
+                    en pré-seed, avec un dispositif ou une solution digital health,
+                    idéalement dans le mini-invasif ou l'endoscopie. Belges ou
+                    internationales.
                   </p>
                   <p>
                     <strong className="text-cream">Ce qui se passe ensuite :</strong>{" "}
