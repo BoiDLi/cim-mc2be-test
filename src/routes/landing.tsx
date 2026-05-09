@@ -181,33 +181,33 @@ function LandingPage() {
             {[
               {
                 Icon: Stethoscope,
-                t: "Introductions cliniques structurées",
-                d: "Accès aux équipes de chirurgie, cardiologie et gastro-entérologie du CHU Marie Curie. Co-créateur clinicien assigné dans les 30 jours.",
+                t: "Mise en relation avec les cliniciens",
+                d: "Accès aux équipes des hôpitaux pour confronter votre dispositif au terrain dès les premières itérations.",
               },
               {
                 Icon: Microscope,
-                t: "Infrastructure partagée, zéro setup",
-                d: "Salles propres ISO classe 7, impression 3D, prototypage et simulation — disponibles dès le premier jour. Coûts de résidence subsidiés.",
+                t: "Infrastructures partagées",
+                d: "Salles propres ISO classe 7, impression 3D, prototypage et simulation — disponibles dès le premier jour.",
               },
               {
                 Icon: Sparkles,
-                t: "Parcours faisabilité 90 jours",
+                t: "Parcours faisabilité",
                 d: "De la définition du besoin clinique aux données structurées de faisabilité. Un processus défini, co-conçu avec l'hôpital.",
               },
               {
                 Icon: ShieldCheck,
                 t: "Réglementaire & PI sur place",
-                d: "Conformité MDR, AFMPS, organisme notifié, partenaires PI — le tout dans l'écosystème.",
+                d: "PI, conformité MDR, AFMPS, organismes notifiés — avec l'aide des partenaires de l'écosystème.",
               },
               {
                 Icon: Network,
                 t: "Connexions au financement",
-                d: "Liens directs avec Sambrinvest, Wallonie Entreprendre, BioWin, Mecatech et EIT Health. Co-financements possibles.",
+                d: "Liens directs avec les invests en Belgique (Sambrinvest, Wallonie Entreprendre…) et à l'étranger.",
               },
               {
                 Icon: Building2,
-                t: "Bureaux & coworking",
-                d: "Espaces privés et flexibles, sur un campus hospitalier — pas dans un parc d'affaires générique.",
+                t: "Espaces de recherche, labo, bureaux & coworking",
+                d: "Espaces privés et flexibles dans un Centre d'Innovation Médicale proche de l'hôpital et dédié aux technologies médicales.",
               },
             ].map(({ Icon, t, d }) => (
               <article
