@@ -127,8 +127,9 @@ function LandingPage() {
           </h2>
           <p className="mt-6 max-w-2xl text-lg text-foreground/75">
             Accès clinique, infrastructure de labo, navigation réglementaire, démonstration
-            de faisabilité financière pour les investisseurs. Atteindre ces quatre
-            objectifs était jusqu'ici extrêmement compliqué.
+            de faisabilité financière pour les investisseurs. Atteindre ces
+            objectifs était jusqu'ici extrêmement compliqué. Rejoignez le CIM-MC²
+            pour bénéficier des ressources dont vous avez besoin.
           </p>
 
           <div className="mt-14 grid md:grid-cols-2 gap-6">
@@ -398,8 +399,8 @@ function LandingPage() {
                 <div className="mt-8 space-y-3 text-cream/85 text-sm">
                   <p>
                     <strong className="text-cream">À qui s'adresse le CIM-MC² :</strong>{" "}
-                    aux chercheurs en (fin) de thèse valorisable, aux sociétés medtech
-                    en pré-seed, avec un dispositif ou une solution digital health,
+                    aux chercheurs ayant un projet valorisable, aux sociétés medtech
+                    en phase de démarrage, avec un dispositif ou une solution digital health,
                     idéalement dans le mini-invasif ou l'endoscopie. Belges ou
                     internationales.
                   </p>
