@@ -96,9 +96,11 @@ function NewsPage() {
                       {t.news.featured.body}
                     </p>
                     <p className="mt-3 text-cream italic text-sm">{t.news.featured.invite}</p>
-                    <div className="mt-6">
+                    <div className="mt-6 flex flex-wrap gap-3">
                       <a
-                        href="#"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdm382utO5d1t7wuXreoIs9LLZyAAtfV_fg9mXrbfHvBbah4g/viewform?usp=header"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-6 py-3 font-medium shadow-coral hover:scale-105 transition-smooth"
                       >
                         {t.news.featured.cta}
