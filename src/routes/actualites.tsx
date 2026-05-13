@@ -96,9 +96,11 @@ function NewsPage() {
                       {t.news.featured.body}
                     </p>
                     <p className="mt-3 text-cream italic text-sm">{t.news.featured.invite}</p>
-                    <div className="mt-6">
+                    <div className="mt-6 flex flex-wrap gap-3">
                       <a
-                        href="#"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdm382utO5d1t7wuXreoIs9LLZyAAtfV_fg9mXrbfHvBbah4g/viewform?usp=header"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-6 py-3 font-medium shadow-coral hover:scale-105 transition-smooth"
                       >
                         {t.news.featured.cta}
@@ -149,7 +151,7 @@ function NewsPage() {
                   <p className="text-muted-foreground italic">{t.news.eventsEmpty}</p>
                 )}
                 {upcoming.map((e) => (
-                  <EventRow key={e.title} ev={e} cta={t.news.eventsCta} />
+                  <EventRow key={e.title} ev={e} cta={t.news.eventsCta} registerCta={t.news.eventsRegister} />
                 ))}
               </div>
 
@@ -285,10 +287,12 @@ function NewsPage() {
 function EventRow({
   ev,
   cta,
+  registerCta,
   muted,
 }: {
-  ev: { day: string; month: string; year: string; time: string; title: string; location: string; desc: string };
+  ev: { day: string; month: string; year: string; time: string; title: string; location: string; desc: string; registerUrl?: string };
   cta: string;
+  registerCta?: string;
   muted?: boolean;
 }) {
   return (
@@ -318,13 +322,26 @@ function EventRow({
         </div>
         <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{ev.desc}</p>
       </div>
-      <a
-        href="#"
-        className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 text-sm font-medium text-primary hover:border-coral hover:text-coral transition-smooth"
-      >
-        {cta}
-        <ArrowRight className="h-3.5 w-3.5" />
-      </a>
+      <div className="hidden md:flex flex-col items-end gap-2">
+        {ev.registerUrl && registerCta && (
+          <a
+            href={ev.registerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full bg-coral text-coral-foreground px-4 py-2 text-sm font-medium shadow-coral hover:scale-105 transition-smooth"
+          >
+            {registerCta}
+            <ArrowRight className="h-3.5 w-3.5" />
+          </a>
+        )}
+        <a
+          href="#"
+          className="inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 text-sm font-medium text-primary hover:border-coral hover:text-coral transition-smooth"
+        >
+          {cta}
+          <ArrowRight className="h-3.5 w-3.5" />
+        </a>
+      </div>
     </article>
   );
 }
