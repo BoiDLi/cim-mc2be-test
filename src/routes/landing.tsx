@@ -230,8 +230,8 @@ function LandingPage() {
         <div className="container-narrow">
           <p className="font-display italic text-coral text-lg">— À l'intérieur</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl max-w-3xl">
-            1 750 m² conçus pour <em className="text-coral not-italic">une seule chose</em> :
-            mettre les dispositifs entre les mains des patients.
+            1 750 m² conçus avec une <em className="text-coral not-italic">ambition</em> :
+            mieux soigner les patients grâce à des dispositifs innovants.
           </h2>
 
           <div className="mt-14 grid lg:grid-cols-12 gap-8">
