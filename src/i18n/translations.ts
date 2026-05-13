@@ -590,7 +590,7 @@ export const translations = {
         "CIM-MC² brings together clinicians, engineers and entrepreneurs to turn ideas into medical devices, faster and for the direct benefit of patients — including in the field of rare diseases that remain underserved due to market constraints.",
       ctaPrimary: "Discover our services",
       ctaSecondary: "Get in touch",
-      whatTitle: "What is CIM-MC²?",
+      whatTitle: "CIM-MC²: an integrated hub dedicated to medical technologies.",
       whatBody:
         "A collaboration platform located right next to the CHU Hôpital Marie Curie in Charleroi. Our mission: to accelerate the development of innovative medical devices, from idea to patient use.",
       whatBody2:
