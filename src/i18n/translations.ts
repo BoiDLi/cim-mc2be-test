@@ -187,7 +187,7 @@ export const translations = {
       foundationBody:
         "Acteur fondateur du projet, la Fondation soutient l'innovation médicale en finançant programmes de recherche, bourses et infrastructures dédiées.",
       foundationLink: "michelcremerfoundation.eu",
-      geewTitle: "Rôle de l'asbl Gastroentérologie et Endothérapie",
+      geewTitle: "L'asbl Gastroentérologie et Endothérapie",
       geewBody: "L'asbl Gastroentérologie et Endothérapie est plus particulièrement impliquée dans l'organisation et la mise sur pied de transmissions de cas cliniques du CIM-MC².",
     },
     offer: {
