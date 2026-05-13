@@ -27,7 +27,7 @@ export const translations = {
         "Le CIM-MC² réunit médecins, ingénieurs et entrepreneurs pour transformer une idée en dispositif médical, plus rapidement et au bénéfice direct des patients, y compris dans le domaine des pathologies rares insuffisamment adressées en raison de contraintes de marché.",
       ctaPrimary: "Découvrir nos services",
       ctaSecondary: "Nous contacter",
-      whatTitle: "C'est quoi le CIM-MC² ?",
+      whatTitle: "Le CIM-MC² : un « hub » intégré dédié aux technologies médicales.",
       whatBody:
         "Une plateforme de collaboration située à proximité immédiate du CHU Hôpital Marie Curie à Charleroi. Notre mission : accélérer le développement de dispositifs médicaux innovants, de l'idée jusqu'à leur utilisation chez les patients.",
       whatBody2:
@@ -281,7 +281,7 @@ export const translations = {
         "En réunissant expertises, infrastructures et partenaires au sein d'un même lieu, le CIM-MC² offre un cadre unique pour :",
       conclusionPoints: [
         "Réduire les délais de développement",
-        "Sécuriser les étapes critiques (techniques, réglementaires, cliniques)",
+        "Sécuriser les étapes critiques (techniques, PI, réglementaires, cliniques)",
         "Accélérer l'accès au marché",
       ],
       conclusionFooter:
@@ -590,7 +590,7 @@ export const translations = {
         "CIM-MC² brings together clinicians, engineers and entrepreneurs to turn ideas into medical devices, faster and for the direct benefit of patients — including in the field of rare diseases that remain underserved due to market constraints.",
       ctaPrimary: "Discover our services",
       ctaSecondary: "Get in touch",
-      whatTitle: "What is CIM-MC²?",
+      whatTitle: "CIM-MC²: an integrated hub dedicated to medical technologies.",
       whatBody:
         "A collaboration platform located right next to the CHU Hôpital Marie Curie in Charleroi. Our mission: to accelerate the development of innovative medical devices, from idea to patient use.",
       whatBody2:

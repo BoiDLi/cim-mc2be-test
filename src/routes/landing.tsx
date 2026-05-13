@@ -230,8 +230,8 @@ function LandingPage() {
         <div className="container-narrow">
           <p className="font-display italic text-coral text-lg">— À l'intérieur</p>
           <h2 className="mt-2 font-display text-4xl md:text-5xl max-w-3xl">
-            1 750 m² conçus pour <em className="text-coral not-italic">une seule chose</em> :
-            mettre les dispositifs entre les mains des patients.
+            1 750 m² conçus avec une <em className="text-coral not-italic">ambition</em> :
+            mieux soigner les patients grâce à des dispositifs innovants.
           </h2>
 
           <div className="mt-14 grid lg:grid-cols-12 gap-8">
@@ -419,14 +419,16 @@ function LandingPage() {
                 </p>
                 <div className="mt-5 space-y-3">
                   <Link
-                    to="/contact"
+                    to="/offre"
+                    hash="infra-form"
                     className="block w-full text-center rounded-full bg-coral text-coral-foreground px-6 py-3 font-medium hover:scale-[1.02] transition-smooth"
                   >
                     Devenir résident fondateur
                     <ArrowRight className="inline h-4 w-4 ml-1" />
                   </Link>
                   <Link
-                    to="/contact"
+                    to="/offre"
+                    hash="visite-form"
                     className="block w-full text-center rounded-full bg-secondary text-primary px-6 py-3 font-medium hover:bg-accent/30 transition-smooth"
                   >
                     Demander une visite

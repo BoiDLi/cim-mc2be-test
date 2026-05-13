@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
+import { NeedForm } from "@/components/site/NeedForm";
 import clinicalImg from "@/assets/cim-cleanroom-prototyping.jpg";
 import buildingImg from "@/assets/cim-building-entrance.jpg";
 import transmissionImg from "@/assets/cim-transmission-space.png";
@@ -165,14 +166,26 @@ function OfferPage() {
             ))}
           </div>
 
-          <div className="mt-12">
+          <div className="mt-12 grid lg:grid-cols-12 gap-8 items-start">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+              className="lg:col-span-4 inline-flex items-center justify-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth h-fit"
             >
               {t.offer.ctaServices}
               <ArrowRight className="h-4 w-4" />
             </Link>
+            <div className="lg:col-span-8">
+              <NeedForm
+                id="service-form"
+                kicker="Offre de services"
+                title="Vous avez un besoin ?"
+                intro="Décrivez votre besoin en quelques lignes. Notre équipe vous oriente vers le bon référent du CIM-MC² sous 5 jours ouvrés."
+                needLabel="Description du besoin"
+                needPlaceholder="Décrivez le service ou l'accompagnement recherché…"
+                suggestions="conseils techniques, design industriel, préparation des essais cliniques, séminaire, PI, aspects régulatoires et qualité, market development, … Autre"
+                mailSubject="Offre de services — CIM-MC²"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -254,7 +267,7 @@ function OfferPage() {
                 ))}
               </div>
 
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
@@ -262,8 +275,28 @@ function OfferPage() {
                   {t.offer.ctaInfra}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
+                <a
+                  href="#infra-form"
+                  className="inline-flex items-center gap-2 rounded-full bg-secondary text-primary px-7 py-4 font-medium hover:bg-accent/30 transition-smooth"
+                >
+                  Vous avez un besoin d'infrastructure ?
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
             </div>
+          </div>
+
+          <div className="mt-16">
+            <NeedForm
+              id="infra-form"
+              kicker="Offre d'infrastructure"
+              title="Vous avez un besoin d'infrastructure ?"
+              intro="Indiquez les espaces ou équipements qui vous intéressent. Notre équipe revient vers vous sous 5 jours ouvrés."
+              needLabel="Description du besoin d'infrastructure"
+              needPlaceholder="Précisez vos besoins en espaces ou équipements…"
+              suggestions="bureaux et/ou salle propre, place de coworking, salle de réunion, salle de transmission des cas cliniques, accès aux espaces techniques (préciser)"
+              mailSubject="Offre d'infrastructure — CIM-MC²"
+            />
           </div>
         </div>
       </section>
@@ -329,7 +362,7 @@ function OfferPage() {
             </figure>
           </div>
 
-          <div className="mt-12">
+          <div className="mt-12 flex flex-wrap gap-4">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
@@ -337,7 +370,30 @@ function OfferPage() {
               {t.offer.spacesCta}
               <ArrowRight className="h-4 w-4" />
             </Link>
+            <a
+              href="#visite-form"
+              className="inline-flex items-center gap-2 rounded-full bg-cream/10 ring-1 ring-cream/30 text-cream px-7 py-4 font-medium hover:bg-cream/15 transition-smooth"
+            >
+              Préparer ma visite
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
+        </div>
+      </section>
+
+      {/* VISITE FORM */}
+      <section className="py-24">
+        <div className="container-narrow">
+          <NeedForm
+            id="visite-form"
+            kicker="Demander une visite"
+            title="Préparons votre visite"
+            intro="Indiquez ce qui vous intéresse afin que nous adaptions la visite à vos enjeux."
+            needLabel="Je suis intéressé·e par une offre de service ou d'infrastructure ?"
+            needPlaceholder="Décrivez ce qui vous intéresse pour la visite…"
+            suggestions="Offre de services (conseils techniques, design industriel, préparation des essais cliniques, séminaire, PI, aspects régulatoires et qualité, market development, … Autre) ou offre d'infrastructure (bureaux et/ou salle propre, place de coworking, salle de réunion, salle de transmission des cas cliniques, accès aux espaces techniques : préciser)"
+            mailSubject="Demande de visite — CIM-MC²"
+          />
         </div>
       </section>
 
@@ -351,14 +407,16 @@ function OfferPage() {
           <p className="mt-5 text-lg text-foreground/85 leading-relaxed">
             {t.offer.conclusionBody}
           </p>
-          <ul className="mt-6 grid sm:grid-cols-3 gap-4">
+          <ul className="mt-8 grid sm:grid-cols-3 gap-5">
             {t.offer.conclusionPoints.map((p, i) => (
               <li
                 key={p}
-                className="rounded-2xl bg-card border border-border p-5 hover:border-coral/40 transition-smooth"
+                className="rounded-2xl bg-card border border-border p-7 hover:border-coral/40 transition-smooth"
               >
-                <span className="font-mono text-xs text-coral">0{i + 1}</span>
-                <p className="mt-2 text-sm font-medium text-primary leading-snug">{p}</p>
+                <span className="font-mono text-sm text-coral">0{i + 1}</span>
+                <p className="mt-3 font-display text-xl md:text-2xl font-semibold text-primary leading-snug">
+                  {p}
+                </p>
               </li>
             ))}
           </ul>
@@ -374,20 +432,20 @@ function OfferPage() {
               {t.offer.ctaServices}
               <ArrowRight className="h-4 w-4" />
             </a>
-            <Link
-              to="/contact"
+            <a
+              href="#infra-form"
               className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.03] transition-smooth"
             >
               {t.offer.ctaInfra}
               <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              to="/contact"
+            </a>
+            <a
+              href="#infra-form"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-4 font-medium text-primary hover:border-coral/50 transition-smooth"
             >
               {t.offer.ctaResident}
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
