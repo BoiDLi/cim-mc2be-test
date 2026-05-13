@@ -166,14 +166,26 @@ function OfferPage() {
             ))}
           </div>
 
-          <div className="mt-12">
+          <div className="mt-12 grid lg:grid-cols-12 gap-8 items-start">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+              className="lg:col-span-4 inline-flex items-center justify-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth h-fit"
             >
               {t.offer.ctaServices}
               <ArrowRight className="h-4 w-4" />
             </Link>
+            <div className="lg:col-span-8">
+              <NeedForm
+                id="service-form"
+                kicker="Offre de services"
+                title="Vous avez un besoin ?"
+                intro="Décrivez votre besoin en quelques lignes. Notre équipe vous oriente vers le bon référent du CIM-MC² sous 5 jours ouvrés."
+                needLabel="Description du besoin"
+                needPlaceholder="Décrivez le service ou l'accompagnement recherché…"
+                suggestions="conseils techniques, design industriel, préparation des essais cliniques, séminaire, PI, aspects régulatoires et qualité, market development, … Autre"
+                mailSubject="Offre de services — CIM-MC²"
+              />
+            </div>
           </div>
         </div>
       </section>
