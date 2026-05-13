@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { PageHero } from "@/components/site/PageHero";
+import { NeedForm } from "@/components/site/NeedForm";
 import clinicalImg from "@/assets/cim-cleanroom-prototyping.jpg";
 import buildingImg from "@/assets/cim-building-entrance.jpg";
 import transmissionImg from "@/assets/cim-transmission-space.png";
