@@ -149,7 +149,7 @@ function NewsPage() {
                   <p className="text-muted-foreground italic">{t.news.eventsEmpty}</p>
                 )}
                 {upcoming.map((e) => (
-                  <EventRow key={e.title} ev={e} cta={t.news.eventsCta} />
+                  <EventRow key={e.title} ev={e} cta={t.news.eventsCta} registerCta={t.news.eventsRegister} />
                 ))}
               </div>
 
