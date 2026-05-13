@@ -347,6 +347,7 @@ export const translations = {
       eventsPast: "Événements passés",
       eventsEmpty: "Aucun événement programmé pour le moment.",
       eventsCta: "Voir le détail",
+      eventsRegister: "S'inscrire",
       events: [
         {
           day: "27",
@@ -357,10 +358,11 @@ export const translations = {
           location: "Lodelinsart, Charleroi",
           desc: "Lancement officiel du chantier en présence des autorités régionales et des partenaires fondateurs.",
           status: "upcoming",
+          registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdm382utO5d1t7wuXreoIs9LLZyAAtfV_fg9mXrbfHvBbah4g/viewform?usp=header",
         },
         {
-          day: "14",
-          month: "Sep.",
+          day: "T4",
+          month: "Trim.",
           year: "2027",
           time: "Toute la journée",
           title: "Inauguration du bâtiment CIM-MC²",
