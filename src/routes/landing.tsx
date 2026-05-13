@@ -419,14 +419,16 @@ function LandingPage() {
                 </p>
                 <div className="mt-5 space-y-3">
                   <Link
-                    to="/contact"
+                    to="/offre"
+                    hash="infra-form"
                     className="block w-full text-center rounded-full bg-coral text-coral-foreground px-6 py-3 font-medium hover:scale-[1.02] transition-smooth"
                   >
                     Devenir résident fondateur
                     <ArrowRight className="inline h-4 w-4 ml-1" />
                   </Link>
                   <Link
-                    to="/contact"
+                    to="/offre"
+                    hash="visite-form"
                     className="block w-full text-center rounded-full bg-secondary text-primary px-6 py-3 font-medium hover:bg-accent/30 transition-smooth"
                   >
                     Demander une visite
