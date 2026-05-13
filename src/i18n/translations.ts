@@ -281,7 +281,7 @@ export const translations = {
         "En réunissant expertises, infrastructures et partenaires au sein d'un même lieu, le CIM-MC² offre un cadre unique pour :",
       conclusionPoints: [
         "Réduire les délais de développement",
-        "Sécuriser les étapes critiques (techniques, réglementaires, cliniques)",
+        "Sécuriser les étapes critiques (techniques, PI, réglementaires, cliniques)",
         "Accélérer l'accès au marché",
       ],
       conclusionFooter:
