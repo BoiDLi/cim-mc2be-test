@@ -897,6 +897,7 @@ export const translations = {
       eventsPast: "Past events",
       eventsEmpty: "No event scheduled at the moment.",
       eventsCta: "View details",
+      eventsRegister: "Register",
       events: [
         {
           day: "27",
@@ -907,10 +908,11 @@ export const translations = {
           location: "Lodelinsart, Charleroi",
           desc: "Official launch of construction with regional authorities and founding partners.",
           status: "upcoming",
+          registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdm382utO5d1t7wuXreoIs9LLZyAAtfV_fg9mXrbfHvBbah4g/viewform?usp=header",
         },
         {
-          day: "14",
-          month: "Sep.",
+          day: "Q4",
+          month: "Quarter",
           year: "2027",
           time: "All day",
           title: "CIM-MC² building inauguration",
