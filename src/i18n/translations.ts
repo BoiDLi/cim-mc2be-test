@@ -735,7 +735,7 @@ export const translations = {
       foundationBody:
         "A founding actor of the project, the Foundation supports medical innovation by funding research programmes, scholarships and dedicated infrastructure.",
       foundationLink: "michelcremerfoundation.eu",
-      geewTitle: "Role of the Gastroenterology & Endotherapy non-profit",
+      geewTitle: "The Gastroenterology & Endotherapy non-profit",
       geewBody: "The Gastroenterology & Endotherapy non-profit is specifically involved in organising and setting up live clinical case transmissions for CIM-MC².",
     },
     offer: {
