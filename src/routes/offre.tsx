@@ -407,14 +407,16 @@ function OfferPage() {
           <p className="mt-5 text-lg text-foreground/85 leading-relaxed">
             {t.offer.conclusionBody}
           </p>
-          <ul className="mt-6 grid sm:grid-cols-3 gap-4">
+          <ul className="mt-8 grid sm:grid-cols-3 gap-5">
             {t.offer.conclusionPoints.map((p, i) => (
               <li
                 key={p}
-                className="rounded-2xl bg-card border border-border p-5 hover:border-coral/40 transition-smooth"
+                className="rounded-2xl bg-card border border-border p-7 hover:border-coral/40 transition-smooth"
               >
-                <span className="font-mono text-xs text-coral">0{i + 1}</span>
-                <p className="mt-2 text-sm font-medium text-primary leading-snug">{p}</p>
+                <span className="font-mono text-sm text-coral">0{i + 1}</span>
+                <p className="mt-3 font-display text-xl md:text-2xl font-semibold text-primary leading-snug">
+                  {p}
+                </p>
               </li>
             ))}
           </ul>
