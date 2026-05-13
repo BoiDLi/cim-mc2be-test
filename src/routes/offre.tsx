@@ -432,20 +432,20 @@ function OfferPage() {
               {t.offer.ctaServices}
               <ArrowRight className="h-4 w-4" />
             </a>
-            <Link
-              to="/contact"
+            <a
+              href="#infra-form"
               className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.03] transition-smooth"
             >
               {t.offer.ctaInfra}
               <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              to="/contact"
+            </a>
+            <a
+              href="#infra-form"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-4 font-medium text-primary hover:border-coral/50 transition-smooth"
             >
               {t.offer.ctaResident}
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
