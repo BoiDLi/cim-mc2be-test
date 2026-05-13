@@ -267,7 +267,7 @@ function OfferPage() {
                 ))}
               </div>
 
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
@@ -275,8 +275,28 @@ function OfferPage() {
                   {t.offer.ctaInfra}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
+                <a
+                  href="#infra-form"
+                  className="inline-flex items-center gap-2 rounded-full bg-secondary text-primary px-7 py-4 font-medium hover:bg-accent/30 transition-smooth"
+                >
+                  Vous avez un besoin d'infrastructure ?
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
             </div>
+          </div>
+
+          <div className="mt-16">
+            <NeedForm
+              id="infra-form"
+              kicker="Offre d'infrastructure"
+              title="Vous avez un besoin d'infrastructure ?"
+              intro="Indiquez les espaces ou équipements qui vous intéressent. Notre équipe revient vers vous sous 5 jours ouvrés."
+              needLabel="Description du besoin d'infrastructure"
+              needPlaceholder="Précisez vos besoins en espaces ou équipements…"
+              suggestions="bureaux et/ou salle propre, place de coworking, salle de réunion, salle de transmission des cas cliniques, accès aux espaces techniques (préciser)"
+              mailSubject="Offre d'infrastructure — CIM-MC²"
+            />
           </div>
         </div>
       </section>
