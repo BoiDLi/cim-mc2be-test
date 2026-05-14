@@ -115,14 +115,26 @@ export function NeedForm({
             noValidate
           >
             <div className="grid sm:grid-cols-2 gap-4">
-              <Field label="Nom et prénom" error={errors.name}>
-                <input name="name" maxLength={100} required className="form-input" />
+              <Field label="Prénom" error={errors.firstName}>
+                <input name="firstName" maxLength={80} required className="form-input" />
+              </Field>
+              <Field label="Nom" error={errors.lastName}>
+                <input name="lastName" maxLength={80} required className="form-input" />
               </Field>
               <Field label="Email professionnel" error={errors.email}>
                 <input
                   name="email"
                   type="email"
                   maxLength={255}
+                  required
+                  className="form-input"
+                />
+              </Field>
+              <Field label="Téléphone" error={errors.phone}>
+                <input
+                  name="phone"
+                  type="tel"
+                  maxLength={30}
                   required
                   className="form-input"
                 />
