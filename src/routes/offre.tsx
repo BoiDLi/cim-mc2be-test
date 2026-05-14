@@ -178,7 +178,7 @@ function OfferPage() {
               <NeedForm
                 id="service-form"
                 kicker="Offre de services"
-                title="Vous avez un besoin ?"
+                title="Vous avez besoin d'un service ?"
                 intro="Décrivez votre besoin en quelques lignes. Notre équipe vous oriente vers le bon référent du CIM-MC² sous 5 jours ouvrés."
                 needLabel="Description du besoin"
                 needPlaceholder="Décrivez le service ou l'accompagnement recherché…"

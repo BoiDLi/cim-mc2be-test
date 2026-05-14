@@ -3,8 +3,15 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { z } from "zod";
 
 const schema = z.object({
-  name: z.string().trim().min(2).max(100),
-  email: z.string().trim().email().max(255),
+  firstName: z.string().trim().min(1, "Prénom requis").max(80),
+  lastName: z.string().trim().min(1, "Nom requis").max(80),
+  email: z.string().trim().email("Email invalide").max(255),
+  phone: z
+    .string()
+    .trim()
+    .min(6, "Téléphone invalide")
+    .max(30)
+    .regex(/^[+0-9 ().\-]+$/, "Téléphone invalide"),
   organization: z.string().trim().max(150).optional(),
   need: z.string().trim().min(10).max(1500),
 });
@@ -44,8 +51,10 @@ export function NeedForm({
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = {
-      name: String(fd.get("name") ?? ""),
+      firstName: String(fd.get("firstName") ?? ""),
+      lastName: String(fd.get("lastName") ?? ""),
       email: String(fd.get("email") ?? ""),
+      phone: String(fd.get("phone") ?? ""),
       organization: String(fd.get("organization") ?? ""),
       need: String(fd.get("need") ?? ""),
     };
@@ -59,7 +68,7 @@ export function NeedForm({
       return;
     }
     setErrors({});
-    const body = `Nom: ${parsed.data.name}\nEmail: ${parsed.data.email}\nOrganisation: ${
+    const body = `Prénom: ${parsed.data.firstName}\nNom: ${parsed.data.lastName}\nEmail: ${parsed.data.email}\nTéléphone: ${parsed.data.phone}\nOrganisation: ${
       parsed.data.organization ?? ""
     }\n\n${parsed.data.need}`;
     window.location.href = `mailto:${mailto}?subject=${encodeURIComponent(
@@ -106,14 +115,26 @@ export function NeedForm({
             noValidate
           >
             <div className="grid sm:grid-cols-2 gap-4">
-              <Field label="Nom et prénom" error={errors.name}>
-                <input name="name" maxLength={100} required className="form-input" />
+              <Field label="Prénom" error={errors.firstName}>
+                <input name="firstName" maxLength={80} required className="form-input" />
+              </Field>
+              <Field label="Nom" error={errors.lastName}>
+                <input name="lastName" maxLength={80} required className="form-input" />
               </Field>
               <Field label="Email professionnel" error={errors.email}>
                 <input
                   name="email"
                   type="email"
                   maxLength={255}
+                  required
+                  className="form-input"
+                />
+              </Field>
+              <Field label="Téléphone" error={errors.phone}>
+                <input
+                  name="phone"
+                  type="tel"
+                  maxLength={30}
                   required
                   className="form-input"
                 />
