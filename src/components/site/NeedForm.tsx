@@ -23,7 +23,9 @@ export interface NeedFormProps {
   intro?: string;
   needLabel: string;
   needPlaceholder: string;
-  suggestions?: string;
+  /** Topic choices rendered as selectable chips. "Autre" reveals an extra text field. */
+  topics?: string[];
+  topicsLabel?: string;
   submitLabel?: string;
   mailto?: string;
   mailSubject: string;
@@ -38,7 +40,8 @@ export function NeedForm({
   intro,
   needLabel,
   needPlaceholder,
-  suggestions,
+  topics,
+  topicsLabel = "Sujets concernés",
   submitLabel = "Envoyer ma demande",
   mailto = "contact@cim-mc2.be",
   mailSubject,
@@ -46,6 +49,14 @@ export function NeedForm({
 }: NeedFormProps) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
+  const [otherTopic, setOtherTopic] = useState("");
+
+  const toggleTopic = (topic: string) => {
+    setSelectedTopics((prev) =>
+      prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic],
+    );
+  };
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -68,9 +79,12 @@ export function NeedForm({
       return;
     }
     setErrors({});
+    const topicsList = selectedTopics
+      .map((t) => (t === "Autre" && otherTopic.trim() ? `Autre : ${otherTopic.trim()}` : t))
+      .join(", ");
     const body = `Prénom: ${parsed.data.firstName}\nNom: ${parsed.data.lastName}\nEmail: ${parsed.data.email}\nTéléphone: ${parsed.data.phone}\nOrganisation: ${
       parsed.data.organization ?? ""
-    }\n\n${parsed.data.need}`;
+    }${topicsList ? `\nSujets : ${topicsList}` : ""}\n\n${parsed.data.need}`;
     window.location.href = `mailto:${mailto}?subject=${encodeURIComponent(
       mailSubject,
     )}&body=${encodeURIComponent(body)}`;
@@ -145,6 +159,45 @@ export function NeedForm({
               <input name="organization" maxLength={150} className="form-input" />
             </Field>
 
+            {topics && topics.length > 0 && (
+              <div>
+                <span className="block text-sm font-medium text-foreground/85 mb-2">
+                  {topicsLabel}
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {topics.map((topic) => {
+                    const active = selectedTopics.includes(topic);
+                    return (
+                      <button
+                        key={topic}
+                        type="button"
+                        onClick={() => toggleTopic(topic)}
+                        aria-pressed={active}
+                        className={
+                          "inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition-smooth border " +
+                          (active
+                            ? "bg-coral text-coral-foreground border-coral shadow-coral"
+                            : "bg-secondary text-primary border-border hover:border-coral/50")
+                        }
+                      >
+                        {topic}
+                      </button>
+                    );
+                  })}
+                </div>
+                {selectedTopics.includes("Autre") && (
+                  <input
+                    type="text"
+                    value={otherTopic}
+                    onChange={(e) => setOtherTopic(e.target.value)}
+                    maxLength={150}
+                    placeholder="Précisez…"
+                    className="form-input mt-3"
+                  />
+                )}
+              </div>
+            )}
+
             <Field label={needLabel} error={errors.need}>
               <textarea
                 name="need"
@@ -154,11 +207,6 @@ export function NeedForm({
                 className="form-input resize-none"
                 placeholder={needPlaceholder}
               />
-              {suggestions && (
-                <span className="mt-2 block text-xs text-muted-foreground italic">
-                  Suggestions : {suggestions}
-                </span>
-              )}
             </Field>
 
             <div className="flex flex-wrap items-center justify-between gap-4 pt-2">

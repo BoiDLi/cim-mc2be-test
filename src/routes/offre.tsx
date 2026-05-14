@@ -182,7 +182,17 @@ function OfferPage() {
                 intro="Décrivez votre besoin en quelques lignes. Notre équipe vous oriente vers le bon référent du CIM-MC² sous 5 jours ouvrés."
                 needLabel="Description du besoin"
                 needPlaceholder="Décrivez le service ou l'accompagnement recherché…"
-                suggestions="conseils techniques, design industriel, préparation des essais cliniques, séminaire, PI, aspects régulatoires et qualité, market development, … Autre"
+                topicsLabel="Quels services vous intéressent ?"
+                topics={[
+                  "Conseils techniques",
+                  "Design industriel",
+                  "Préparation des essais cliniques",
+                  "Séminaire",
+                  "PI",
+                  "Aspects régulatoires et qualité",
+                  "Market development",
+                  "Autre",
+                ]}
                 mailSubject="Offre de services — CIM-MC²"
               />
             </div>
@@ -268,18 +278,11 @@ function OfferPage() {
               </div>
 
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
-                >
-                  {t.offer.ctaInfra}
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
                 <a
                   href="#infra-form"
-                  className="inline-flex items-center gap-2 rounded-full bg-secondary text-primary px-7 py-4 font-medium hover:bg-accent/30 transition-smooth"
+                  className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
                 >
-                  Vous avez un besoin d'infrastructure ?
+                  Vous avez besoin d'une infrastructure ?
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
@@ -290,11 +293,20 @@ function OfferPage() {
             <NeedForm
               id="infra-form"
               kicker="Offre d'infrastructure"
-              title="Vous avez un besoin d'infrastructure ?"
+              title="Vous avez besoin d'une infrastructure ?"
               intro="Indiquez les espaces ou équipements qui vous intéressent. Notre équipe revient vers vous sous 5 jours ouvrés."
               needLabel="Description du besoin d'infrastructure"
               needPlaceholder="Précisez vos besoins en espaces ou équipements…"
-              suggestions="bureaux et/ou salle propre, place de coworking, salle de réunion, salle de transmission des cas cliniques, accès aux espaces techniques (préciser)"
+              topicsLabel="Quelles infrastructures vous intéressent ?"
+              topics={[
+                "Bureaux",
+                "Salle propre",
+                "Place de coworking",
+                "Salle de réunion",
+                "Salle de transmission des cas cliniques",
+                "Accès aux espaces techniques",
+                "Autre",
+              ]}
               mailSubject="Offre d'infrastructure — CIM-MC²"
             />
           </div>
@@ -391,7 +403,7 @@ function OfferPage() {
             intro="Indiquez ce qui vous intéresse afin que nous adaptions la visite à vos enjeux."
             needLabel="Je suis intéressé·e par une offre de service ou d'infrastructure ?"
             needPlaceholder="Décrivez ce qui vous intéresse pour la visite…"
-            suggestions="Offre de services (conseils techniques, design industriel, préparation des essais cliniques, séminaire, PI, aspects régulatoires et qualité, market development, … Autre) ou offre d'infrastructure (bureaux et/ou salle propre, place de coworking, salle de réunion, salle de transmission des cas cliniques, accès aux espaces techniques : préciser)"
+            
             mailSubject="Demande de visite — CIM-MC²"
           />
         </div>
