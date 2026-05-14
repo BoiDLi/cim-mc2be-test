@@ -403,7 +403,7 @@ function OfferPage() {
             intro="Indiquez ce qui vous intéresse afin que nous adaptions la visite à vos enjeux."
             needLabel="Je suis intéressé·e par une offre de service ou d'infrastructure ?"
             needPlaceholder="Décrivez ce qui vous intéresse pour la visite…"
-            suggestions="Offre de services (conseils techniques, design industriel, préparation des essais cliniques, séminaire, PI, aspects régulatoires et qualité, market development, … Autre) ou offre d'infrastructure (bureaux et/ou salle propre, place de coworking, salle de réunion, salle de transmission des cas cliniques, accès aux espaces techniques : préciser)"
+            
             mailSubject="Demande de visite — CIM-MC²"
           />
         </div>
