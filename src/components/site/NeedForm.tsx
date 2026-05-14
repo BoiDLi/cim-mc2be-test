@@ -51,8 +51,10 @@ export function NeedForm({
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = {
-      name: String(fd.get("name") ?? ""),
+      firstName: String(fd.get("firstName") ?? ""),
+      lastName: String(fd.get("lastName") ?? ""),
       email: String(fd.get("email") ?? ""),
+      phone: String(fd.get("phone") ?? ""),
       organization: String(fd.get("organization") ?? ""),
       need: String(fd.get("need") ?? ""),
     };
@@ -66,7 +68,7 @@ export function NeedForm({
       return;
     }
     setErrors({});
-    const body = `Nom: ${parsed.data.name}\nEmail: ${parsed.data.email}\nOrganisation: ${
+    const body = `Prénom: ${parsed.data.firstName}\nNom: ${parsed.data.lastName}\nEmail: ${parsed.data.email}\nTéléphone: ${parsed.data.phone}\nOrganisation: ${
       parsed.data.organization ?? ""
     }\n\n${parsed.data.need}`;
     window.location.href = `mailto:${mailto}?subject=${encodeURIComponent(
