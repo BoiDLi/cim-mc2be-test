@@ -438,22 +438,60 @@ export const translations = {
       ],
     },
     building: {
-      title: "Le bâtiment",
+      title: "Le CIM-MC²",
       subtitle:
-        "Une infrastructure dédiée à la collaboration entre cliniciens, chercheurs et industriels.",
-      designTitle: "Pensé pour l'innovation médicale",
-      designBody:
-        "Le CIM-MC² investira un bâtiment dédié, conçu pour faciliter les collaborations. Sa proximité immédiate avec le CHU Hôpital Marie Curie en fait un trait d'union naturel entre la pratique hospitalière et la recherche appliquée.",
-      timelineTitle: "Calendrier",
-      timeline: [
-        { date: "En cours", t: "Conception & travaux", d: "Phase de construction et d'équipement." },
-        { date: "Septembre 2027", t: "Mise en service", d: "Ouverture officielle et accueil des premiers projets." },
+        "Une infrastructure unique de 1 750 m² répartis sur 2 niveaux, dédiée à la collaboration entre cliniciens, chercheurs et industriels.",
+      archTitle: "Une architecture et des fonctions adaptées",
+      archCollectiveLabel: "Des espaces de recherche collectifs",
+      archCollectiveBody: "mutualisés et ouverts aux projets accueillis au centre.",
+      archCollectiveLink: "Voir l'offre d'infrastructures",
+      archPrivateLabel: "Des espaces privatifs",
+      archPrivateBody:
+        "bureaux, salles propres, salle de prototypage et d'assemblage, espaces techniques dédiés…",
+      archProximityLabel: "À proximité immédiate de l'hôpital Marie-Curie",
+      archProximityBody:
+        "Le bâtiment s'implante en bordure directe du CHU Hôpital Marie Curie, à Lodelinsart (Charleroi).",
+      plan1Caption: "Plan de circulation et d'accès au site",
+      plan2Caption: "Implantation du bâtiment et insertion paysagère",
+      rentTitle: "Des espaces à louer",
+      rentIntro:
+        "En plus d'espaces techniques partagés, le centre propose en location :",
+      rentItems: [
+        "Une dizaine d'espaces à louer — bureaux, espaces de prototypage et salles propres privatifs, avec accès aux salles de réunion et à l'espace convivial — pour des spin-offs, centres de recherche et chercheurs.",
+        "Des places de co-working.",
       ],
-      locationTitle: "Implantation & localisation",
+      rentLink: "Découvrir l'offre d'infrastructures",
+      ctaReserve: "Je souhaite réserver un espace à l'avance",
+      ctaVisit: "Je souhaite visiter le centre",
+      phasesTitle: "Un projet en deux phases",
+      phases: [
+        { n: "01", t: "Construction", d: "2026 – 2027" },
+        { n: "02", t: "Exploitation", d: "À partir du 4ᵉ trimestre 2027" },
+      ],
+      milestonesTitle: "Des étapes clés franchies",
+      milestones: [
+        "L'octroi du permis de construction",
+        "Le choix de l'entrepreneur",
+        "Le démarrage du chantier",
+      ],
+      planningCaption: "Calendrier du projet — d'octobre 2023 à septembre 2027",
+      envNote:
+        "Le centre répond aux normes environnementales en vigueur et disposera de panneaux solaires.",
+      ctaNews:
+        "Je souhaite être tenu au courant de l'avancement du projet et des opportunités d'hébergement",
+      ctaVirtual: "Je souhaite visiter le site virtuellement",
+      galleryTitle: "Galerie du chantier",
+      gallerySubtitle: "L'évolution du chantier au fil des mois.",
+      gallery: [
+        { date: "14/04/2026", caption: "Premiers terrassements" },
+        { date: "19/05/2026", caption: "Fondations et coulage des pieux" },
+        { date: "24/06/2026", caption: "Vue d'ensemble du site" },
+      ],
+      locationTitle: "Nous situer",
       locationBody:
         "À proximité immédiate du CHU Hôpital Marie Curie à Charleroi, au cœur d'un pôle santé en pleine expansion.",
       videoTitle: "Vidéo de présentation",
-      videoNote: "Espace réservé — rendu architectural, interview du directeur, visite virtuelle.",
+      videoNote: "Rendu architectural du projet ARCHIPELAGO — visite virtuelle.",
     },
     careers: {
       title: "Rejoindre l'écosystème du CIM-MC²",
@@ -988,22 +1026,58 @@ export const translations = {
       ],
     },
     building: {
-      title: "The building",
+      title: "CIM-MC²",
       subtitle:
-        "A dedicated infrastructure for collaboration between clinicians, researchers and industry.",
-      designTitle: "Designed for medical innovation",
-      designBody:
-        "CIM-MC² will move into a dedicated building designed to facilitate collaboration. Its immediate proximity to CHU Hôpital Marie Curie makes it a natural bridge between hospital practice and applied research.",
-      timelineTitle: "Timeline",
-      timeline: [
-        { date: "In progress", t: "Design & construction", d: "Construction and equipment phase." },
-        { date: "September 2027", t: "Opening", d: "Official launch and welcome of first projects." },
+        "A unique 1,750 m² facility over 2 levels, dedicated to collaboration between clinicians, researchers and industry.",
+      archTitle: "Architecture and functions designed for purpose",
+      archCollectiveLabel: "Shared research spaces",
+      archCollectiveBody: "pooled and open to the projects hosted at the centre.",
+      archCollectiveLink: "See our infrastructure offer",
+      archPrivateLabel: "Private spaces",
+      archPrivateBody:
+        "offices, cleanrooms, prototyping and assembly room, dedicated technical areas…",
+      archProximityLabel: "Right next to Marie-Curie hospital",
+      archProximityBody:
+        "The building sits directly alongside CHU Hôpital Marie Curie in Lodelinsart (Charleroi).",
+      plan1Caption: "Site access and circulation plan",
+      plan2Caption: "Building footprint and landscape integration",
+      rentTitle: "Spaces for rent",
+      rentIntro: "In addition to shared technical spaces, the centre offers for rent:",
+      rentItems: [
+        "About ten rentable spaces — offices, private prototyping areas and cleanrooms, with access to meeting rooms and the social space — for spin-offs, research centres and researchers.",
+        "Co-working desks.",
       ],
-      locationTitle: "Location",
+      rentLink: "Discover the infrastructure offer",
+      ctaReserve: "I want to book a space in advance",
+      ctaVisit: "I want to visit the centre",
+      phasesTitle: "A two-phase project",
+      phases: [
+        { n: "01", t: "Construction", d: "2026 – 2027" },
+        { n: "02", t: "Operation", d: "From Q4 2027" },
+      ],
+      milestonesTitle: "Key milestones reached",
+      milestones: [
+        "Building permit granted",
+        "Contractor selected",
+        "Construction works started",
+      ],
+      planningCaption: "Project timeline — from October 2023 to September 2027",
+      envNote:
+        "The centre meets current environmental standards and will be fitted with solar panels.",
+      ctaNews: "Keep me posted on project progress and hosting opportunities",
+      ctaVirtual: "I want to visit the site virtually",
+      galleryTitle: "Construction gallery",
+      gallerySubtitle: "How the site has evolved month after month.",
+      gallery: [
+        { date: "14/04/2026", caption: "First earthworks" },
+        { date: "19/05/2026", caption: "Foundations and pile pouring" },
+        { date: "24/06/2026", caption: "Overview of the site" },
+      ],
+      locationTitle: "Find us",
       locationBody:
         "Right next to CHU Hôpital Marie Curie in Charleroi, at the heart of a fast-growing health hub.",
       videoTitle: "Presentation video",
-      videoNote: "Reserved space — architectural rendering, director interview, virtual tour.",
+      videoNote: "Architectural rendering of the ARCHIPELAGO project — virtual tour.",
     },
     careers: {
       title: "Join the CIM-MC² ecosystem",
