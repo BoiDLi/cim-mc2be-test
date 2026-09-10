@@ -1,8 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucide-react";
+import {
+  ArrowRight,
+  Sparkles,
+  Users,
+  Microscope,
+  Rocket,
+  Calendar,
+  Stethoscope,
+  CheckCircle2,
+} from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { SdgIcon } from "@/components/site/SdgIcon";
-import { ClinicalNeed } from "@/components/site/ClinicalNeed";
 import heroImg from "@/assets/cim-hero-endoscopy.jpg";
 import prototypingImg from "@/assets/cim-max-alix.png";
 import sdg1 from "@/assets/sdg/sdg-1.png";
