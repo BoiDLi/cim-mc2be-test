@@ -73,6 +73,18 @@ export const translations = {
         body: "Retrouvez toute l'actualité du CIM-MC² et de ses partenaires.",
         cta: "Voir les événements",
       },
+      clinicalCta: {
+        kicker: "Espace cliniciens",
+        title: "Vous avez un besoin clinique ?",
+        body:
+          "Décrivez en quelques lignes un problème rencontré dans votre pratique. Notre équipe vous oriente vers le bon référent du CIM-MC² sous 5 jours ouvrés.",
+        bullets: [
+          "Échange confidentiel avec un référent dédié",
+          "Évaluation de la faisabilité technique et clinique",
+          "Mise en relation avec ingénieurs et partenaires industriels",
+        ],
+        cta: "Décrire mon besoin",
+      },
       sdg: {
         kicker: "Engagement",
         title: "Indicateurs de développement durable",
@@ -661,6 +673,18 @@ export const translations = {
         title: "Conferences, open days, medtech hackathons",
         body: "Stay up to date with everything happening at CIM-MC² and its partners.",
         cta: "See events",
+      },
+      clinicalCta: {
+        kicker: "Clinicians' space",
+        title: "Do you have a clinical need?",
+        body:
+          "Describe in a few lines a problem you face in your practice. Our team will route you to the right CIM-MC² referent within 5 working days.",
+        bullets: [
+          "Confidential exchange with a dedicated referent",
+          "Technical and clinical feasibility assessment",
+          "Introductions to engineers and industrial partners",
+        ],
+        cta: "Describe my need",
       },
       sdg: {
         kicker: "Commitment",
