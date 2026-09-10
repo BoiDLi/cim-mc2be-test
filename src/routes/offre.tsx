@@ -41,7 +41,88 @@ function OfferPage() {
 
   return (
     <>
-      <PageHero kicker="03" title={t.offer.title} subtitle={t.offer.subtitle} />
+      <PageHero kicker={t.offer.hero.kicker} title={t.offer.hero.title}>
+        <p className="mt-6 max-w-3xl text-lg text-foreground/85 leading-relaxed">
+          {t.offer.hero.lead}
+        </p>
+
+        <p className="mt-10 font-display italic text-coral text-lg">
+          — {t.offer.hero.stepsTitle}
+        </p>
+        <div className="mt-5 grid md:grid-cols-3 gap-4">
+          {t.offer.hero.steps.map((s) => (
+            <div
+              key={s.n}
+              className="rounded-2xl bg-card/80 backdrop-blur border border-border p-6 hover:border-coral/50 hover:shadow-soft transition-smooth"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl leading-none" aria-hidden>
+                  {s.icon}
+                </span>
+                <span className="font-mono text-xs text-coral">0{s.n}</span>
+              </div>
+              <h2 className="mt-3 font-display text-xl text-primary">{s.t}</h2>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.d}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 max-w-3xl space-y-4">
+          <p className="text-foreground/80 leading-relaxed">{t.offer.hero.idea}</p>
+          <p className="text-foreground/80 leading-relaxed">{t.offer.hero.support}</p>
+        </div>
+
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <Link
+            to="/deposer-projet"
+            className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-8 py-4 text-lg font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+          >
+            {t.offer.hero.ctaPrimary}
+            <ArrowRight className="h-5 w-5" />
+          </Link>
+          <a
+            href="#services"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/25 px-8 py-4 text-lg font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+          >
+            {t.offer.hero.ctaSecondary}
+            <ArrowRight className="h-5 w-5" />
+          </a>
+        </div>
+      </PageHero>
+
+      {/* VALUE CHAIN SCHEMA */}
+      <section className="py-20 border-b border-border">
+        <div className="container-narrow">
+          <p className="font-display italic text-coral text-lg">— {t.offer.hero.chainKicker}</p>
+          <h2 className="mt-2 font-display text-3xl md:text-4xl">{t.offer.hero.chainTitle}</h2>
+
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-3">
+            {t.offer.hero.chain.map((c, i) => (
+              <div
+                key={c.t}
+                className="flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:border-coral/50 hover:shadow-soft transition-smooth"
+              >
+                <div className="bg-primary text-primary-foreground px-4 py-3">
+                  <p className="font-mono text-[10px] text-coral">0{i + 1}</p>
+                  <p className="font-display text-base leading-tight">{c.t}</p>
+                </div>
+                <ul className="p-4 space-y-2">
+                  {c.items.map((it) => (
+                    <li key={it} className="flex gap-2 items-start">
+                      <span className="mt-1.5 h-1 w-1 rounded-full bg-coral shrink-0" />
+                      <span className="text-xs text-foreground/80 leading-snug">{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 max-w-3xl text-foreground/75 italic border-l-2 border-coral pl-5">
+            {t.offer.hero.chainNote}
+          </p>
+        </div>
+      </PageHeroEnd>
 
       {/* SUB-NAV : deux piliers de l'offre */}
       <section className="py-12 border-b border-border">
