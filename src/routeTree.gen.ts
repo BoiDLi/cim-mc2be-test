@@ -15,6 +15,7 @@ import { Route as OffreRouteImport } from './routes/offre'
 import { Route as LandingRouteImport } from './routes/landing'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CarrieresRouteImport } from './routes/carrieres'
+import { Route as BesoinCliniqueRouteImport } from './routes/besoin-clinique'
 import { Route as BatimentRouteImport } from './routes/batiment'
 import { Route as ActualitesRouteImport } from './routes/actualites'
 import { Route as IndexRouteImport } from './routes/index'
@@ -49,6 +50,11 @@ const CarrieresRoute = CarrieresRouteImport.update({
   path: '/carrieres',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BesoinCliniqueRoute = BesoinCliniqueRouteImport.update({
+  id: '/besoin-clinique',
+  path: '/besoin-clinique',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BatimentRoute = BatimentRouteImport.update({
   id: '/batiment',
   path: '/batiment',
@@ -69,6 +75,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/actualites': typeof ActualitesRoute
   '/batiment': typeof BatimentRoute
+  '/besoin-clinique': typeof BesoinCliniqueRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
   '/landing': typeof LandingRoute
@@ -80,6 +87,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/actualites': typeof ActualitesRoute
   '/batiment': typeof BatimentRoute
+  '/besoin-clinique': typeof BesoinCliniqueRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
   '/landing': typeof LandingRoute
@@ -92,6 +100,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/actualites': typeof ActualitesRoute
   '/batiment': typeof BatimentRoute
+  '/besoin-clinique': typeof BesoinCliniqueRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
   '/landing': typeof LandingRoute
@@ -105,6 +114,7 @@ export interface FileRouteTypes {
     | '/'
     | '/actualites'
     | '/batiment'
+    | '/besoin-clinique'
     | '/carrieres'
     | '/contact'
     | '/landing'
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/'
     | '/actualites'
     | '/batiment'
+    | '/besoin-clinique'
     | '/carrieres'
     | '/contact'
     | '/landing'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/'
     | '/actualites'
     | '/batiment'
+    | '/besoin-clinique'
     | '/carrieres'
     | '/contact'
     | '/landing'
@@ -139,6 +151,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ActualitesRoute: typeof ActualitesRoute
   BatimentRoute: typeof BatimentRoute
+  BesoinCliniqueRoute: typeof BesoinCliniqueRoute
   CarrieresRoute: typeof CarrieresRoute
   ContactRoute: typeof ContactRoute
   LandingRoute: typeof LandingRoute
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CarrieresRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/besoin-clinique': {
+      id: '/besoin-clinique'
+      path: '/besoin-clinique'
+      fullPath: '/besoin-clinique'
+      preLoaderRoute: typeof BesoinCliniqueRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/batiment': {
       id: '/batiment'
       path: '/batiment'
@@ -219,6 +239,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ActualitesRoute: ActualitesRoute,
   BatimentRoute: BatimentRoute,
+  BesoinCliniqueRoute: BesoinCliniqueRoute,
   CarrieresRoute: CarrieresRoute,
   ContactRoute: ContactRoute,
   LandingRoute: LandingRoute,

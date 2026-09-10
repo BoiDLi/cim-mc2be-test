@@ -1,8 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Sparkles, Users, Microscope, Rocket, Calendar } from "lucide-react";
+import {
+  ArrowRight,
+  Sparkles,
+  Users,
+  Microscope,
+  Rocket,
+  Calendar,
+  Stethoscope,
+  CheckCircle2,
+} from "lucide-react";
 import { useLang } from "@/i18n/LanguageContext";
 import { SdgIcon } from "@/components/site/SdgIcon";
-import { ClinicalNeed } from "@/components/site/ClinicalNeed";
 import heroImg from "@/assets/cim-hero-endoscopy.jpg";
 import prototypingImg from "@/assets/cim-max-alix.png";
 import sdg1 from "@/assets/sdg/sdg-1.png";
@@ -222,8 +230,45 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CLINICAL NEED FORM */}
-      <ClinicalNeed />
+      {/* CLINICAL NEED CTA */}
+      <section className="py-24 bg-secondary/40">
+        <div className="container-narrow">
+          <div className="relative overflow-hidden rounded-3xl bg-card border border-border p-10 md:p-14 shadow-elegant">
+            <div className="absolute -top-20 -right-20 h-64 w-64 rounded-full bg-coral/10 blur-2xl" />
+            <div className="relative grid lg:grid-cols-12 gap-10 items-center">
+              <div className="lg:col-span-8">
+                <div className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-coral">
+                  <Stethoscope className="h-3.5 w-3.5" />
+                  {t.home.clinicalCta.kicker}
+                </div>
+                <h2 className="mt-4 font-display text-3xl md:text-4xl text-primary">
+                  {t.home.clinicalCta.title}
+                </h2>
+                <p className="mt-4 max-w-2xl text-foreground/80 leading-relaxed">
+                  {t.home.clinicalCta.body}
+                </p>
+                <ul className="mt-6 space-y-2">
+                  {t.home.clinicalCta.bullets.map((b) => (
+                    <li key={b} className="flex items-center gap-3 text-sm text-muted-foreground">
+                      <CheckCircle2 className="h-4 w-4 text-coral shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="lg:col-span-4 lg:text-right">
+                <Link
+                  to="/besoin-clinique"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium shadow-soft hover:bg-primary-glow transition-smooth"
+                >
+                  {t.home.clinicalCta.cta}
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* SDG */}
       <section className="py-24 bg-gradient-soft">
