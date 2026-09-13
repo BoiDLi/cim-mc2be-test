@@ -119,6 +119,20 @@ function OfferPage() {
             {t.offer.hero.ctaSecondary}
             <ArrowRight className="h-5 w-5" />
           </a>
+          <a
+            href="#infra-form"
+            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-8 py-4 text-lg font-medium hover:scale-[1.03] transition-smooth"
+          >
+            {t.offer.ctaInfra}
+            <ArrowRight className="h-5 w-5" />
+          </a>
+          <a
+            href="#infra-form"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 text-lg font-medium text-primary hover:border-coral/50 transition-smooth"
+          >
+            {t.offer.ctaResident}
+            <ArrowRight className="h-5 w-5" />
+          </a>
         </div>
       </PageHero>
 
