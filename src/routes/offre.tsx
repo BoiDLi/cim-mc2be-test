@@ -122,7 +122,7 @@ function OfferPage() {
             {t.offer.hero.chainNote}
           </p>
         </div>
-      </PageHeroEnd>
+      </section>
 
       {/* SUB-NAV : deux piliers de l'offre */}
       <section className="py-12 border-b border-border">
