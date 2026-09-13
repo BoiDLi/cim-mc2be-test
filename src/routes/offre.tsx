@@ -46,25 +46,29 @@ function OfferPage() {
           {t.offer.hero.lead}
         </p>
 
-        <p className="mt-10 font-display italic text-coral text-lg">
-          — {t.offer.hero.stepsTitle}
-        </p>
-        <div className="mt-5 grid md:grid-cols-3 gap-4">
-          {t.offer.hero.steps.map((s) => (
-            <div
-              key={s.n}
-              className="rounded-2xl bg-card/80 backdrop-blur border border-border p-6 hover:border-coral/50 hover:shadow-soft transition-smooth"
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-2xl leading-none" aria-hidden>
-                  {s.icon}
-                </span>
-                <span className="font-mono text-xs text-coral">0{s.n}</span>
-              </div>
-              <h2 className="mt-3 font-display text-xl text-primary">{s.t}</h2>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.d}</p>
-            </div>
-          ))}
+        <div className="mt-12 max-w-3xl">
+          <h2 className="font-display text-3xl md:text-4xl text-primary">
+            {t.offer.conclusionTitle}
+          </h2>
+          <p className="mt-5 text-lg text-foreground/85 leading-relaxed">
+            {t.offer.conclusionBody}
+          </p>
+          <ul className="mt-8 grid sm:grid-cols-3 gap-5">
+            {t.offer.conclusionPoints.map((p, i) => (
+              <li
+                key={p}
+                className="rounded-2xl bg-card/80 backdrop-blur border border-border p-7 hover:border-coral/40 hover:shadow-soft transition-smooth"
+              >
+                <span className="font-mono text-sm text-coral">0{i + 1}</span>
+                <p className="mt-3 font-display text-xl md:text-2xl font-semibold text-primary leading-snug">
+                  {p}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-foreground/80 leading-relaxed">
+            {t.offer.conclusionFooter}
+          </p>
         </div>
 
         <div className="mt-12 max-w-3xl">
@@ -518,58 +522,6 @@ function OfferPage() {
         </div>
       </section>
 
-      {/* CONCLUSION + CTAs */}
-      <section className="py-24">
-        <div className="container-narrow max-w-4xl">
-          <p className="font-mono text-xs uppercase tracking-wider text-coral">
-            {t.offer.conclusionKicker}
-          </p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl">{t.offer.conclusionTitle}</h2>
-          <p className="mt-5 text-lg text-foreground/85 leading-relaxed">
-            {t.offer.conclusionBody}
-          </p>
-          <ul className="mt-8 grid sm:grid-cols-3 gap-5">
-            {t.offer.conclusionPoints.map((p, i) => (
-              <li
-                key={p}
-                className="rounded-2xl bg-card border border-border p-7 hover:border-coral/40 transition-smooth"
-              >
-                <span className="font-mono text-sm text-coral">0{i + 1}</span>
-                <p className="mt-3 font-display text-xl md:text-2xl font-semibold text-primary leading-snug">
-                  {p}
-                </p>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 text-foreground/80 leading-relaxed">
-            {t.offer.conclusionFooter}
-          </p>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#services"
-              className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-7 py-4 font-medium shadow-coral hover:scale-[1.03] transition-smooth"
-            >
-              {t.offer.ctaServices}
-              <ArrowRight className="h-4 w-4" />
-            </a>
-            <a
-              href="#infra-form"
-              className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium hover:scale-[1.03] transition-smooth"
-            >
-              {t.offer.ctaInfra}
-              <ArrowRight className="h-4 w-4" />
-            </a>
-            <a
-              href="#infra-form"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-4 font-medium text-primary hover:border-coral/50 transition-smooth"
-            >
-              {t.offer.ctaResident}
-              <ArrowRight className="h-4 w-4" />
-            </a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
