@@ -67,6 +67,34 @@ function OfferPage() {
           ))}
         </div>
 
+        <div className="mt-12 max-w-3xl">
+          <h2 className="font-display text-3xl md:text-4xl text-primary">
+            {t.offer.hero.pathKicker}
+          </h2>
+          <p className="mt-4 text-lg text-foreground/80 leading-relaxed">
+            {t.offer.hero.pathIntro}
+          </p>
+          <ol className="mt-8 space-y-4">
+            {t.offer.hero.pathSteps.map((s, i) => (
+              <li
+                key={s.t}
+                className="rounded-2xl bg-card/80 backdrop-blur border border-border p-6 hover:border-coral/50 hover:shadow-soft transition-smooth"
+              >
+                <div className="flex items-baseline gap-3">
+                  <span className="font-mono text-xs text-coral">{i + 1}.</span>
+                  <h3 className="font-display text-xl text-primary">{s.t}</h3>
+                </div>
+                <p className="mt-2 text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {s.d}
+                </p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-8 text-foreground/75 leading-relaxed border-l-2 border-coral pl-5">
+            {t.offer.hero.pathNote}
+          </p>
+        </div>
+
         <div className="mt-10 max-w-3xl space-y-4">
           <p className="text-foreground/80 leading-relaxed">{t.offer.hero.idea}</p>
           <p className="text-foreground/80 leading-relaxed">{t.offer.hero.support}</p>

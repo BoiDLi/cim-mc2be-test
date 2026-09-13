@@ -310,6 +310,25 @@ export const translations = {
           { n: "2", icon: "⚙️", t: "Développement en co-conception", d: "Validation · Prototype · Tests" },
           { n: "3", icon: "🚀", t: "Innovation", d: "Entreprise · Essais cliniques · Patient" },
         ],
+        pathKicker: "Une méthodologie centrée sur le porteur de projet",
+        pathIntro:
+          "Chaque innovation suit un parcours différent. C'est pourquoi le CIM-MC² met en œuvre une méthodologie d'accompagnement progressive, basée sur les besoins réels du projet.",
+        pathSteps: [
+          {
+            t: "Comprendre le besoin",
+            d: "Nous analysons la problématique clinique, le niveau de maturité technologique (TRL), les objectifs du projet et les compétences déjà disponibles.",
+          },
+          {
+            t: "Construire un parcours personnalisé",
+            d: "En fonction des besoins identifiés, nous constituons une équipe pluridisciplinaire et mobilisons les partenaires les plus pertinents : experts scientifiques, cliniciens, ingénieurs, spécialistes réglementaires, industriels ou investisseurs.",
+          },
+          {
+            t: "Coordonner les expertises",
+            d: "Le CIM-MC² reste l'interlocuteur unique du porteur de projet. Nous assurons la coordination des interventions, le suivi des différentes étapes et la cohérence globale du développement.",
+          },
+        ],
+        pathNote:
+          "À mesure que le projet progresse, de nouveaux partenaires rejoignent l'accompagnement afin de préparer les validations précliniques et cliniques, la stratégie réglementaire, l'industrialisation, la création d'entreprise ou les levées de fonds.",
         lead: "Du besoin clinique à la mise sur le marché, le CIM-MC² réunit en un seul lieu les expertises, les infrastructures et les partenaires qui accélèrent le développement des technologies médicales.",
         idea: "Vous avez une idée ? Nous réunissons les compétences, les infrastructures et l'écosystème pour la transformer en une solution qui répond aux besoins des équipes médicales et qui améliore la vie des patients.",
         support: "Vous n'êtes jamais seul : vous bénéficiez d'un accompagnement personnalisé, à chaque étape du développement, par une équipe multidisciplinaire composée de médecins, ingénieurs, chercheurs, experts réglementaires et partenaires industriels.",
@@ -938,6 +957,25 @@ export const translations = {
           { n: "2", icon: "⚙️", t: "Co-designed development", d: "Validation · Prototype · Testing" },
           { n: "3", icon: "🚀", t: "Innovation", d: "Company · Clinical trials · Patient" },
         ],
+        pathKicker: "A methodology centred on the project owner",
+        pathIntro:
+          "Every innovation follows a different path. That is why CIM-MC² applies a progressive support methodology, built around the real needs of the project.",
+        pathSteps: [
+          {
+            t: "Understand the need",
+            d: "We analyse the clinical problem, the technology readiness level (TRL), the project's objectives and the skills already available.",
+          },
+          {
+            t: "Build a tailored pathway",
+            d: "Based on the identified needs, we assemble a multidisciplinary team and mobilise the most relevant partners: scientific experts, clinicians, engineers, regulatory specialists, industrialists or investors.",
+          },
+          {
+            t: "Coordinate the expertise",
+            d: "CIM-MC² remains the project owner's single point of contact. We ensure the coordination of interventions, the monitoring of each stage and the overall coherence of the development.",
+          },
+        ],
+        pathNote:
+          "As the project progresses, new partners join the support team to prepare preclinical and clinical validations, the regulatory strategy, industrialisation, company creation or fundraising.",
         lead: "From clinical need to market launch, CIM-MC² brings together in one place the expertise, infrastructure and partners that accelerate medical technology development.",
         idea: "Got an idea? We bring together the skills, infrastructure and ecosystem to turn it into a solution that meets the needs of medical teams and improves patients' lives.",
         support: "You are never alone: you benefit from personalised support at every development stage from a multidisciplinary team of physicians, engineers, researchers, regulatory experts and industrial partners.",
