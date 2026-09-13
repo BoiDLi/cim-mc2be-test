@@ -13,6 +13,7 @@ import { Route as SoutenirRouteImport } from './routes/soutenir'
 import { Route as OrganisationRouteImport } from './routes/organisation'
 import { Route as OffreRouteImport } from './routes/offre'
 import { Route as LandingRouteImport } from './routes/landing'
+import { Route as DeposerProjetRouteImport } from './routes/deposer-projet'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CarrieresRouteImport } from './routes/carrieres'
 import { Route as BesoinCliniqueRouteImport } from './routes/besoin-clinique'
@@ -38,6 +39,11 @@ const OffreRoute = OffreRouteImport.update({
 const LandingRoute = LandingRouteImport.update({
   id: '/landing',
   path: '/landing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeposerProjetRoute = DeposerProjetRouteImport.update({
+  id: '/deposer-projet',
+  path: '/deposer-projet',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/besoin-clinique': typeof BesoinCliniqueRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
+  '/deposer-projet': typeof DeposerProjetRoute
   '/landing': typeof LandingRoute
   '/offre': typeof OffreRoute
   '/organisation': typeof OrganisationRoute
@@ -90,6 +97,7 @@ export interface FileRoutesByTo {
   '/besoin-clinique': typeof BesoinCliniqueRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
+  '/deposer-projet': typeof DeposerProjetRoute
   '/landing': typeof LandingRoute
   '/offre': typeof OffreRoute
   '/organisation': typeof OrganisationRoute
@@ -103,6 +111,7 @@ export interface FileRoutesById {
   '/besoin-clinique': typeof BesoinCliniqueRoute
   '/carrieres': typeof CarrieresRoute
   '/contact': typeof ContactRoute
+  '/deposer-projet': typeof DeposerProjetRoute
   '/landing': typeof LandingRoute
   '/offre': typeof OffreRoute
   '/organisation': typeof OrganisationRoute
@@ -117,6 +126,7 @@ export interface FileRouteTypes {
     | '/besoin-clinique'
     | '/carrieres'
     | '/contact'
+    | '/deposer-projet'
     | '/landing'
     | '/offre'
     | '/organisation'
@@ -129,6 +139,7 @@ export interface FileRouteTypes {
     | '/besoin-clinique'
     | '/carrieres'
     | '/contact'
+    | '/deposer-projet'
     | '/landing'
     | '/offre'
     | '/organisation'
@@ -141,6 +152,7 @@ export interface FileRouteTypes {
     | '/besoin-clinique'
     | '/carrieres'
     | '/contact'
+    | '/deposer-projet'
     | '/landing'
     | '/offre'
     | '/organisation'
@@ -154,6 +166,7 @@ export interface RootRouteChildren {
   BesoinCliniqueRoute: typeof BesoinCliniqueRoute
   CarrieresRoute: typeof CarrieresRoute
   ContactRoute: typeof ContactRoute
+  DeposerProjetRoute: typeof DeposerProjetRoute
   LandingRoute: typeof LandingRoute
   OffreRoute: typeof OffreRoute
   OrganisationRoute: typeof OrganisationRoute
@@ -188,6 +201,13 @@ declare module '@tanstack/react-router' {
       path: '/landing'
       fullPath: '/landing'
       preLoaderRoute: typeof LandingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/deposer-projet': {
+      id: '/deposer-projet'
+      path: '/deposer-projet'
+      fullPath: '/deposer-projet'
+      preLoaderRoute: typeof DeposerProjetRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -242,6 +262,7 @@ const rootRouteChildren: RootRouteChildren = {
   BesoinCliniqueRoute: BesoinCliniqueRoute,
   CarrieresRoute: CarrieresRoute,
   ContactRoute: ContactRoute,
+  DeposerProjetRoute: DeposerProjetRoute,
   LandingRoute: LandingRoute,
   OffreRoute: OffreRoute,
   OrganisationRoute: OrganisationRoute,
