@@ -42,15 +42,8 @@ function OfferPage() {
   return (
     <>
       <PageHero kicker={t.offer.hero.kicker} title={t.offer.hero.title}>
-        <p className="mt-6 max-w-3xl text-lg text-foreground/85 leading-relaxed">
-          {t.offer.hero.lead}
-        </p>
-
         <div className="mt-12 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl text-primary">
-            {t.offer.conclusionTitle}
-          </h2>
-          <p className="mt-5 text-lg text-foreground/85 leading-relaxed">
+          <p className="text-lg text-foreground/85 leading-relaxed">
             {t.offer.conclusionBody}
           </p>
           <ul className="mt-8 grid sm:grid-cols-3 gap-5">
