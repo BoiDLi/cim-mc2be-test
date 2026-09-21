@@ -1,7 +1,6 @@
 # Roadmap
 
 ## En cours
-- [ ] Mettre à jour la page Bâtiment avec le nouveau contenu fourni (infrastructure 1 750 m² sur 2 niveaux, espaces collectifs/privatifs, proximité hôpital Marie-Curie).
-
-## À traiter ensuite
-- [ ] Attendre la suite du message utilisateur concernant la page Bâtiment.
+- [x] Restructurer la page Offre en A. Services et B. Infrastructures.
+- [x] Déplacer la présentation globale sous « Notre chaîne de valeur ».
+- [x] Supprimer les contenus, boutons et formulaires redondants.

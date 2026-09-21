@@ -277,7 +277,7 @@ export const translations = {
       servicesBlockTitle: "Offre de services",
       servicesBlockIntro:
         "Accompagnement complet, de l'identification du besoin clinique à la mise sur le marché — par les équipes du CIM-MC² et son réseau de partenaires.",
-      spacesBlockTitle: "Espaces de travail et intégration dans l'écosystème",
+      spacesBlockTitle: "Offre d'infrastructures",
       spacesBlockIntro:
         "Un environnement de travail conçu pour favoriser la collaboration et l'innovation, avec une offre de services intégrée (accueil, support administratif, logistique).",
       spaces: [
@@ -924,7 +924,7 @@ export const translations = {
       servicesBlockTitle: "Services offering",
       servicesBlockIntro:
         "End-to-end support from clinical need identification to market launch — by CIM-MC² teams and its partner network.",
-      spacesBlockTitle: "Workspaces & ecosystem integration",
+      spacesBlockTitle: "Infrastructure offering",
       spacesBlockIntro:
         "A working environment designed to foster collaboration and innovation, with an integrated service offering (reception, administrative support, logistics).",
       spaces: [

@@ -31,7 +31,13 @@ export const Route = createRootRoute({
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9135cd4c-d4eb-4844-98b4-febdf9be5191/id-preview-33d1fec2--35c1ad9b-7476-4edb-b3b9-45eccf6950c0.lovable.app-1777221874037.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9135cd4c-d4eb-4844-98b4-febdf9be5191/id-preview-33d1fec2--35c1ad9b-7476-4edb-b3b9-45eccf6950c0.lovable.app-1777221874037.png" },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap",
+      },
+      { rel: "stylesheet", href: appCss },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
