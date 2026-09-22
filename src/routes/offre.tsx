@@ -93,13 +93,6 @@ function OfferPage() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
-          <Link
-            to="/deposer-projet"
-            className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-8 py-4 text-lg font-medium shadow-coral hover:scale-[1.03] transition-smooth"
-          >
-            {t.offer.hero.ctaPrimary}
-            <ArrowRight className="h-5 w-5" />
-          </Link>
           <a
             href="#services"
             className="inline-flex items-center gap-2 rounded-full border border-primary/25 px-8 py-4 text-lg font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
@@ -107,6 +100,13 @@ function OfferPage() {
             {t.offer.hero.ctaSecondary}
             <ArrowRight className="h-5 w-5" />
           </a>
+          <Link
+            to="/deposer-projet"
+            className="inline-flex items-center gap-2 rounded-full bg-coral text-coral-foreground px-8 py-4 text-lg font-medium shadow-coral hover:scale-[1.03] transition-smooth"
+          >
+            {t.offer.hero.ctaPrimary}
+            <ArrowRight className="h-5 w-5" />
+          </Link>
           <a
             href="#infra-form"
             className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-8 py-4 text-lg font-medium hover:scale-[1.03] transition-smooth"
